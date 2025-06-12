@@ -15,10 +15,8 @@ int main(int argc, char* argv[]) {
     cout << "Dimension: " << reader.getDimension() << endl;
     cout << "Number of Vehicles: " << reader.getNumVehicles() << endl;
     cout << "Capacity: " << reader.getCapacity() << endl;
-    // Notar que el deposito varia y no siempre es 0. getDepotId() nos dice cual es el id del deposito.
-    cout << "Depot ID: " << reader.getDepotId() << endl;
 
-
+    // Inicialización de los clientes.
     vector<Node> nodos = reader.getNodes();
     vector<int> demandas = reader.getDemands();
     vector<Cliente> clientes;
@@ -30,18 +28,20 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    cout << clients.size() << endl;
-    
     // Testeamos la matriz de distancia. Tomando los id de los nodos, indexa desde 1.
     // Tener en cuenta esto al momento de decidir como representar una solucion.
-    cout << "Distance matrix" << endl;
     vector<vector<double>> dist_matrix = reader.getDistanceMatrix();
-    for (int i = 1; i <= reader.getDimension(); i++) {
-        for (int j = 1; j <= reader.getDimension(); j++) {
-            cout << dist_matrix[i][j] << " ";
-        }
-        cout << endl;
+
+    // Inicialización de las rutas.
+    vector<Ruta> rutas;
+    for (int i = 0; i < reader.getNumVehicles(); i++) {
+        rutas.push_back(Ruta(reader.getCapacity(), reader.getDepotId()));
     }
+
+    // Inicialización de la solución.
+
+    
+    
 
     
 
