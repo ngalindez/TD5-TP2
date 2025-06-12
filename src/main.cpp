@@ -1,34 +1,36 @@
 #include <iostream>
 #include "VRPLIBReader.h"
 
+using namespace std;
+
 int main(int argc, char* argv[]) {
     if (argc < 2) {
-        std::cerr << "Usage: " << argv[0] << " <path_to_vrp_file>" << std::endl;
+        cerr << "Usage: " << argv[0] << " <path_to_vrp_file>" << endl;
         return 1;
     }
 
     VRPLIBReader reader(argv[1]);
 
-    std::cout << "Instance Name: " << reader.getName() << std::endl;
-    std::cout << "Dimension: " << reader.getDimension() << std::endl;
-    std::cout << "Number of Vehicles: " << reader.getNumVehicles() << std::endl;
-    std::cout << "Capacity: " << reader.getCapacity() << std::endl;
+    cout << "Instance Name: " << reader.getName() << endl;
+    cout << "Dimension: " << reader.getDimension() << endl;
+    cout << "Number of Vehicles: " << reader.getNumVehicles() << endl;
+    cout << "Capacity: " << reader.getCapacity() << endl;
     // Notar que el deposito varia y no siempre es 0. getDepotId() nos dice cual es el id del deposito.
-    std::cout << "Depot ID: " << reader.getDepotId() << std::endl;
+    cout << "Depot ID: " << reader.getDepotId() << endl;
 
-    std::vector<Node> clients = reader.getNodes();
+    vector<Node> clients = reader.getNodes();
 
-    std::cout << clients.size() << std::endl;
+    cout << clients.size() << endl;
     
     // Testeamos la matriz de distancia. Tomando los id de los nodos, indexa desde 1.
     // Tener en cuenta esto al momento de decidir como representar una solucion.
-    std::cout << "Distance matrix" << std::endl;
-    std::vector<std::vector<double>> dist_matrix = reader.getDistanceMatrix();
+    cout << "Distance matrix" << endl;
+    vector<vector<double>> dist_matrix = reader.getDistanceMatrix();
     for (int i = 1; i <= reader.getDimension(); i++) {
         for (int j = 1; j <= reader.getDimension(); j++) {
-            std::cout << dist_matrix[i][j] << " ";
+            cout << dist_matrix[i][j] << " ";
         }
-        std::cout << std::endl;
+        cout << endl;
     }
 
     
