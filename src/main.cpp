@@ -18,7 +18,17 @@ int main(int argc, char* argv[]) {
     // Notar que el deposito varia y no siempre es 0. getDepotId() nos dice cual es el id del deposito.
     cout << "Depot ID: " << reader.getDepotId() << endl;
 
-    vector<Node> clients = reader.getNodes();
+
+    vector<Node> nodos = reader.getNodes();
+    vector<int> demandas = reader.getDemands();
+    vector<Cliente> clientes;
+    int depotId = reader.getDepotId();
+
+    for (int i = 0; i < nodos.size(); i++) {
+        if (nodos[i].id != depotId) {
+            clientes.push_back(Cliente(nodos[i].id, demandas[nodos[i].id]));
+        }
+    }
 
     cout << clients.size() << endl;
     
