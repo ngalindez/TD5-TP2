@@ -2,6 +2,8 @@
 #include "VRPLIBReader.h"
 #include "Cliente.h"
 #include "Ruta.h"
+#include "Solucion.h"
+#include "HeuristicaClarkWright.h"
 
 using namespace std;
 
@@ -34,16 +36,26 @@ int main(int argc, char* argv[]) {
     // Tener en cuenta esto al momento de decidir como representar una solucion.
     vector<vector<double>> dist_matrix = reader.getDistanceMatrix();
 
-    // Inicialización de las rutas.
-    vector<Ruta> rutas;
-    for (int i = 0; i < reader.getNumVehicles(); i++) {
-        rutas.push_back(Ruta(reader.getCapacity(), reader.getDepotId()));
+    HeuristicaClarkWright heuristica(clientes, dist_matrix, reader.getCapacity(), depotId, reader.getNumVehicles());
+    Solucion solucion = heuristica.resolver();
+
+    // Mostrar resultados
+    cout << "\nResultados de la Heurística de Clarke & Wright:" << endl;
+    cout << "Costo total: " << solucion.getCostoTotal() << endl;
+    cout << "Número de rutas: " << solucion.getRutas().size() << endl;
+    
+    // Mostrar cada ruta
+    cout << "\nRutas generadas:" << endl;
+    int rutaNum = 1;
+    for (const auto& ruta : solucion.getRutas()) {
+        cout << "Ruta " << rutaNum++ << ": ";
+        cout << depotId << " -> ";
+        for (int clienteId : ruta.getClientes()) {
+            cout << clienteId << " -> ";
+        }
+        cout << depotId;
+        cout << " (Demanda: " << ruta.getDemandaActual() << ", Costo: " << ruta.getCosto() << ")" << endl;
     }
-
-    // Inicialización de la solución.
-
-    
-    
 
     
 

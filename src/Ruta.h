@@ -13,24 +13,37 @@ private:
     int demandaActual;
     double costoTotal;
     int idDeposito;
+    const vector<vector<double>>* distMatrix;
+    const vector<Cliente>* allClientes;
 
 public:
-    Ruta(int capacidad, int deposito);
+    // Constructor básico
+    Ruta(int capacidad, int deposito, const vector<vector<double>>& distMatrix, const vector<Cliente>& allClientes);
     
-    // Getters
-    const vector<int>& getClientes() const;
-    int getCapacidadMaxima() const;
-    int getDemandaActual() const;
-    double getCostoTotal() const;
+    // Constructor con clientes iniciales
+    Ruta(const vector<int>& clientesIniciales, int capacidad, int deposito, 
+         const vector<vector<double>>& distMatrix, const vector<Cliente>& allClientes);
     
     // Métodos de modificación
-    bool agregarCliente(int idCliente, int demanda, const vector<vector<double>>& distMatrix);
-    bool removerCliente(int idCliente, int demanda, const vector<vector<double>>& distMatrix);
-    void actualizarCosto(const vector<vector<double>>& distMatrix);
+    void agregarCliente(int cliente);
+    void eliminarCliente(int cliente);
     
-    // Validaciones
+    // Métodos de consulta
+    double calcularCosto();
     bool esFactible() const;
     bool tieneCapacidadSuficiente(int demandaAdicional) const;
+    int getCantidadClientes() const;
+    const vector<int>& getClientes() const;
+    double getCosto() const;
+    int getCapacidadMaxima() const;
+    int getDemandaActual() const;
+    
+    // Operador de igualdad
+    bool operator==(const Ruta& otra) const {
+        return clientes == otra.clientes && 
+               capacidadMaxima == otra.capacidadMaxima && 
+               idDeposito == otra.idDeposito;
+    }
 };
 
 #endif 
