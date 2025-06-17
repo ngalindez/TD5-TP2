@@ -1,3 +1,6 @@
+#ifndef RUTA_H
+#define RUTA_H
+
 #include <vector>
 #include "Cliente.h"
 

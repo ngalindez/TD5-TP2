@@ -1,4 +1,5 @@
-using namespace std; 
+#ifndef CLIENTE_H
+#define CLIENTE_H
 
 #include <vector>
 
@@ -8,7 +9,9 @@ class Cliente {
         int demand;
 
     public:
-        Cliente(int id, int demand, double x, double y);
+        Cliente(int id, int demand);
         int getId() const;
         int getDemand() const;
 };
+
+#endif

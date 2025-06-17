@@ -1,5 +1,7 @@
 #include <iostream>
 #include "VRPLIBReader.h"
+#include "Cliente.h"
+#include "Ruta.h"
 
 using namespace std;
 
