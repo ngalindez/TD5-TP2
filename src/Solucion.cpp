@@ -1,12 +1,22 @@
 #include "Solucion.h"
+#include <algorithm>
 
 using namespace std;
 
 Solucion::Solucion(int cantCamiones)
     : _cantCamiones(cantCamiones)
 {
-    vector<Ruta> _rutas;
     _costoTotal = 0;
+}
+
+Solucion::Solucion(const vector<Ruta>& rutas, const vector<Cliente>& clientes, 
+                   const vector<vector<double>>& distMatrix)
+    : _rutas(rutas), _cantCamiones(rutas.size())
+{
+    _costoTotal = 0;
+    for (const auto& ruta : rutas) {
+        _costoTotal += ruta.getCosto();
+    }
 }
 
 // Verificar que sea independiente (?)
@@ -17,7 +27,7 @@ bool Solucion::agregarRuta(Ruta ruta)
     }
 
     _rutas.push_back(ruta);
-    _costoTotal += ruta.getCostoTotal();
+    _costoTotal += ruta.getCosto();
     return true;
 }
 
@@ -31,7 +41,7 @@ bool Solucion::removerRuta(Ruta ruta)
         return false;
     }
 
-    _costoTotal -= ruta.getCostoTotal();
+    _costoTotal -= ruta.getCosto();
     _rutas.erase(it);
     return true;
 }
