@@ -1,10 +1,14 @@
 #include <iostream>
 #include "VRPLIBReader.h"
+#include "Cliente.h"
+#include "Ruta.h"
 
 using namespace std;
 
-int main(int argc, char* argv[]) {
-    if (argc < 2) {
+int main(int argc, char *argv[])
+{
+    if (argc < 2)
+    {
         cerr << "Usage: " << argv[0] << " <path_to_vrp_file>" << endl;
         return 1;
     }
@@ -22,8 +26,10 @@ int main(int argc, char* argv[]) {
     vector<Cliente> clientes;
     int depotId = reader.getDepotId();
 
-    for (int i = 0; i < nodos.size(); i++) {
-        if (nodos[i].id != depotId) {
+    for (int i = 0; i < nodos.size(); i++)
+    {
+        if (nodos[i].id != depotId)
+        {
             clientes.push_back(Cliente(nodos[i].id, demandas[nodos[i].id]));
         }
     }
@@ -34,16 +40,12 @@ int main(int argc, char* argv[]) {
 
     // Inicialización de las rutas.
     vector<Ruta> rutas;
-    for (int i = 0; i < reader.getNumVehicles(); i++) {
+    for (int i = 0; i < reader.getNumVehicles(); i++)
+    {
         rutas.push_back(Ruta(reader.getCapacity(), reader.getDepotId()));
     }
 
     // Inicialización de la solución.
-
-    
-    
-
-    
 
     return 0;
 }

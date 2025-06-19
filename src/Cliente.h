@@ -1,16 +1,15 @@
 using namespace std;
 
-
 #include <vector>
 
-    class Cliente
+class Cliente
 {
 private:
     int id;
     int demand;
 
 public:
-    Cliente(int id, int demand, double x, double y);
+    Cliente(int id, int demand);
     int getId() const;
     int getDemand() const;
 };
