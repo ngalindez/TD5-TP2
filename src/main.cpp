@@ -4,6 +4,7 @@
 #include "Ruta.h"
 #include "Solucion.h"
 #include "HeuristicaClarkWright.h"
+#include "HeuristicaInsercionCercana.h"
 
 using namespace std;
 
@@ -54,14 +55,40 @@ int main(int argc, char *argv[])
     for (const auto& ruta : solucion.getRutas()) {
         cout << "Ruta " << rutaNum++ << ": ";
         cout << depotId << " -> ";
-        for (int clienteId : ruta.getClientes()) {
-            cout << clienteId << " -> ";
-        }
-        cout << depotId;
+        for (size_t i = 0; i < ruta.getClientes().size(); ++i) {
+            cout << ruta.getClientes()[i];
+            if (i < ruta.getClientes().size() - 1) {
+                cout << " -> ";
+            }
+}
+
         cout << " (Demanda: " << ruta.getDemandaActual() << ", Costo: " << ruta.getCosto() << ")" << endl;
     }
 
-    
+
+    cout << "\nResultados de la Heurística de Inserción Más Cercana:" << endl;
+
+    HeuristicaInsercionCercana heuristicaInsercion(clientes, dist_matrix, reader.getCapacity(), depotId, reader.getNumVehicles());
+    Solucion solucionInsercion = heuristicaInsercion.resolver();
+
+    cout << "Costo total: " << solucionInsercion.getCostoTotal() << endl;
+    cout << "Número de rutas: " << solucionInsercion.getRutas().size() << endl;
+
+    cout << "\nRutas generadas:" << endl;
+    int num = 1;
+    for (const auto& ruta : solucionInsercion.getRutas()) {
+        cout << "Ruta " << num++ << ": ";
+        cout << reader.getDepotId() << " -> ";
+        for (size_t i = 0; i < ruta.getClientes().size(); ++i) {
+            cout << ruta.getClientes()[i];
+            if (i < ruta.getClientes().size() - 1) {
+                cout << " -> ";
+            }
+}
+        cout << " (Demanda: " << ruta.getDemandaActual() << ", Costo: " << ruta.getCosto() << ")" << endl;
+    }
+
+        
 
     return 0;
 }

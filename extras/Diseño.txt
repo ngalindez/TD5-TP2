@@ -24,16 +24,6 @@
 | void evaluate(...)          |
 +-----------------------------+
 
-+------------------------------------+
-|     Instance                       |
-+------------------------------------+
-| int num_customers                  |
-| int vehicle_capacity               |
-| int max_vehicles                   |
-| vector<Customer> customers         |
-| vector<vector<double>> dist_matrix |
-| void computeDistances()            |
-+------------------------------------+
 
 +------------------------------+
 |      CVRP                    |
