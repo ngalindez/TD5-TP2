@@ -1,6 +1,5 @@
 #include "HeuristicaInsercionCercana.h"
 #include <limits>
-#include <algorithm>
 
 HeuristicaInsercionCercana::HeuristicaInsercionCercana( const vector<Cliente>& clientes,
                                                         const vector<vector<double>>& distMatrix,

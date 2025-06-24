@@ -37,6 +37,9 @@ public:
     double getCosto() const;
     int getCapacidadMaxima() const;
     int getDemandaActual() const;
+    int getIdDeposito() const;
+    const vector<vector<double>>* getDistMatrix() const;
+    const vector<Cliente>* getAllClientes() const;
     
     // Operador de igualdad
     bool operator==(const Ruta& otra) const {

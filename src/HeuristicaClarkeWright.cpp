@@ -2,8 +2,7 @@
 #include "Cliente.h"
 #include "Ruta.h"
 #include "Solucion.h"
-#include "VRPLIBReader.h"
-#include <algorithm> // For std::find and std::reverse
+#include <algorithm> // Para std::find y std::reverse
 #include <vector>
 
 using namespace std;
