@@ -1,5 +1,5 @@
-#ifndef HEURISTICA_CLARK_WRIGHT_H
-#define HEURISTICA_CLARK_WRIGHT_H
+#ifndef HEURISTICA_CLARKE_WRIGHT_H
+#define HEURISTICA_CLARKE_WRIGHT_H
 
 #include <iostream>
 #include <vector>
@@ -10,10 +10,10 @@
 
 using namespace std;
 
-class HeuristicaClarkWright {
+class HeuristicaClarkeWright {
 
     public:
-        HeuristicaClarkWright(const vector<Cliente>& clientes,
+        HeuristicaClarkeWright(const vector<Cliente>& clientes,
                               const vector<vector<double>>& distMatrix,
                               int capacidadVehiculo,
                               int depotId,
