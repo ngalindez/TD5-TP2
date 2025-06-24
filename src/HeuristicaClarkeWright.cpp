@@ -24,7 +24,7 @@ Solucion HeuristicaClarkeWright::resolver() {
   vector<Ahorro> ahorros = calcularAhorros();
 
   // 3. Ordenar ahorros (ya se hace en calcularAhorros, pero por claridad lo
-  // mencionamos aquí) std::sort(ahorros.begin(), ahorros.end(),
+  // mencionamos acá) std::sort(ahorros.begin(), ahorros.end(),
   // std::greater<Ahorro>());
 
   // 4. Fusionar rutas según los ahorros y restricciones

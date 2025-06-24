@@ -42,7 +42,7 @@ Solucion HeuristicaInsercionCercana::resolver() {
                 actual = masCercano.getId();
                 cantidadVisitados++;
             } else {
-                break; // No cabe más
+                break; // No entra más
             }
         }
 
