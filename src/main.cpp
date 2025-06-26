@@ -9,7 +9,23 @@
 
 using namespace std;
 
-// ARMAR FUNCIÓN PARA MOSTRAR LAS RUTAS DE UNA SOLUCIÓN
+void printRutas(const Solucion &solucion, int depotId,
+                const string &label = "Rutas generadas:") {
+  cout << "\n" << label << endl;
+  int rutaNum = 1;
+  for (const auto &ruta : solucion.getRutas()) {
+    cout << "Ruta " << rutaNum++ << ": ";
+    cout << depotId << " -> ";
+    for (size_t i = 0; i < ruta.getClientes().size(); ++i) {
+      cout << ruta.getClientes()[i];
+      if (i < ruta.getClientes().size() - 1) {
+        cout << " -> ";
+      }
+    }
+    cout << " (Demanda: " << ruta.getDemandaActual()
+         << ", Costo: " << ruta.getCosto() << ")" << endl;
+  }
+}
 
 int main(int argc, char *argv[]) {
   if (argc < 2) {
@@ -51,21 +67,7 @@ int main(int argc, char *argv[]) {
   cout << "Número de rutas: " << solucion.getRutas().size() << endl;
 
   // Mostrar cada ruta
-  cout << "\nRutas generadas:" << endl;
-  int rutaNum = 1;
-  for (const auto &ruta : solucion.getRutas()) {
-    cout << "Ruta " << rutaNum++ << ": ";
-    cout << depotId << " -> ";
-    for (size_t i = 0; i < ruta.getClientes().size(); ++i) {
-      cout << ruta.getClientes()[i];
-      if (i < ruta.getClientes().size() - 1) {
-        cout << " -> ";
-      }
-    }
-
-    cout << " (Demanda: " << ruta.getDemandaActual()
-         << ", Costo: " << ruta.getCosto() << ")" << endl;
-  }
+  printRutas(solucion, depotId);
 
   cout << "\nResultados de la Heurística de Inserción Más Cercana:" << endl;
 
@@ -77,20 +79,7 @@ int main(int argc, char *argv[]) {
   cout << "Costo total: " << solucionInsercion.getCostoTotal() << endl;
   cout << "Número de rutas: " << solucionInsercion.getRutas().size() << endl;
 
-  cout << "\nRutas generadas:" << endl;
-  int num = 1;
-  for (const auto &ruta : solucionInsercion.getRutas()) {
-    cout << "Ruta " << num++ << ": ";
-    cout << reader.getDepotId() << " -> ";
-    for (size_t i = 0; i < ruta.getClientes().size(); ++i) {
-      cout << ruta.getClientes()[i];
-      if (i < ruta.getClientes().size() - 1) {
-        cout << " -> ";
-      }
-    }
-    cout << " (Demanda: " << ruta.getDemandaActual()
-         << ", Costo: " << ruta.getCosto() << ")" << endl;
-  }
+  printRutas(solucionInsercion, reader.getDepotId());
 
   // Test the Swap Operator
   cout << "\n=== Testing Swap Operator ===" << endl;
@@ -107,20 +96,7 @@ int main(int argc, char *argv[]) {
        << solucion.getCostoTotal() - solucionMejorada.getCostoTotal() << endl;
 
   // Show improved routes
-  cout << "\nImproved routes after swap:" << endl;
-  int rutaNumMejorada = 1;
-  for (const auto &ruta : solucionMejorada.getRutas()) {
-    cout << "Ruta " << rutaNumMejorada++ << ": ";
-    cout << depotId << " -> ";
-    for (size_t i = 0; i < ruta.getClientes().size(); ++i) {
-      cout << ruta.getClientes()[i];
-      if (i < ruta.getClientes().size() - 1) {
-        cout << " -> ";
-      }
-    }
-    cout << " (Demanda: " << ruta.getDemandaActual()
-         << ", Costo: " << ruta.getCosto() << ")" << endl;
-  }
+  printRutas(solucionMejorada, depotId, "\nImproved routes after swap:");
 
   // Apply swap operator to Nearest Insertion solution
   cout << "\nApplying Swap Operator to Nearest Insertion solution:" << endl;
@@ -137,20 +113,8 @@ int main(int argc, char *argv[]) {
        << endl;
 
   // Show improved routes for Nearest Insertion
-  cout << "\nImproved routes after swap (Nearest Insertion):" << endl;
-  int rutaNumInsercionMejorada = 1;
-  for (const auto &ruta : solucionInsercionMejorada.getRutas()) {
-    cout << "Ruta " << rutaNumInsercionMejorada++ << ": ";
-    cout << depotId << " -> ";
-    for (size_t i = 0; i < ruta.getClientes().size(); ++i) {
-      cout << ruta.getClientes()[i];
-      if (i < ruta.getClientes().size() - 1) {
-        cout << " -> ";
-      }
-    }
-    cout << " (Demanda: " << ruta.getDemandaActual()
-         << ", Costo: " << ruta.getCosto() << ")" << endl;
-  }
+  printRutas(solucionInsercionMejorada, depotId,
+             "\nImproved routes after swap (Nearest Insertion):");
 
   return 0;
 }
