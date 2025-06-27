@@ -3,16 +3,9 @@
 OperadorSwap::OperadorSwap(const Solucion &solucion) : solucion(solucion) {}
 
 Solucion OperadorSwap::aplicar() {
-  // Iterar sobre todos los posibles pares de clientes de rutas diferentes,
-  // aplicar el swap y calcular el costo de la nueva solución luego elegir el
-  // swap que minimice el costo
-
   Solucion mejorSolucion = solucion;
   int mejorCosto = solucion.getCostoTotal();
 
-  // iteramos sobre todos los pares de rutas diferentes y obtenemos el mejor
-  // swap entre esas rutas luego elegimos el swap que minimice el costo de entre
-  // los swaps obtenidos
   for (size_t i = 0; i < solucion.getRutas().size(); i++) {
     for (size_t j = i + 1; j < solucion.getRutas().size(); j++) {
       Solucion nuevaSolucion = mejorSwapEntreRutas(i, j);
@@ -25,8 +18,8 @@ Solucion OperadorSwap::aplicar() {
   return mejorSolucion;
 }
 
-// MEJORAR PARA NO CREAR TANTAS RUTAS
-
+// MEJORAR PARA NO CREAR TANTAS RUTAS: hacer la cuenta manual y decidir si hacer el swapeo en base a la cuenta
+// VER QUE NO SE PISEN LAS RUTAS
 Solucion OperadorSwap::mejorSwapEntreRutas(size_t i, size_t j) {
   // Iterar sobre todos los posibles pares de clientes de las rutas, aplicar el
   // swap y calcular el costo de la nueva solución luego elegir el swap que
@@ -36,11 +29,11 @@ Solucion OperadorSwap::mejorSwapEntreRutas(size_t i, size_t j) {
   int mejorCosto = ruta_i.getCosto() + ruta_j.getCosto();
   int size_i = ruta_i.getClientes().size();
   int size_j = ruta_j.getClientes().size();
+  vector<int> clientes_i = ruta_i.getClientes();
+  vector<int> clientes_j = ruta_j.getClientes();
 
   for (size_t pos_i = 1; pos_i < size_i - 1; pos_i++) {
-    vector<int> clientes_i = ruta_i.getClientes();
     for (size_t pos_j = 1; pos_j < size_j - 1; pos_j++) {
-      vector<int> clientes_j = ruta_j.getClientes();
       swap(clientes_i[pos_i], clientes_j[pos_j]);
 
       // construyo las nuevas rutas con los clientes intercambiados
@@ -51,7 +44,7 @@ Solucion OperadorSwap::mejorSwapEntreRutas(size_t i, size_t j) {
           Ruta(clientes_j, ruta_j.getCapacidadMaxima(), ruta_j.getIdDeposito(),
                *ruta_j.getDistMatrix(), *ruta_j.getAllClientes());
 
-      // Check if both routes are feasible after the swap
+      // chequeo si son factibles después del swap
       if (nuevaRuta_i.esFactible() && nuevaRuta_j.esFactible() &&
           nuevaRuta_i.getCosto() + nuevaRuta_j.getCosto() < mejorCosto) {
         ruta_i = nuevaRuta_i;
@@ -60,7 +53,6 @@ Solucion OperadorSwap::mejorSwapEntreRutas(size_t i, size_t j) {
       }
     }
   }
-
   // armo una nueva solución con el mejor swap entre las rutas i y j
   vector<Ruta> nuevasRutas = solucion.getRutas();
   nuevasRutas[i] = ruta_i;

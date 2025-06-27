@@ -8,5 +8,4 @@ public:
 
 private:
   const Solucion &solucion;
-  void aplicarSwap(size_t ruta1, size_t ruta2);
 };
