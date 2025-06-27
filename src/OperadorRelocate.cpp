@@ -1,6 +1,5 @@
 #include "OperadorRelocate.h"
 #include "Solucion.h"
-#include <algorithm>
 
 OperadorRelocate::OperadorRelocate(const Solucion &solucion)
     : solucion(solucion) {}
@@ -40,10 +39,10 @@ Solucion OperadorRelocate::mejorRelocateEntreRutas(size_t i, size_t j) {
     vector<int> clientes_i = ruta_i.getClientes();
     vector<int> clientes_j = ruta_j.getClientes();
 
-    // Get the client to be moved
+    // Obtener el cliente a mover
     int cliente_a_mover = clientes_i[pos_i];
 
-    // Get individual client demand
+    // Obtener demanda individual del cliente
     int demanda_cliente = 0;
     const vector<Cliente> &allClientes = *ruta_i.getAllClientes();
     for (const auto &cliente : allClientes) {
@@ -54,8 +53,8 @@ Solucion OperadorRelocate::mejorRelocateEntreRutas(size_t i, size_t j) {
     }
 
     for (size_t pos_j = 1; pos_j < size_j; pos_j++) {
-      // Calculate new costs (simplified - you might want to recalculate
-      // properly)
+      // Calcular nuevos costos (simplificado - podrías querer recalcular
+      // apropiadamente)
       int nuevoCosto_i =
           costo_i - distMatrix[clientes_i[pos_i - 1]][clientes_i[pos_i]] -
           distMatrix[clientes_i[pos_i]][clientes_i[pos_i + 1]] +
@@ -68,23 +67,23 @@ Solucion OperadorRelocate::mejorRelocateEntreRutas(size_t i, size_t j) {
 
       int nuevaDemanda_j = demanda_cliente + demanda_ruta_j;
 
-      // Check factibility and improvement
+      // Verificar factibilidad y mejora
       if (nuevaDemanda_j <= ruta_j.getCapacidadMaxima() &&
           (demanda_ruta_i - demanda_cliente) <= ruta_i.getCapacidadMaxima() &&
           nuevoCosto_i + nuevoCosto_j < mejorCosto) {
 
-        // Create copies for the relocate operation
+        // Crear copias para la operación de relocate
         vector<int> nuevos_clientes_i = clientes_i;
         vector<int> nuevos_clientes_j = clientes_j;
 
-        // Remove client from route i
+        // Remover cliente de la ruta i
         nuevos_clientes_i.erase(nuevos_clientes_i.begin() + pos_i);
 
-        // Insert client into route j
+        // Insertar cliente en la ruta j
         nuevos_clientes_j.insert(nuevos_clientes_j.begin() + pos_j,
                                  cliente_a_mover);
 
-        // Create new routes
+        // Crear nuevas rutas
         Ruta nuevaRuta_i =
             Ruta(nuevos_clientes_i, ruta_i.getCapacidadMaxima(),
                  ruta_i.getIdDeposito(), distMatrix, *ruta_i.getAllClientes());
@@ -92,7 +91,7 @@ Solucion OperadorRelocate::mejorRelocateEntreRutas(size_t i, size_t j) {
             Ruta(nuevos_clientes_j, ruta_j.getCapacidadMaxima(),
                  ruta_j.getIdDeposito(), distMatrix, *ruta_j.getAllClientes());
 
-        // Check if new routes are feasible
+        // Verificar si las nuevas rutas son factibles
         if (nuevaRuta_i.esFactible() && nuevaRuta_j.esFactible()) {
           mejorRuta_i = nuevaRuta_i;
           mejorRuta_j = nuevaRuta_j;
@@ -102,7 +101,7 @@ Solucion OperadorRelocate::mejorRelocateEntreRutas(size_t i, size_t j) {
     }
   }
 
-  // Create new solution with the best relocate between routes i and j
+  // Crear nueva solución con el mejor relocate entre las rutas i y j
   vector<Ruta> nuevasRutas = solucion.getRutas();
   nuevasRutas[i] = mejorRuta_i;
   nuevasRutas[j] = mejorRuta_j;
