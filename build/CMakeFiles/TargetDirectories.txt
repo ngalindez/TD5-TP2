@@ -1,0 +1,4 @@
+/workspaces/TD5-TP2/build/CMakeFiles/runTests.dir
+/workspaces/TD5-TP2/build/CMakeFiles/test.dir
+/workspaces/TD5-TP2/build/CMakeFiles/edit_cache.dir
+/workspaces/TD5-TP2/build/CMakeFiles/rebuild_cache.dir
