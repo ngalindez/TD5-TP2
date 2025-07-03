@@ -9,3 +9,89 @@ g++ -std=c++11 -O2 -o my_vrp_solver main.cpp VRPLIBReader.cpp
 INSTANCIAS
 
 Junto con el código se proveen un conjunto inicial de instancias de hasta 200 clientes. Para algunas de ellas, se cuenta con soluciones obtenidas por otros algoritmos en la literatura. Pueden usarlas para validar y testear el código, pero no se espera que se utilicen como parte de la heurística. Es sólo a fines de validar la implementación.
+
+
+## 🧪 Guía para Ejecutar los Tests
+
+### 1. **Compilar el proyecto y los tests**
+
+Asegúrate de tener CMake y un compilador de C++ (recomendado: g++ >= 7).
+
+Desde la raíz del proyecto, ejecuta:
+
+```bash
+mkdir -p build
+cd build
+cmake ..
+make
+```
+
+Esto generará el ejecutable de tests llamado `runTests` en la carpeta `build/`.
+
+---
+
+### 2. **Ejecutar todos los tests**
+
+Desde la carpeta `build/`:
+
+```bash
+./runTests
+```
+
+Esto ejecutará **todos los tests** y mostrará un resumen de los resultados.
+
+---
+
+### 3. **Ejecutar solo un grupo de tests (por etiqueta)**
+
+Puedes ejecutar solo los tests de un módulo usando la etiqueta correspondiente.  
+Por ejemplo, para ejecutar solo los tests de la búsqueda local:
+
+```bash
+./runTests "[CWwLocalSearch]"
+```
+
+O para los tests del operador swap:
+
+```bash
+./runTests "[OperadorSwap]"
+```
+
+---
+
+### 4. **Ver la lista de todos los tests disponibles**
+
+```bash
+./runTests -l
+```
+
+---
+
+### 5. **Ver la salida detallada de los tests**
+
+Para ver los mensajes de salida estándar (`std::cout`, `std::cerr`) durante los tests:
+
+```bash
+./runTests -s
+```
+
+---
+
+### 6. **Ejecutar un test específico por nombre**
+
+Puedes filtrar por el nombre (o parte del nombre) del test:
+
+```bash
+./runTests "Mejora la solución en instancia donde es posible"
+```
+
+---
+
+### 7. **Notas adicionales**
+
+- Si agregas nuevos archivos de test, ejecuta nuevamente `cmake ..` y `make` en la carpeta `build/` para que se incluyan.
+- Todos los tests están escritos usando [Catch2](https://github.com/catchorg/Catch2).
+
+---
+
+**¡Con esto puedes verificar fácilmente la robustez y corrección de tu código!**
