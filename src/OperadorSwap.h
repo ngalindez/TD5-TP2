@@ -1,3 +1,5 @@
+#ifndef OPERADOR_SWAP_H
+#define OPERADOR_SWAP_H
 #include "Solucion.h"
 
 class OperadorSwap {
@@ -9,3 +11,5 @@ public:
 private:
   const Solucion &solucion;
 };
+
+#endif // OPERADOR_SWAP_H

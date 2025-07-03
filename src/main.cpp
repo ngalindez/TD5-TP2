@@ -1,3 +1,4 @@
+#include "CWwLocalSearch.h"
 #include "Cliente.h"
 #include "HeuristicaClarkeWright.h"
 #include "HeuristicaInsercionCercana.h"
@@ -34,7 +35,10 @@ void printMenu() {
   cout << "1. Heurística de Clarke & Wright" << endl;
   cout << "2. Heurística de Inserción Más Cercana" << endl;
   cout << "3. Ambas Heurísticas" << endl;
-  cout << "4. Salir" << endl;
+  cout << "4. Clarke & Wright + Local Search (Swap + Relocate hasta mínimo "
+          "local)"
+       << endl;
+  cout << "5. Salir" << endl;
   cout << "Elige una opción: ";
 }
 
@@ -250,14 +254,29 @@ int main() {
         break;
       }
 
-      case 4:
+      case 4: { // Clarke & Wright + Local Search
+        cout << "\n=== Clarke & Wright + Local Search (Swap + Relocate hasta "
+                "mínimo local) ==="
+             << endl;
+        CWwLocalSearch cwwls(clientes, dist_matrix, reader.getCapacity(),
+                             depotId, reader.getNumVehicles());
+        Solucion solucion = cwwls.resolver();
+        cout << "Costo total después de búsqueda local: "
+             << solucion.getCostoTotal() << endl;
+        cout << "Número de rutas: " << solucion.getRutas().size() << endl;
+        printRutas(solucion, depotId,
+                   "Rutas finales (Clarke & Wright + Local Search):");
+        break;
+      }
+
+      case 5:
         cout << "Saliendo..." << endl;
         break;
 
       default:
         cout << "Opción inválida. Por favor intenta de nuevo." << endl;
       }
-    } while (choice != 4);
+    } while (choice != 5);
 
   } catch (const exception &e) {
     cerr << "Error leyendo archivo: " << e.what() << endl;
