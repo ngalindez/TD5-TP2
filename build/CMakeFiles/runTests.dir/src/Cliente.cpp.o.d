@@ -2,9 +2,9 @@ CMakeFiles/runTests.dir/src/Cliente.cpp.o: \
  /workspaces/TD5-TP2/src/Cliente.cpp /usr/include/stdc-predef.h \
  /workspaces/TD5-TP2/src/Cliente.h /usr/include/c++/13.2.1/vector \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h \
  /usr/include/c++/13.2.1/pstl/pstl_config.h \
  /usr/include/c++/13.2.1/bits/stl_algobase.h \
  /usr/include/c++/13.2.1/bits/functexcept.h \
@@ -24,7 +24,7 @@ CMakeFiles/runTests.dir/src/Cliente.cpp.o: \
  /usr/include/c++/13.2.1/debug/debug.h \
  /usr/include/c++/13.2.1/bits/predefined_ops.h \
  /usr/include/c++/13.2.1/bit /usr/include/c++/13.2.1/bits/allocator.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h \
  /usr/include/c++/13.2.1/bits/new_allocator.h /usr/include/c++/13.2.1/new \
  /usr/include/c++/13.2.1/bits/exception.h \
  /usr/include/c++/13.2.1/bits/memoryfwd.h \
@@ -59,7 +59,7 @@ CMakeFiles/runTests.dir/src/Cliente.cpp.o: \
  /usr/include/c++/13.2.1/bits/postypes.h /usr/include/c++/13.2.1/cwchar \
  /usr/include/wchar.h /usr/include/features.h \
  /usr/include/c++/13.2.1/bits/localefwd.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h \
  /usr/include/c++/13.2.1/clocale /usr/include/locale.h \
  /usr/include/c++/13.2.1/iosfwd /usr/include/c++/13.2.1/cctype \
  /usr/include/ctype.h /usr/include/c++/13.2.1/bits/ostream_insert.h \

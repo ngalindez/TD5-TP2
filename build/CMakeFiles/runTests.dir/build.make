@@ -73,225 +73,225 @@ CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o: CMakeFiles/runTests.dir
 CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o: /workspaces/TD5-TP2/tests/test_CWwLocalSearch.cpp
 CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o -MF CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o -c /workspaces/TD5-TP2/tests/test_CWwLocalSearch.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o -MF CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o -c /workspaces/TD5-TP2/tests/test_CWwLocalSearch.cpp
 
 CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_CWwLocalSearch.cpp > CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_CWwLocalSearch.cpp > CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.i
 
 CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_CWwLocalSearch.cpp -o CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_CWwLocalSearch.cpp -o CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.s
 
 CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o: /workspaces/TD5-TP2/tests/test_Cliente.cpp
 CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o -MF CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o -c /workspaces/TD5-TP2/tests/test_Cliente.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o -MF CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o -c /workspaces/TD5-TP2/tests/test_Cliente.cpp
 
 CMakeFiles/runTests.dir/tests/test_Cliente.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/tests/test_Cliente.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_Cliente.cpp > CMakeFiles/runTests.dir/tests/test_Cliente.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_Cliente.cpp > CMakeFiles/runTests.dir/tests/test_Cliente.cpp.i
 
 CMakeFiles/runTests.dir/tests/test_Cliente.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/tests/test_Cliente.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_Cliente.cpp -o CMakeFiles/runTests.dir/tests/test_Cliente.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_Cliente.cpp -o CMakeFiles/runTests.dir/tests/test_Cliente.cpp.s
 
 CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o: /workspaces/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp
 CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o -MF CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o -c /workspaces/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o -MF CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o -c /workspaces/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp
 
 CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp > CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp > CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.i
 
 CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp -o CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp -o CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.s
 
 CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o: /workspaces/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp
 CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o -MF CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o -c /workspaces/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o -MF CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o -c /workspaces/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp
 
 CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp > CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp > CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.i
 
 CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp -o CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp -o CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.s
 
 CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o: /workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp
 CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o -MF CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o -c /workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o -MF CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o -c /workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp
 
 CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp > CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp > CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.i
 
 CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp -o CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp -o CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.s
 
 CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o: /workspaces/TD5-TP2/tests/test_OperadorSwap.cpp
 CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o -MF CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o -c /workspaces/TD5-TP2/tests/test_OperadorSwap.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o -MF CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o -c /workspaces/TD5-TP2/tests/test_OperadorSwap.cpp
 
 CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_OperadorSwap.cpp > CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_OperadorSwap.cpp > CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.i
 
 CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_OperadorSwap.cpp -o CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_OperadorSwap.cpp -o CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.s
 
 CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o: /workspaces/TD5-TP2/tests/test_Ruta.cpp
 CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o -MF CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o -c /workspaces/TD5-TP2/tests/test_Ruta.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o -MF CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o -c /workspaces/TD5-TP2/tests/test_Ruta.cpp
 
 CMakeFiles/runTests.dir/tests/test_Ruta.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/tests/test_Ruta.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_Ruta.cpp > CMakeFiles/runTests.dir/tests/test_Ruta.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_Ruta.cpp > CMakeFiles/runTests.dir/tests/test_Ruta.cpp.i
 
 CMakeFiles/runTests.dir/tests/test_Ruta.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/tests/test_Ruta.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_Ruta.cpp -o CMakeFiles/runTests.dir/tests/test_Ruta.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_Ruta.cpp -o CMakeFiles/runTests.dir/tests/test_Ruta.cpp.s
 
 CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o: /workspaces/TD5-TP2/tests/test_Solucion.cpp
 CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o -MF CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o -c /workspaces/TD5-TP2/tests/test_Solucion.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o -MF CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o.d -o CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o -c /workspaces/TD5-TP2/tests/test_Solucion.cpp
 
 CMakeFiles/runTests.dir/tests/test_Solucion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/tests/test_Solucion.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_Solucion.cpp > CMakeFiles/runTests.dir/tests/test_Solucion.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/tests/test_Solucion.cpp > CMakeFiles/runTests.dir/tests/test_Solucion.cpp.i
 
 CMakeFiles/runTests.dir/tests/test_Solucion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/tests/test_Solucion.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_Solucion.cpp -o CMakeFiles/runTests.dir/tests/test_Solucion.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/tests/test_Solucion.cpp -o CMakeFiles/runTests.dir/tests/test_Solucion.cpp.s
 
 CMakeFiles/runTests.dir/src/Cliente.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/src/Cliente.cpp.o: /workspaces/TD5-TP2/src/Cliente.cpp
 CMakeFiles/runTests.dir/src/Cliente.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runTests.dir/src/Cliente.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/Cliente.cpp.o -MF CMakeFiles/runTests.dir/src/Cliente.cpp.o.d -o CMakeFiles/runTests.dir/src/Cliente.cpp.o -c /workspaces/TD5-TP2/src/Cliente.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/Cliente.cpp.o -MF CMakeFiles/runTests.dir/src/Cliente.cpp.o.d -o CMakeFiles/runTests.dir/src/Cliente.cpp.o -c /workspaces/TD5-TP2/src/Cliente.cpp
 
 CMakeFiles/runTests.dir/src/Cliente.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/src/Cliente.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/Cliente.cpp > CMakeFiles/runTests.dir/src/Cliente.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/Cliente.cpp > CMakeFiles/runTests.dir/src/Cliente.cpp.i
 
 CMakeFiles/runTests.dir/src/Cliente.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/src/Cliente.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/Cliente.cpp -o CMakeFiles/runTests.dir/src/Cliente.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/Cliente.cpp -o CMakeFiles/runTests.dir/src/Cliente.cpp.s
 
 CMakeFiles/runTests.dir/src/Ruta.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/src/Ruta.cpp.o: /workspaces/TD5-TP2/src/Ruta.cpp
 CMakeFiles/runTests.dir/src/Ruta.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runTests.dir/src/Ruta.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/Ruta.cpp.o -MF CMakeFiles/runTests.dir/src/Ruta.cpp.o.d -o CMakeFiles/runTests.dir/src/Ruta.cpp.o -c /workspaces/TD5-TP2/src/Ruta.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/Ruta.cpp.o -MF CMakeFiles/runTests.dir/src/Ruta.cpp.o.d -o CMakeFiles/runTests.dir/src/Ruta.cpp.o -c /workspaces/TD5-TP2/src/Ruta.cpp
 
 CMakeFiles/runTests.dir/src/Ruta.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/src/Ruta.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/Ruta.cpp > CMakeFiles/runTests.dir/src/Ruta.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/Ruta.cpp > CMakeFiles/runTests.dir/src/Ruta.cpp.i
 
 CMakeFiles/runTests.dir/src/Ruta.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/src/Ruta.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/Ruta.cpp -o CMakeFiles/runTests.dir/src/Ruta.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/Ruta.cpp -o CMakeFiles/runTests.dir/src/Ruta.cpp.s
 
 CMakeFiles/runTests.dir/src/Solucion.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/src/Solucion.cpp.o: /workspaces/TD5-TP2/src/Solucion.cpp
 CMakeFiles/runTests.dir/src/Solucion.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/runTests.dir/src/Solucion.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/Solucion.cpp.o -MF CMakeFiles/runTests.dir/src/Solucion.cpp.o.d -o CMakeFiles/runTests.dir/src/Solucion.cpp.o -c /workspaces/TD5-TP2/src/Solucion.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/Solucion.cpp.o -MF CMakeFiles/runTests.dir/src/Solucion.cpp.o.d -o CMakeFiles/runTests.dir/src/Solucion.cpp.o -c /workspaces/TD5-TP2/src/Solucion.cpp
 
 CMakeFiles/runTests.dir/src/Solucion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/src/Solucion.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/Solucion.cpp > CMakeFiles/runTests.dir/src/Solucion.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/Solucion.cpp > CMakeFiles/runTests.dir/src/Solucion.cpp.i
 
 CMakeFiles/runTests.dir/src/Solucion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/src/Solucion.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/Solucion.cpp -o CMakeFiles/runTests.dir/src/Solucion.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/Solucion.cpp -o CMakeFiles/runTests.dir/src/Solucion.cpp.s
 
 CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o: /workspaces/TD5-TP2/src/CWwLocalSearch.cpp
 CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o -MF CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o.d -o CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o -c /workspaces/TD5-TP2/src/CWwLocalSearch.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o -MF CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o.d -o CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o -c /workspaces/TD5-TP2/src/CWwLocalSearch.cpp
 
 CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/CWwLocalSearch.cpp > CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/CWwLocalSearch.cpp > CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.i
 
 CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/CWwLocalSearch.cpp -o CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/CWwLocalSearch.cpp -o CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.s
 
 CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o: /workspaces/TD5-TP2/src/HeuristicaClarkeWright.cpp
 CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o -MF CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o.d -o CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o -c /workspaces/TD5-TP2/src/HeuristicaClarkeWright.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o -MF CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o.d -o CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o -c /workspaces/TD5-TP2/src/HeuristicaClarkeWright.cpp
 
 CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/HeuristicaClarkeWright.cpp > CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/HeuristicaClarkeWright.cpp > CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.i
 
 CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/HeuristicaClarkeWright.cpp -o CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/HeuristicaClarkeWright.cpp -o CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.s
 
 CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o: /workspaces/TD5-TP2/src/HeuristicaInsercionCercana.cpp
 CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o -MF CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o.d -o CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o -c /workspaces/TD5-TP2/src/HeuristicaInsercionCercana.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o -MF CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o.d -o CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o -c /workspaces/TD5-TP2/src/HeuristicaInsercionCercana.cpp
 
 CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/HeuristicaInsercionCercana.cpp > CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/HeuristicaInsercionCercana.cpp > CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.i
 
 CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/HeuristicaInsercionCercana.cpp -o CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/HeuristicaInsercionCercana.cpp -o CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.s
 
 CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o: /workspaces/TD5-TP2/src/OperadorRelocate.cpp
 CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o -MF CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o.d -o CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o -c /workspaces/TD5-TP2/src/OperadorRelocate.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o -MF CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o.d -o CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o -c /workspaces/TD5-TP2/src/OperadorRelocate.cpp
 
 CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/OperadorRelocate.cpp > CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/OperadorRelocate.cpp > CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.i
 
 CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/OperadorRelocate.cpp -o CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/OperadorRelocate.cpp -o CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.s
 
 CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o: /workspaces/TD5-TP2/src/OperadorSwap.cpp
 CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o: CMakeFiles/runTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o -MF CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o.d -o CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o -c /workspaces/TD5-TP2/src/OperadorSwap.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o -MF CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o.d -o CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o -c /workspaces/TD5-TP2/src/OperadorSwap.cpp
 
 CMakeFiles/runTests.dir/src/OperadorSwap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/src/OperadorSwap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/OperadorSwap.cpp > CMakeFiles/runTests.dir/src/OperadorSwap.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/TD5-TP2/src/OperadorSwap.cpp > CMakeFiles/runTests.dir/src/OperadorSwap.cpp.i
 
 CMakeFiles/runTests.dir/src/OperadorSwap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/src/OperadorSwap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/OperadorSwap.cpp -o CMakeFiles/runTests.dir/src/OperadorSwap.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/TD5-TP2/src/OperadorSwap.cpp -o CMakeFiles/runTests.dir/src/OperadorSwap.cpp.s
 
 # Object files for target runTests
 runTests_OBJECTS = \

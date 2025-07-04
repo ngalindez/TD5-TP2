@@ -40,6 +40,12 @@ Ruta::Ruta(const vector<int> &clientesIniciales, int capacidad, int deposito,
 }
 
 void Ruta::agregarCliente(int cliente) {
+  if (cliente == -1) {
+  // Ignorar IDs inválidos
+  return;
+  }
+
+
   // Encontrar la demanda del cliente
   int demanda = 0;
   for (const auto &c : *allClientes) {
@@ -59,6 +65,12 @@ void Ruta::agregarCliente(int cliente) {
 }
 
 void Ruta::eliminarCliente(int cliente) {
+  if (clientes.size() <= 2) {
+    // No hay clientes intermedios
+    return;
+  }
+
+  // Buscar en el rango sin depósitos
   auto it = find(clientes.begin() + 1, clientes.end() - 1, cliente);
   if (it != clientes.end() - 1) {
     // Encontrar la demanda del cliente

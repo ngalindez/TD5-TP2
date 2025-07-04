@@ -4,9 +4,9 @@ CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o: \
  /workspaces/TD5-TP2/src/HeuristicaClarkeWright.h \
  /usr/include/c++/13.2.1/iostream \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h \
  /usr/include/c++/13.2.1/pstl/pstl_config.h \
  /usr/include/c++/13.2.1/ostream /usr/include/c++/13.2.1/ios \
  /usr/include/c++/13.2.1/iosfwd /usr/include/c++/13.2.1/bits/stringfwd.h \
@@ -24,18 +24,18 @@ CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o: \
  /usr/include/c++/13.2.1/bits/nested_exception.h \
  /usr/include/c++/13.2.1/bits/char_traits.h \
  /usr/include/c++/13.2.1/bits/localefwd.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h \
  /usr/include/c++/13.2.1/clocale /usr/include/locale.h \
  /usr/include/c++/13.2.1/cctype /usr/include/ctype.h \
  /usr/include/c++/13.2.1/bits/ios_base.h \
  /usr/include/c++/13.2.1/ext/atomicity.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr-default.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr-default.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/atomic_word.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/atomic_word.h \
  /usr/include/c++/13.2.1/bits/locale_classes.h \
  /usr/include/c++/13.2.1/string /usr/include/c++/13.2.1/bits/allocator.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h \
  /usr/include/c++/13.2.1/bits/new_allocator.h \
  /usr/include/c++/13.2.1/bits/functexcept.h \
  /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
@@ -81,15 +81,15 @@ CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o: \
  /usr/include/c++/13.2.1/tuple \
  /usr/include/c++/13.2.1/bits/locale_classes.tcc \
  /usr/include/c++/13.2.1/system_error \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/error_constants.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/error_constants.h \
  /usr/include/c++/13.2.1/stdexcept /usr/include/c++/13.2.1/streambuf \
  /usr/include/c++/13.2.1/bits/streambuf.tcc \
  /usr/include/c++/13.2.1/bits/basic_ios.h \
  /usr/include/c++/13.2.1/bits/locale_facets.h \
  /usr/include/c++/13.2.1/cwctype /usr/include/wctype.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_base.h \
  /usr/include/c++/13.2.1/bits/streambuf_iterator.h \
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_inline.h \
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_inline.h \
  /usr/include/c++/13.2.1/bits/locale_facets.tcc \
  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
  /usr/include/c++/13.2.1/bits/ostream.tcc /usr/include/c++/13.2.1/istream \

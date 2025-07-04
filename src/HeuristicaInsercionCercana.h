@@ -1,4 +1,6 @@
 #include <vector>
+#include <limits>
+#include <stdexcept>
 #include "Cliente.h"
 #include "Ruta.h"
 #include "Solucion.h"

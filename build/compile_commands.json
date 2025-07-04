@@ -1,0 +1,98 @@
+[
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o -c /workspaces/TD5-TP2/tests/test_CWwLocalSearch.cpp",
+  "file": "/workspaces/TD5-TP2/tests/test_CWwLocalSearch.cpp",
+  "output": "CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o -c /workspaces/TD5-TP2/tests/test_Cliente.cpp",
+  "file": "/workspaces/TD5-TP2/tests/test_Cliente.cpp",
+  "output": "CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o -c /workspaces/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp",
+  "file": "/workspaces/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp",
+  "output": "CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o -c /workspaces/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp",
+  "file": "/workspaces/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp",
+  "output": "CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o -c /workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp",
+  "file": "/workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp",
+  "output": "CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o -c /workspaces/TD5-TP2/tests/test_OperadorSwap.cpp",
+  "file": "/workspaces/TD5-TP2/tests/test_OperadorSwap.cpp",
+  "output": "CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o -c /workspaces/TD5-TP2/tests/test_Ruta.cpp",
+  "file": "/workspaces/TD5-TP2/tests/test_Ruta.cpp",
+  "output": "CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o -c /workspaces/TD5-TP2/tests/test_Solucion.cpp",
+  "file": "/workspaces/TD5-TP2/tests/test_Solucion.cpp",
+  "output": "CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/src/Cliente.cpp.o -c /workspaces/TD5-TP2/src/Cliente.cpp",
+  "file": "/workspaces/TD5-TP2/src/Cliente.cpp",
+  "output": "CMakeFiles/runTests.dir/src/Cliente.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/src/Ruta.cpp.o -c /workspaces/TD5-TP2/src/Ruta.cpp",
+  "file": "/workspaces/TD5-TP2/src/Ruta.cpp",
+  "output": "CMakeFiles/runTests.dir/src/Ruta.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/src/Solucion.cpp.o -c /workspaces/TD5-TP2/src/Solucion.cpp",
+  "file": "/workspaces/TD5-TP2/src/Solucion.cpp",
+  "output": "CMakeFiles/runTests.dir/src/Solucion.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o -c /workspaces/TD5-TP2/src/CWwLocalSearch.cpp",
+  "file": "/workspaces/TD5-TP2/src/CWwLocalSearch.cpp",
+  "output": "CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o -c /workspaces/TD5-TP2/src/HeuristicaClarkeWright.cpp",
+  "file": "/workspaces/TD5-TP2/src/HeuristicaClarkeWright.cpp",
+  "output": "CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o -c /workspaces/TD5-TP2/src/HeuristicaInsercionCercana.cpp",
+  "file": "/workspaces/TD5-TP2/src/HeuristicaInsercionCercana.cpp",
+  "output": "CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o -c /workspaces/TD5-TP2/src/OperadorRelocate.cpp",
+  "file": "/workspaces/TD5-TP2/src/OperadorRelocate.cpp",
+  "output": "CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o"
+},
+{
+  "directory": "/workspaces/TD5-TP2/build",
+  "command": "/usr/bin/g++  -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests -g -std=gnu++17 -o CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o -c /workspaces/TD5-TP2/src/OperadorSwap.cpp",
+  "file": "/workspaces/TD5-TP2/src/OperadorSwap.cpp",
+  "output": "CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o"
+}
+]

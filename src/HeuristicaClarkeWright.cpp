@@ -18,6 +18,7 @@ Solucion HeuristicaClarkeWright::resolver() {
   // 1. Inicializar rutas individuales
   vector<Ruta> rutas;
   inicializarRutas(rutas);
+  Solucion sol(clientes, distMatrix, numVehiculos);
 
   // 2. Calcular ahorros
   vector<Ahorro> ahorros = calcularAhorros();
@@ -52,7 +53,11 @@ Solucion HeuristicaClarkeWright::resolver() {
   }
 
   // 5. Devolver la solución final
-  return Solucion(rutas, clientes, distMatrix);
+  for (const auto& ruta : rutas) {
+    sol.agregarRuta(ruta);
+  }
+
+  return sol;
 }
 
 vector<HeuristicaClarkeWright::Ahorro>
@@ -110,44 +115,43 @@ bool HeuristicaClarkeWright::esFactibleFusion(const Ruta &r1, const Ruta &r2,
 
 void HeuristicaClarkeWright::fusionarRutas(vector<Ruta> &rutas, int idx1,
                                            int idx2, int id1, int id2) {
-  // Fusiona rutas[idx1] y rutas[idx2] según los extremos id1 y id2
+  // Referencias a las rutas que vamos a fusionar
   Ruta &r1 = rutas[idx1];
   Ruta &r2 = rutas[idx2];
+
+ 
+  vector<int> clientes1 = r1.getClientes();
+  vector<int> clientes2 = r2.getClientes();
   vector<int> nuevaRuta;
 
+
   // Determinar el orden correcto y si hay que invertir alguna ruta
-  if (r1.getClientes().back() == id1 && r2.getClientes().front() == id2) {
-    // r1 + r2
-    nuevaRuta = r1.getClientes();
-    nuevaRuta.insert(nuevaRuta.end(), r2.getClientes().begin(),
-                     r2.getClientes().end());
-  } else if (r1.getClientes().front() == id1 &&
-             r2.getClientes().back() == id2) {
-    // r2 + r1
-    nuevaRuta = r2.getClientes();
-    nuevaRuta.insert(nuevaRuta.end(), r1.getClientes().begin(),
-                     r1.getClientes().end());
-  } else if (r1.getClientes().back() == id1 && r2.getClientes().back() == id2) {
-    // r1 + reverse(r2)
-    vector<int> r2rev = r2.getClientes();
-    std::reverse(r2rev.begin(), r2rev.end());
-    nuevaRuta = r1.getClientes();
-    nuevaRuta.insert(nuevaRuta.end(), r2rev.begin(), r2rev.end());
-  } else if (r1.getClientes().front() == id1 &&
-             r2.getClientes().front() == id2) {
-    // reverse(r1) + r2
-    vector<int> r1rev = r1.getClientes();
-    std::reverse(r1rev.begin(), r1rev.end());
-    nuevaRuta = r1rev;
-    nuevaRuta.insert(nuevaRuta.end(), r2.getClientes().begin(),
-                     r2.getClientes().end());
+  if (clientes1.back() == id1 && clientes2.front() == id2) {
+    // Caso 1: r1 termina en id1, r2 empieza en id2 → unir directo: r1 + r2
+    nuevaRuta = clientes1;
+    nuevaRuta.insert(nuevaRuta.end(), clientes2.begin(), clientes2.end());
+  } else if (clientes1.front() == id1 && clientes2.back() == id2) {
+    // Caso 2: r1 empieza en id1, r2 termina en id2 → unir: r2 + r1
+    nuevaRuta = clientes2;
+    nuevaRuta.insert(nuevaRuta.end(), clientes1.begin(), clientes1.end());
+  } else if (clientes1.back() == id1 && clientes2.back() == id2) {
+    // Caso 3: r1 termina en id1, r2 termina en id2 → invertir r2 antes de unir: r1 + reverse(r2)
+    reverse(clientes2.begin(), clientes2.end());
+    nuevaRuta = clientes1;
+    nuevaRuta.insert(nuevaRuta.end(), clientes2.begin(), clientes2.end());
+  } else if (clientes1.front() == id1 && clientes2.front() == id2) {
+    // Caso 4: r1 empieza en id1, r2 empieza en id2 → invertir r1 antes de unir: reverse(r1) + r2
+    reverse(clientes1.begin(), clientes1.end());
+    nuevaRuta = clientes1;
+    nuevaRuta.insert(nuevaRuta.end(), clientes2.begin(), clientes2.end());
   }
 
   // Crear la nueva ruta fusionada
+  // El constructor de Ruta automáticamente añade el depósito al principio y al final
   Ruta nueva(nuevaRuta, capacidadVehiculo, depotId, distMatrix, clientes);
 
-  // Eliminar las rutas viejas (eliminar primero el índice mayor para no
-  // invalidar el menor)
+  // Eliminar rutas viejas del vector
+  // Se elimina primero el índice mayor para no desacomodar los índices
   if (idx1 > idx2) {
     rutas.erase(rutas.begin() + idx1);
     rutas.erase(rutas.begin() + idx2);
@@ -155,6 +159,7 @@ void HeuristicaClarkeWright::fusionarRutas(vector<Ruta> &rutas, int idx1,
     rutas.erase(rutas.begin() + idx2);
     rutas.erase(rutas.begin() + idx1);
   }
-  // Agregar la nueva ruta
+
+  // Agregar la nueva ruta fusionada al vector de rutas
   rutas.push_back(nueva);
 }

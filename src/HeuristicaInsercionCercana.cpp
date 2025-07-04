@@ -15,6 +15,8 @@ HeuristicaInsercionCercana::HeuristicaInsercionCercana( const vector<Cliente>& c
 
 Solucion HeuristicaInsercionCercana::resolver() {
     vector<Ruta> rutas;
+    Solucion sol(clientes, distMatrix, numVehiculos);
+
 
     // Vector de visitados por ID
     vector<bool> visitado(distMatrix.size(), false);
@@ -31,7 +33,7 @@ Solucion HeuristicaInsercionCercana::resolver() {
         while (true) {
             Cliente masCercano = buscarMasCercano(actual, visitado);
 
-            if (masCercano.getId() == -1) break; // No hay cliente válido
+            if (masCercano.getId() == 0) break; // No hay cliente válido
 
             int demanda = masCercano.getDemand();
             if (carga + demanda <= capacidadVehiculo) {
@@ -48,13 +50,17 @@ Solucion HeuristicaInsercionCercana::resolver() {
         rutas.push_back(ruta);
     }
 
-    return Solucion(rutas, clientes, distMatrix);
+    for (const auto& ruta : rutas) {
+        sol.agregarRuta(ruta);
+    }
+
+    return sol;
 }
 
 
 Cliente HeuristicaInsercionCercana::buscarMasCercano(int desde, const vector<bool>& visitado) {
     double mejorDist = numeric_limits<double>::max();
-    Cliente mejor(-1, 0); // ID -1 → marcador inválido
+    Cliente mejor(0, 0); // ID 0 → marcador inválido
 
     for (const Cliente& c : clientes) {
         if (!visitado[c.getId()]) {

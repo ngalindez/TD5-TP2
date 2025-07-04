@@ -6,17 +6,6 @@ CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o
  /usr/include/alloca.h
  /usr/include/bits/alltypes.h
  /usr/include/bits/errno.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/atomic_word.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_inline.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/error_constants.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr-default.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/backward/binders.h
  /usr/include/c++/13.2.1/bit
  /usr/include/c++/13.2.1/bits/alloc_traits.h
@@ -110,6 +99,17 @@ CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o
  /usr/include/c++/13.2.1/type_traits
  /usr/include/c++/13.2.1/typeinfo
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/atomic_word.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_base.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_inline.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/error_constants.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr-default.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/features.h
@@ -137,11 +137,6 @@ CMakeFiles/runTests.dir/src/Cliente.cpp.o
  /usr/include/alloca.h
  /usr/include/bits/alltypes.h
  /usr/include/bits/errno.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/backward/binders.h
  /usr/include/c++/13.2.1/bit
  /usr/include/c++/13.2.1/bits/alloc_traits.h
@@ -216,6 +211,11 @@ CMakeFiles/runTests.dir/src/Cliente.cpp.o
  /usr/include/c++/13.2.1/type_traits
  /usr/include/c++/13.2.1/typeinfo
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/features.h
@@ -232,17 +232,6 @@ CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o
  /usr/include/alloca.h
  /usr/include/bits/alltypes.h
  /usr/include/bits/errno.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/atomic_word.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_inline.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/error_constants.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr-default.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/algorithm
  /usr/include/c++/13.2.1/backward/binders.h
  /usr/include/c++/13.2.1/bit
@@ -344,6 +333,17 @@ CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o
  /usr/include/c++/13.2.1/type_traits
  /usr/include/c++/13.2.1/typeinfo
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/atomic_word.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_base.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_inline.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/error_constants.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr-default.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/features.h
@@ -366,10 +366,6 @@ CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o
 CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o
  /workspaces/TD5-TP2/src/HeuristicaInsercionCercana.cpp
  /usr/include/bits/alltypes.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/backward/binders.h
  /usr/include/c++/13.2.1/bit
  /usr/include/c++/13.2.1/bits/alloc_traits.h
@@ -418,6 +414,10 @@ CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o
  /usr/include/c++/13.2.1/tuple
  /usr/include/c++/13.2.1/type_traits
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/stdc-predef.h
  /usr/include/stddef.h
  /workspaces/TD5-TP2/src/Cliente.h
@@ -428,10 +428,6 @@ CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o
 CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o
  /workspaces/TD5-TP2/src/OperadorRelocate.cpp
  /usr/include/bits/alltypes.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/backward/binders.h
  /usr/include/c++/13.2.1/bit
  /usr/include/c++/13.2.1/bits/alloc_traits.h
@@ -479,6 +475,10 @@ CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o
  /usr/include/c++/13.2.1/tuple
  /usr/include/c++/13.2.1/type_traits
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/stdc-predef.h
  /usr/include/stddef.h
  /workspaces/TD5-TP2/src/Cliente.h
@@ -489,10 +489,6 @@ CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o
 CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o
  /workspaces/TD5-TP2/src/OperadorSwap.cpp
  /usr/include/bits/alltypes.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/backward/binders.h
  /usr/include/c++/13.2.1/bit
  /usr/include/c++/13.2.1/bits/alloc_traits.h
@@ -540,6 +536,10 @@ CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o
  /usr/include/c++/13.2.1/tuple
  /usr/include/c++/13.2.1/type_traits
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/stdc-predef.h
  /usr/include/stddef.h
  /workspaces/TD5-TP2/src/Cliente.h
@@ -551,10 +551,6 @@ CMakeFiles/runTests.dir/src/Ruta.cpp.o
  /workspaces/TD5-TP2/src/Ruta.cpp
  /usr/include/alloca.h
  /usr/include/bits/alltypes.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/algorithm
  /usr/include/c++/13.2.1/backward/binders.h
  /usr/include/c++/13.2.1/bit
@@ -612,6 +608,10 @@ CMakeFiles/runTests.dir/src/Ruta.cpp.o
  /usr/include/c++/13.2.1/tuple
  /usr/include/c++/13.2.1/type_traits
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/features.h
  /usr/include/stdc-predef.h
  /usr/include/stddef.h
@@ -623,10 +623,6 @@ CMakeFiles/runTests.dir/src/Solucion.cpp.o
  /workspaces/TD5-TP2/src/Solucion.cpp
  /usr/include/alloca.h
  /usr/include/bits/alltypes.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/algorithm
  /usr/include/c++/13.2.1/backward/binders.h
  /usr/include/c++/13.2.1/bit
@@ -684,6 +680,10 @@ CMakeFiles/runTests.dir/src/Solucion.cpp.o
  /usr/include/c++/13.2.1/tuple
  /usr/include/c++/13.2.1/type_traits
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/features.h
  /usr/include/stdc-predef.h
  /usr/include/stddef.h
@@ -699,18 +699,6 @@ CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o
  /usr/include/bits/alltypes.h
  /usr/include/bits/errno.h
  /usr/include/bits/stdint.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/atomic_word.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_inline.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/error_constants.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr-default.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/opt_random.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/algorithm
  /usr/include/c++/13.2.1/array
  /usr/include/c++/13.2.1/backward/auto_ptr.h
@@ -867,6 +855,18 @@ CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o
  /usr/include/c++/13.2.1/unordered_map
  /usr/include/c++/13.2.1/utility
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/atomic_word.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_base.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_inline.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/error_constants.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr-default.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/opt_random.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/features.h
@@ -902,22 +902,6 @@ CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o
  /usr/include/bits/posix.h
  /usr/include/bits/signal.h
  /usr/include/bits/stdint.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/atomic_word.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/basic_file.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++io.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_inline.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/error_constants.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr-default.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/messages_members.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/opt_random.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/time_members.h
  /usr/include/c++/13.2.1/algorithm
  /usr/include/c++/13.2.1/array
  /usr/include/c++/13.2.1/backward/auto_ptr.h
@@ -1116,6 +1100,22 @@ CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o
  /usr/include/c++/13.2.1/unordered_map
  /usr/include/c++/13.2.1/utility
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/atomic_word.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/basic_file.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++io.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_base.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_inline.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/error_constants.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr-default.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/messages_members.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/opt_random.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/time_members.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/features.h
@@ -1146,18 +1146,6 @@ CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o
  /usr/include/bits/alltypes.h
  /usr/include/bits/errno.h
  /usr/include/bits/stdint.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/atomic_word.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_inline.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/error_constants.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr-default.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/opt_random.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/algorithm
  /usr/include/c++/13.2.1/array
  /usr/include/c++/13.2.1/backward/auto_ptr.h
@@ -1314,6 +1302,18 @@ CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o
  /usr/include/c++/13.2.1/unordered_map
  /usr/include/c++/13.2.1/utility
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/atomic_word.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_base.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_inline.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/error_constants.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr-default.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/opt_random.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/features.h
@@ -1343,18 +1343,6 @@ CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o
  /usr/include/bits/alltypes.h
  /usr/include/bits/errno.h
  /usr/include/bits/stdint.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/atomic_word.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_inline.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/error_constants.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr-default.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/opt_random.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/algorithm
  /usr/include/c++/13.2.1/array
  /usr/include/c++/13.2.1/backward/auto_ptr.h
@@ -1508,6 +1496,18 @@ CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o
  /usr/include/c++/13.2.1/unordered_map
  /usr/include/c++/13.2.1/utility
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/atomic_word.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_base.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_inline.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/error_constants.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr-default.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/opt_random.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/features.h
@@ -1536,18 +1536,6 @@ CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o
  /usr/include/bits/alltypes.h
  /usr/include/bits/errno.h
  /usr/include/bits/stdint.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/atomic_word.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_inline.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/error_constants.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr-default.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/opt_random.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/algorithm
  /usr/include/c++/13.2.1/array
  /usr/include/c++/13.2.1/backward/auto_ptr.h
@@ -1701,6 +1689,18 @@ CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o
  /usr/include/c++/13.2.1/unordered_map
  /usr/include/c++/13.2.1/utility
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/atomic_word.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_base.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_inline.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/error_constants.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr-default.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/opt_random.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/features.h
@@ -1729,18 +1729,6 @@ CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o
  /usr/include/bits/alltypes.h
  /usr/include/bits/errno.h
  /usr/include/bits/stdint.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/atomic_word.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_inline.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/error_constants.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr-default.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/opt_random.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/algorithm
  /usr/include/c++/13.2.1/array
  /usr/include/c++/13.2.1/backward/auto_ptr.h
@@ -1894,6 +1882,18 @@ CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o
  /usr/include/c++/13.2.1/unordered_map
  /usr/include/c++/13.2.1/utility
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/atomic_word.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_base.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_inline.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/error_constants.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr-default.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/opt_random.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/features.h
@@ -1922,18 +1922,6 @@ CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o
  /usr/include/bits/alltypes.h
  /usr/include/bits/errno.h
  /usr/include/bits/stdint.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/atomic_word.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_inline.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/error_constants.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr-default.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/opt_random.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/algorithm
  /usr/include/c++/13.2.1/array
  /usr/include/c++/13.2.1/backward/auto_ptr.h
@@ -2087,6 +2075,18 @@ CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o
  /usr/include/c++/13.2.1/unordered_map
  /usr/include/c++/13.2.1/utility
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/atomic_word.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_base.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_inline.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/error_constants.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr-default.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/opt_random.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/features.h
@@ -2113,18 +2113,6 @@ CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o
  /usr/include/bits/alltypes.h
  /usr/include/bits/errno.h
  /usr/include/bits/stdint.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/atomic_word.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++config.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++locale.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/cpu_defines.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_inline.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/error_constants.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr-default.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/gthr.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/opt_random.h
- /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/os_defines.h
  /usr/include/c++/13.2.1/algorithm
  /usr/include/c++/13.2.1/array
  /usr/include/c++/13.2.1/backward/auto_ptr.h
@@ -2278,6 +2266,18 @@ CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o
  /usr/include/c++/13.2.1/unordered_map
  /usr/include/c++/13.2.1/utility
  /usr/include/c++/13.2.1/vector
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/atomic_word.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++allocator.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++config.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/c++locale.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/cpu_defines.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_base.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/ctype_inline.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/error_constants.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr-default.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/gthr.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/opt_random.h
+ /usr/include/c++/13.2.1/x86_64-alpine-linux-musl/bits/os_defines.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/features.h

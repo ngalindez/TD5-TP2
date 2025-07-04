@@ -117,7 +117,7 @@ Solucion OperadorSwap::mejorSwapEntreRutas(size_t i, size_t j) {
   nuevasRutas[i] = mejorRuta_i;
   nuevasRutas[j] = mejorRuta_j;
   Solucion nuevaSolucion =
-      Solucion(nuevasRutas, solucion.getClientes(), distMatrix);
+      Solucion(nuevasRutas, solucion.getClientes(), distMatrix, solucion.getCantCamiones());
 
   return nuevaSolucion;
 }

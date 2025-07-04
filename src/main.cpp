@@ -58,10 +58,17 @@ Solucion runClarkeWright(const vector<Cliente> &clientes,
   HeuristicaClarkeWright heuristica(clientes, dist_matrix, capacity, depotId,
                                     numVehicles);
   Solucion solucion = heuristica.resolver();
+  
+  if (solucion.esFactible()){
+    cout << "Costo total: " << solucion.getCostoTotal() << endl;
+    cout << "Número de rutas: " << solucion.getRutas().size() << endl;
+    printRutas(solucion, depotId, "Rutas de Clarke & Wright:");
 
-  cout << "Costo total: " << solucion.getCostoTotal() << endl;
-  cout << "Número de rutas: " << solucion.getRutas().size() << endl;
-  printRutas(solucion, depotId, "Rutas de Clarke & Wright:");
+  } else {
+    cout << "La heuristica de Clarke & Wright, devuelve una solucion invalida para esta instancia" << endl;
+  }
+
+
 
   return solucion;
 }
@@ -73,10 +80,14 @@ Solucion runNearestInsertion(const vector<Cliente> &clientes,
   HeuristicaInsercionCercana heuristica(clientes, dist_matrix, capacity,
                                         depotId, numVehicles);
   Solucion solucion = heuristica.resolver();
+  if(solucion.esFactible()){
+    cout << "Costo total: " << solucion.getCostoTotal() << endl;
+    cout << "Número de rutas: " << solucion.getRutas().size() << endl;
+    printRutas(solucion, depotId, "Rutas de Inserción Más Cercana:");
 
-  cout << "Costo total: " << solucion.getCostoTotal() << endl;
-  cout << "Número de rutas: " << solucion.getRutas().size() << endl;
-  printRutas(solucion, depotId, "Rutas de Inserción Más Cercana:");
+  } else {
+    cout << "La heuristica de Inserción Más Cercana, devuelve una solucion invalida para esta instancia" << endl;
+  }
 
   return solucion;
 }

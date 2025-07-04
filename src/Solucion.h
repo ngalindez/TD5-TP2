@@ -15,10 +15,12 @@ private:
   vector<Cliente> _clientes;
   vector<vector<double>> _distMatrix;
 
+
 public:
   Solucion(int cantCamiones);
   Solucion(const vector<Ruta> &rutas, const vector<Cliente> &clientes,
-           const vector<vector<double>> &distMatrix);
+           const vector<vector<double>> &distMatrix, const int cantCamiones);
+  Solucion(const vector<Cliente> &clientes, const vector<vector<double>> &distMatrix, const int cantCamiones);
   bool agregarRuta(Ruta ruta);
   bool removerRuta(Ruta ruta);
   int getCostoTotal() const;

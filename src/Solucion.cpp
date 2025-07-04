@@ -7,9 +7,11 @@ Solucion::Solucion(int cantCamiones) : _cantCamiones(cantCamiones) {
   _costoTotal = 0;
 }
 
-Solucion::Solucion(const vector<Ruta> &rutas, const vector<Cliente> &clientes,
-                   const vector<vector<double>> &distMatrix)
-    : _rutas(rutas), _cantCamiones(rutas.size()), _clientes(clientes),
+Solucion::Solucion(const vector<Ruta> &rutas,
+                   const vector<Cliente> &clientes,
+                   const vector<vector<double>> &distMatrix,
+                   const int cantCamiones)
+    : _rutas(rutas), _cantCamiones(cantCamiones), _clientes(clientes),
       _distMatrix(distMatrix) {
   _costoTotal = 0;
   for (const auto &ruta : rutas) {
@@ -17,11 +19,16 @@ Solucion::Solucion(const vector<Ruta> &rutas, const vector<Cliente> &clientes,
   }
 }
 
+Solucion::Solucion(const vector<Cliente> &clientes,
+                   const vector<vector<double>> &distMatrix,
+                   const int cantCamiones)
+    : _cantCamiones(cantCamiones), _clientes(clientes),
+      _distMatrix(distMatrix), _costoTotal(0) {
+  _rutas.clear();
+}
+
 // Verificar que sea independiente (?)
 bool Solucion::agregarRuta(Ruta ruta) {
-  if (_rutas.size() + 1 > _cantCamiones) {
-    return false;
-  }
 
   _rutas.push_back(ruta);
   _costoTotal += ruta.getCosto();
