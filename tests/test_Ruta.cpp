@@ -2,6 +2,7 @@
 #include "../src/Ruta.h"
 #include "../src/Cliente.h"
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -14,9 +15,9 @@ TEST_CASE("Construcción básica de Ruta", "[Ruta]") {
     };
     int capacidad = 10;
     int deposito = 1;
-    Ruta ruta(capacidad, deposito, distMatrix, clientes);
-    REQUIRE(ruta.getClientes().size() == 1); // Solo depósito al inicio
-    REQUIRE(ruta.getDemandaActual() == 0);
+    Ruta ruta(capacidad, deposito, distMatrix, clientes, {2});
+    REQUIRE(ruta.getClientes().size() == 3); // deposito, cliente 2, deposito
+    REQUIRE(ruta.getDemandaActual() == 5);
     REQUIRE(ruta.getCapacidadMaxima() == 10);
     REQUIRE(ruta.getIdDeposito() == 1);
 }
@@ -28,9 +29,9 @@ TEST_CASE("Agregar cliente a la ruta", "[Ruta]") {
         {0, 0, 10},
         {0, 10, 0}
     };
-    Ruta ruta(10, 1, distMatrix, clientes);
+    Ruta ruta(10, 1, distMatrix, clientes, {});
     ruta.agregarCliente(2);
-    REQUIRE(ruta.getClientes().size() == 2); // depósito + cliente
+    REQUIRE(ruta.getClientes().size() == 3); // deposito, cliente, deposito
     REQUIRE(ruta.getDemandaActual() == 5);
 }
 
@@ -42,11 +43,10 @@ TEST_CASE("No agregar cliente si excede capacidad", "[Ruta]") {
         {0, 10, 0, 15},
         {0, 20, 15, 0}
     };
-    Ruta ruta(10, 1, distMatrix, clientes);
-    ruta.agregarCliente(2); // demanda 8
-    ruta.agregarCliente(3); // demanda 5, no debe agregarse
+    Ruta ruta(10, 1, distMatrix, clientes, {2});
+    ruta.agregarCliente(3); // demanda 5, excede capacidad (8+5=13)
     REQUIRE(ruta.getDemandaActual() == 8);
-    REQUIRE(ruta.getClientes().size() == 2); // depósito + cliente 2
+    REQUIRE(ruta.getClientes().size() == 3); // deposito, cliente 2, deposito
 }
 
 TEST_CASE("Eliminar cliente de la ruta", "[Ruta]") {
@@ -57,13 +57,13 @@ TEST_CASE("Eliminar cliente de la ruta", "[Ruta]") {
         {0, 10, 0, 15},
         {0, 20, 15, 0}
     };
-    Ruta ruta(10, 1, distMatrix, clientes);
+    Ruta ruta(10, 1, distMatrix, clientes, {});
     ruta.agregarCliente(2);
     ruta.agregarCliente(3);
     REQUIRE(ruta.getDemandaActual() == 9);
     ruta.eliminarCliente(2);
     REQUIRE(ruta.getDemandaActual() == 4);
-    REQUIRE(ruta.getClientes().size() == 2); // depósito + cliente 3
+    REQUIRE(ruta.getClientes().size() == 3); // deposito, cliente 3, deposito
 }
 
 TEST_CASE("Calcular costo de la ruta", "[Ruta]") {
@@ -74,11 +74,10 @@ TEST_CASE("Calcular costo de la ruta", "[Ruta]") {
         {0, 10, 0, 15},
         {0, 20, 15, 0}
     };
-    Ruta ruta(15, 1, distMatrix, clientes);
+    Ruta ruta(15, 1, distMatrix, clientes, {});
     ruta.agregarCliente(2);
     ruta.agregarCliente(3);
-    // La ruta es: 1 -> 2 -> 3 -> 1
-    ruta.agregarCliente(1); // Para cerrar el ciclo
+    // Ruta: 1->2->3->1
     double costo = ruta.calcularCosto();
     // 1->2 (10) + 2->3 (15) + 3->1 (20) = 45
     REQUIRE(costo == Approx(45.0));
@@ -92,12 +91,14 @@ TEST_CASE("Factibilidad de la ruta", "[Ruta]") {
         {0, 10, 0, 15},
         {0, 20, 15, 0}
     };
-    Ruta ruta(10, 1, distMatrix, clientes);
+    Ruta ruta(10, 1, distMatrix, clientes, {});
     ruta.agregarCliente(2);
     REQUIRE(ruta.esFactible());
-    ruta.agregarCliente(3); // Excede capacidad
-    REQUIRE_FALSE(ruta.esFactible());
+    ruta.agregarCliente(3); // No se agrega porque excede capacidad
+    REQUIRE(ruta.getDemandaActual() == 5);
+    REQUIRE(ruta.esFactible());
 }
+
 
 TEST_CASE("No eliminar cliente inexistente", "[Ruta]") {
     vector<Cliente> clientes = {Cliente(2, 5)};
@@ -106,10 +107,10 @@ TEST_CASE("No eliminar cliente inexistente", "[Ruta]") {
         {0, 0, 10},
         {0, 10, 0}
     };
-    Ruta ruta(10, 1, distMatrix, clientes);
+    Ruta ruta(10, 1, distMatrix, clientes, {});
     ruta.eliminarCliente(2); // No debe afectar nada
     REQUIRE(ruta.getDemandaActual() == 0);
-    REQUIRE(ruta.getClientes().size() == 1); // Solo depósito
+    REQUIRE(ruta.getClientes().size() == 2); // depósito al inicio y al final
 }
 
 TEST_CASE("Agregar y eliminar múltiples clientes", "[Ruta]") {
@@ -121,7 +122,7 @@ TEST_CASE("Agregar y eliminar múltiples clientes", "[Ruta]") {
         {0, 20, 15, 0, 12},
         {0, 30, 25, 12, 0}
     };
-    Ruta ruta(10, 1, distMatrix, clientes);
+    Ruta ruta(10, 1, distMatrix, clientes, {});
     ruta.agregarCliente(2);
     ruta.agregarCliente(3);
     ruta.agregarCliente(4);
@@ -132,5 +133,5 @@ TEST_CASE("Agregar y eliminar múltiples clientes", "[Ruta]") {
     REQUIRE(ruta.getDemandaActual() == 2);
     ruta.eliminarCliente(4);
     REQUIRE(ruta.getDemandaActual() == 0);
-    REQUIRE(ruta.getClientes().size() == 1); // Solo depósito
-} 
+    REQUIRE(ruta.getClientes().size() == 2); // depósitos
+}

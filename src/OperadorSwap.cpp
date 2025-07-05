@@ -96,11 +96,11 @@ Solucion OperadorSwap::mejorSwapEntreRutas(size_t i, size_t j) {
 
         // Crear nuevas rutas
         Ruta nuevaRuta_i =
-            Ruta(nuevos_clientes_i, ruta_i.getCapacidadMaxima(),
-                 ruta_i.getIdDeposito(), distMatrix, *ruta_i.getAllClientes());
+            Ruta(ruta_i.getCapacidadMaxima(),
+                 ruta_i.getIdDeposito(), distMatrix, *ruta_i.getAllClientes(), nuevos_clientes_i);
         Ruta nuevaRuta_j =
-            Ruta(nuevos_clientes_j, ruta_j.getCapacidadMaxima(),
-                 ruta_j.getIdDeposito(), distMatrix, *ruta_j.getAllClientes());
+            Ruta(ruta_j.getCapacidadMaxima(),
+                 ruta_j.getIdDeposito(), distMatrix, *ruta_j.getAllClientes(), nuevos_clientes_j);
 
         // Verificar si las nuevas rutas son factibles
         if (nuevaRuta_i.esFactible() && nuevaRuta_j.esFactible()) {
@@ -117,7 +117,7 @@ Solucion OperadorSwap::mejorSwapEntreRutas(size_t i, size_t j) {
   nuevasRutas[i] = mejorRuta_i;
   nuevasRutas[j] = mejorRuta_j;
   Solucion nuevaSolucion =
-      Solucion(nuevasRutas, solucion.getClientes(), distMatrix, solucion.getCantCamiones());
+      Solucion(solucion.getClientes(), distMatrix, solucion.getCantCamiones(), nuevasRutas);
 
   return nuevaSolucion;
 }

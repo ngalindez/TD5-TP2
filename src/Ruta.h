@@ -18,11 +18,7 @@ private:
 
 public:
     // Constructor básico
-    Ruta(int capacidad, int deposito, const vector<vector<double>>& distMatrix, const vector<Cliente>& allClientes);
-    
-    // Constructor con clientes iniciales
-    Ruta(const vector<int>& clientesIniciales, int capacidad, int deposito, 
-         const vector<vector<double>>& distMatrix, const vector<Cliente>& allClientes);
+    Ruta(int capacidad, int deposito, const vector<vector<double>>& distMatrix, const vector<Cliente>& allClientes, const vector<int> &clientesIniciales = {});
     
     // Métodos de modificación
     void agregarCliente(int cliente);

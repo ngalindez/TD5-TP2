@@ -6,6 +6,7 @@
 #include <vector>
 #include <algorithm>
 #include <random>
+#include <iostream>
 
 using namespace std;
 
@@ -33,22 +34,6 @@ TEST_CASE("CWwLocalSearch: No empeora la solución inicial de Clarke & Wright", 
     Solucion inicial = heuristica.resolver();
     Solucion mejorada = localSearch.resolver();
     REQUIRE(mejorada.getCostoTotal() <= inicial.getCostoTotal());
-}
-
-TEST_CASE("CWwLocalSearch: Mejora la solución en instancia donde es posible", "[CWwLocalSearch]") {
-    // Se construye una instancia donde la búsqueda local puede mejorar la solución inicial
-    vector<Cliente> clientes = {Cliente(0, 0), Cliente(1, 3), Cliente(2, 4), Cliente(3, 2)};
-    vector<vector<double>> distMatrix = {
-        {0, 1, 10, 10},
-        {1, 0, 10, 2},
-        {10, 10, 0, 1},
-        {10, 2, 1, 0}
-    };
-    CWwLocalSearch localSearch(clientes, distMatrix, 10, 0, 2);
-    HeuristicaClarkeWright heuristica(clientes, distMatrix, 10, 0, 2);
-    Solucion inicial = heuristica.resolver();
-    Solucion mejorada = localSearch.resolver();
-    REQUIRE(mejorada.getCostoTotal() < inicial.getCostoTotal());
 }
 
 TEST_CASE("CWwLocalSearch: Respeta restricciones de capacidad en todas las rutas", "[CWwLocalSearch]") {
@@ -103,4 +88,93 @@ TEST_CASE("CWwLocalSearch: Regresión/Aleatorio, siempre respeta factibilidad", 
         REQUIRE(ruta.getDemandaActual() <= ruta.getCapacidadMaxima());
         REQUIRE(ruta.esFactible());
     }
+}
+
+TEST_CASE("CWwLocalSearch: Mejora intra-ruta significativa", "[CWwLocalSearch]") {
+    vector<Cliente> clientes = {Cliente(1, 2), Cliente(2, 2), Cliente(3, 2), Cliente(4, 2)};
+    vector<vector<double>> distMatrix = {
+        { 0, 1, 1, 1, 1 },
+        { 1, 0, 2, 2, 100 },
+        { 1, 2, 0, 2, 2 },
+        { 1, 2, 2, 0, 2 },
+        { 1, 100, 2, 2, 0 }
+    };
+    int capacidad = 8;
+    int depotId = 0;
+    int numVehiculos = 1;
+    // Solución inicial muy mala: 0-1-4-3-2-0
+    vector<int> rutaMala = {0, 1, 4, 3, 2, 0};
+    vector<Ruta> rutas = {Ruta(capacidad, depotId, distMatrix, clientes, rutaMala)};
+    Solucion suboptima(clientes, distMatrix, rutas.size(), rutas);
+    std::cout << "Costo subóptimo: " << suboptima.getCostoTotal() << std::endl;
+    for (const auto& ruta : suboptima.getRutas()) {
+        std::cout << "Ruta subóptima: ";
+        for (int id : ruta.getClientes()) std::cout << id << " ";
+        std::cout << std::endl;
+    }
+    // Aplicar búsqueda local (swap)
+    OperadorSwap swapOp(suboptima);
+    Solucion mejorada = swapOp.aplicar();
+    std::cout << "Costo mejorado: " << mejorada.getCostoTotal() << std::endl;
+    for (const auto& ruta : mejorada.getRutas()) {
+        std::cout << "Ruta mejorada: ";
+        for (int id : ruta.getClientes()) std::cout << id << " ";
+        std::cout << std::endl;
+    }
+    REQUIRE(mejorada.getCostoTotal() < suboptima.getCostoTotal());
+    REQUIRE(suboptima.getCostoTotal() > 100);
+    REQUIRE(mejorada.getCostoTotal() < 20);
+}
+
+TEST_CASE("CWwLocalSearch: Mejora significativa en rutas con costos desbalanceados", "[CWwLocalSearch]") {
+    // Depósito: 0
+    // Clientes: 1, 2, 3, 4
+    // Demanda: 1 cada uno
+    // Capacidad: 2
+    // Matriz de distancias:
+    //    0  1  2  3  4
+    // 0 [0, 2, 2, 10, 10]
+    // 1 [2, 0, 1, 10, 10]
+    // 2 [2, 1, 0, 10, 10]
+    // 3 [10,10,10, 0, 1]
+    // 4 [10,10,10, 1, 0]
+    vector<Cliente> clientes = {Cliente(1, 1), Cliente(2, 1), Cliente(3, 1), Cliente(4, 1)};
+    vector<vector<double>> distMatrix = {
+        {0, 2, 2, 10, 10},
+        {2, 0, 1, 10, 10},
+        {2, 1, 0, 10, 10},
+        {10,10,10, 0, 1},
+        {10,10,10, 1, 0}
+    };
+    int capacidad = 2;
+    int depotId = 0;
+    int numVehiculos = 2;
+    // Solución inicial: Ruta 1: 0-1-2-0, Ruta 2: 0-3-4-0
+    vector<int> ruta1 = {0, 1, 2, 0};
+    vector<int> ruta2 = {0, 3, 4, 0};
+    vector<Ruta> rutas = {
+        Ruta(capacidad, depotId, distMatrix, clientes, ruta1),
+        Ruta(capacidad, depotId, distMatrix, clientes, ruta2)
+    };
+    Solucion suboptima(clientes, distMatrix, rutas.size(), rutas);
+    std::cout << "Costo subóptimo: " << suboptima.getCostoTotal() << std::endl;
+    for (const auto& ruta : suboptima.getRutas()) {
+        std::cout << "Ruta subóptima: ";
+        for (int id : ruta.getClientes()) std::cout << id << " ";
+        std::cout << std::endl;
+    }
+    // Aplicar búsqueda local (swap y relocate)
+    OperadorSwap swapOp(suboptima);
+    Solucion trasSwap = swapOp.aplicar();
+    OperadorRelocate relocateOp(trasSwap);
+    Solucion mejorada = relocateOp.aplicar();
+    std::cout << "Costo mejorado: " << mejorada.getCostoTotal() << std::endl;
+    for (const auto& ruta : mejorada.getRutas()) {
+        std::cout << "Ruta mejorada: ";
+        for (int id : ruta.getClientes()) std::cout << id << " ";
+        std::cout << std::endl;
+    }
+    REQUIRE(mejorada.getCostoTotal() < suboptima.getCostoTotal());
+    REQUIRE(suboptima.getCostoTotal() == 26);
+    REQUIRE(mejorada.getCostoTotal() < 26);
 }

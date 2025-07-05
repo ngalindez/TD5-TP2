@@ -16,10 +16,10 @@ TEST_CASE("OperadorSwap: Construcción básica con solución válida", "[Operado
         {5, 0, 2},
         {6, 2, 0}
     };
-    Ruta ruta1({0, 1, 0}, 10, 0, distMatrix, clientes);
-    Ruta ruta2({0, 2, 0}, 10, 0, distMatrix, clientes);
+    Ruta ruta1(10, 0, distMatrix, clientes, {0, 1, 0});
+    Ruta ruta2(10, 0, distMatrix, clientes, {0, 2, 0});
     vector<Ruta> rutas = {ruta1, ruta2};
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas);
     REQUIRE_NOTHROW(OperadorSwap(sol));
 }
 
@@ -31,10 +31,10 @@ TEST_CASE("OperadorSwap: No realiza swap si no mejora la solución", "[OperadorS
         {5, 0, 2},
         {6, 2, 0}
     };
-    Ruta ruta1({0, 1, 0}, 10, 0, distMatrix, clientes);
-    Ruta ruta2({0, 2, 0}, 10, 0, distMatrix, clientes);
+    Ruta ruta1(10, 0, distMatrix, clientes, {0, 1, 0});
+    Ruta ruta2(10, 0, distMatrix, clientes, {0, 2, 0});
     vector<Ruta> rutas = {ruta1, ruta2};
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas);
     OperadorSwap op(sol);
     Solucion mejorada = op.aplicar();
     // El costo debe ser igual al original
@@ -50,10 +50,10 @@ TEST_CASE("OperadorSwap: Realiza swap que mejora la solución", "[OperadorSwap]"
         {10, 10, 0, 1},
         {10, 2, 1, 0}
     };
-    Ruta ruta1({0, 1, 2, 0}, 10, 0, distMatrix, clientes);
-    Ruta ruta2({0, 3, 0}, 10, 0, distMatrix, clientes);
+    Ruta ruta1(10, 0, distMatrix, clientes, {0, 1, 2, 0});
+    Ruta ruta2(10, 0, distMatrix, clientes, {0, 3, 0});
     vector<Ruta> rutas = {ruta1, ruta2};
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas);
     OperadorSwap op(sol);
     Solucion mejorada = op.aplicar();
     // El costo debe ser menor al original
@@ -69,10 +69,10 @@ TEST_CASE("OperadorSwap: Respeta restricciones de capacidad", "[OperadorSwap]") 
         {10, 10, 0, 1},
         {10, 2, 1, 0}
     };
-    Ruta ruta1({0, 1, 3, 0}, 10, 0, distMatrix, clientes);
-    Ruta ruta2({0, 2, 0}, 10, 0, distMatrix, clientes);
+    Ruta ruta1(10, 0, distMatrix, clientes, {0, 1, 3, 0});
+    Ruta ruta2(10, 0, distMatrix, clientes, {0, 2, 0});
     vector<Ruta> rutas = {ruta1, ruta2};
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas);
     OperadorSwap op(sol);
     Solucion mejorada = op.aplicar();
     // Ninguna ruta debe exceder la capacidad
@@ -90,9 +90,9 @@ TEST_CASE("OperadorSwap: Caso borde con una sola ruta", "[OperadorSwap]") {
         {5, 0, 2},
         {6, 2, 0}
     };
-    Ruta ruta1({0, 1, 2, 0}, 10, 0, distMatrix, clientes);
+    Ruta ruta1(10, 0, distMatrix, clientes, {0, 1, 2, 0});
     vector<Ruta> rutas = {ruta1};
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas);
     OperadorSwap op(sol);
     Solucion mejorada = op.aplicar();
     // El costo debe ser igual al original
@@ -118,9 +118,9 @@ TEST_CASE("OperadorSwap: Regresión/Aleatorio, siempre respeta factibilidad", "[
     // Crear rutas simples
     vector<Ruta> rutas;
     for (int i = 1; i <= n; ++i) {
-        rutas.push_back(Ruta({0, i, 0}, 10, 0, distMatrix, clientes));
+        rutas.push_back(Ruta(10, 0, distMatrix, clientes, {0, i, 0}));
     }
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas);
     OperadorSwap op(sol);
     Solucion mejorada = op.aplicar();
     // Todas las rutas deben ser factibles

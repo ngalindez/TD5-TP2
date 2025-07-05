@@ -15,19 +15,21 @@ private:
   vector<Cliente> _clientes;
   vector<vector<double>> _distMatrix;
 
-
 public:
-  Solucion(int cantCamiones);
-  Solucion(const vector<Ruta> &rutas, const vector<Cliente> &clientes,
-           const vector<vector<double>> &distMatrix, const int cantCamiones);
-  Solucion(const vector<Cliente> &clientes, const vector<vector<double>> &distMatrix, const int cantCamiones);
-  bool agregarRuta(Ruta ruta);
-  bool removerRuta(Ruta ruta);
+  Solucion(
+    const vector<Cliente>& clientes,
+    const vector<vector<double>>& distMatrix,
+    int cantCamiones,
+    const vector<Ruta>& rutas = {}
+  );
+
+  bool agregarRuta(const Ruta& ruta);
+  bool removerRuta(size_t index);
   int getCostoTotal() const;
   int getCantCamiones() const;
   vector<Ruta> getRutas() const;
-  const vector<Cliente> &getClientes() const;
-  const vector<vector<double>> &getDistMatrix() const;
+  const vector<Cliente>& getClientes() const;
+  const vector<vector<double>>& getDistMatrix() const;
   bool esFactible() const;
 };
 

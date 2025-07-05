@@ -2,42 +2,54 @@
 #include "Cliente.h"
 #include <algorithm>
 #include <vector>
-
+#include <iostream>
 
 using namespace std;
 
-// Constructor básico
-Ruta::Ruta(int capacidad, int deposito,
-           const vector<vector<double>> &distMatrix,
-           const vector<Cliente> &allClientes)
-    : capacidadMaxima(capacidad), demandaActual(0), costoTotal(0),
-      idDeposito(deposito), distMatrix(&distMatrix), allClientes(&allClientes) {
-  // Inicializar con el depósito
-  clientes.push_back(deposito);
-}
+Ruta::Ruta(
+  int capacidad,
+  int deposito,
+  const vector<vector<double>>& distMatrix,
+  const vector<Cliente>& allClientes,
+  const vector<int>& clientesIniciales
+)
+: capacidadMaxima(capacidad),
+  demandaActual(0),
+  costoTotal(0),
+  idDeposito(deposito),
+  distMatrix(&distMatrix),
+  allClientes(&allClientes)
+{
+  // Si el vector inicial ya contiene el depósito, úsalo tal cual
+  if (!clientesIniciales.empty() &&
+      clientesIniciales.front() == deposito &&
+      clientesIniciales.back() == deposito) {
+    clientes = clientesIniciales;
+  } else {
+    // Si no, construilo agregando depósitos
+    clientes.push_back(deposito);
+    for (int cliente : clientesIniciales) {
+      if (cliente != deposito) {
+        clientes.push_back(cliente);
+      }
+    }
+    clientes.push_back(deposito);
+  }
 
-// Constructor con clientes iniciales
-Ruta::Ruta(const vector<int> &clientesIniciales, int capacidad, int deposito,
-           const vector<vector<double>> &distMatrix,
-           const vector<Cliente> &allClientes)
-    : capacidadMaxima(capacidad), demandaActual(0), costoTotal(0),
-      idDeposito(deposito), distMatrix(&distMatrix), allClientes(&allClientes) {
-  // Agregar el depósito al inicio
-  clientes.push_back(deposito);
-
-  // Agregar los clientes iniciales
-  for (int cliente : clientesIniciales) {
-    if (cliente != deposito) {
-      agregarCliente(cliente);
+  // Calcular demanda
+  for (size_t i = 1; i < clientes.size()-1; ++i) {
+    int id = clientes[i];
+    for (const auto& c : allClientes) {
+      if (c.getId() == id) {
+        demandaActual += c.getDemand();
+        break;
+      }
     }
   }
 
-  // Agregar el depósito al final
-  clientes.push_back(deposito);
-
-  // Calcular el costo inicial
   costoTotal = calcularCosto();
 }
+
 
 void Ruta::agregarCliente(int cliente) {
   if (cliente == -1) {
@@ -91,7 +103,7 @@ void Ruta::eliminarCliente(int cliente) {
 double Ruta::calcularCosto() {
   double costo = 0;
   for (size_t i = 0; i < clientes.size() - 1; i++) {
-    costo += (*distMatrix)[clientes[i]][clientes[i + 1]];
+    costo += (*distMatrix)[clientes[i]][clientes[i+1]];
   }
   return costo;
 }

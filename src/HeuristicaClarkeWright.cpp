@@ -91,75 +91,77 @@ HeuristicaClarkeWright::calcularAhorros() {
 void HeuristicaClarkeWright::inicializarRutas(vector<Ruta> &rutas) {
   rutas.clear();
   for (const auto &cliente : clientes) {
+    if (cliente.getId() == depotId) continue;
+    // Armamos la ruta de un solo cliente
     vector<int> soloCliente = {cliente.getId()};
-    rutas.emplace_back(soloCliente, capacidadVehiculo, depotId, distMatrix,
-                       clientes);
+    rutas.emplace_back(capacidadVehiculo, depotId, distMatrix,
+                       clientes, soloCliente);
   }
 }
 
 bool HeuristicaClarkeWright::esFactibleFusion(const Ruta &r1, const Ruta &r2,
-                                              int id1, int id2) {
-  // No deben estar en la misma ruta
-  if (&r1 == &r2)
-    return false;
-  // Deben estar en los extremos de sus rutas
-  bool id1_extremo =
-      (r1.getClientes().front() == id1) || (r1.getClientes().back() == id1);
-  bool id2_extremo =
-      (r2.getClientes().front() == id2) || (r2.getClientes().back() == id2);
-  // Capacidad
-  int demandaTotal = r1.getDemandaActual() + r2.getDemandaActual();
-  bool capacidad_ok = demandaTotal <= capacidadVehiculo;
-  return id1_extremo && id2_extremo && capacidad_ok;
+  int id1, int id2) {
+// No deben estar en la misma ruta
+if (&r1 == &r2) return false;
+
+const auto& c1 = r1.getClientes();
+const auto& c2 = r2.getClientes();
+
+// Chequea si id1 está en la primera o última POSICIÓN INTERIOR
+bool id1_extremo = (c1[1] == id1) || (c1[c1.size()-2] == id1);
+bool id2_extremo = (c2[1] == id2) || (c2[c2.size()-2] == id2);
+
+// Capacidad
+int demandaTotal = r1.getDemandaActual() + r2.getDemandaActual();
+bool capacidad_ok = demandaTotal <= capacidadVehiculo;
+
+return id1_extremo && id2_extremo && capacidad_ok;
 }
 
 void HeuristicaClarkeWright::fusionarRutas(vector<Ruta> &rutas, int idx1,
-                                           int idx2, int id1, int id2) {
-  // Referencias a las rutas que vamos a fusionar
-  Ruta &r1 = rutas[idx1];
-  Ruta &r2 = rutas[idx2];
+  int idx2, int id1, int id2) {
+Ruta &r1 = rutas[idx1];
+Ruta &r2 = rutas[idx2];
 
- 
-  vector<int> clientes1 = r1.getClientes();
-  vector<int> clientes2 = r2.getClientes();
-  vector<int> nuevaRuta;
+vector<int> clientes1 = r1.getClientes();
+vector<int> clientes2 = r2.getClientes();
 
+// Quitar depósito de los extremos
+vector<int> sub1(clientes1.begin()+1, clientes1.end()-1);
+vector<int> sub2(clientes2.begin()+1, clientes2.end()-1);
 
-  // Determinar el orden correcto y si hay que invertir alguna ruta
-  if (clientes1.back() == id1 && clientes2.front() == id2) {
-    // Caso 1: r1 termina en id1, r2 empieza en id2 → unir directo: r1 + r2
-    nuevaRuta = clientes1;
-    nuevaRuta.insert(nuevaRuta.end(), clientes2.begin(), clientes2.end());
-  } else if (clientes1.front() == id1 && clientes2.back() == id2) {
-    // Caso 2: r1 empieza en id1, r2 termina en id2 → unir: r2 + r1
-    nuevaRuta = clientes2;
-    nuevaRuta.insert(nuevaRuta.end(), clientes1.begin(), clientes1.end());
-  } else if (clientes1.back() == id1 && clientes2.back() == id2) {
-    // Caso 3: r1 termina en id1, r2 termina en id2 → invertir r2 antes de unir: r1 + reverse(r2)
-    reverse(clientes2.begin(), clientes2.end());
-    nuevaRuta = clientes1;
-    nuevaRuta.insert(nuevaRuta.end(), clientes2.begin(), clientes2.end());
-  } else if (clientes1.front() == id1 && clientes2.front() == id2) {
-    // Caso 4: r1 empieza en id1, r2 empieza en id2 → invertir r1 antes de unir: reverse(r1) + r2
-    reverse(clientes1.begin(), clientes1.end());
-    nuevaRuta = clientes1;
-    nuevaRuta.insert(nuevaRuta.end(), clientes2.begin(), clientes2.end());
-  }
+vector<int> nuevaRuta;
 
-  // Crear la nueva ruta fusionada
-  // El constructor de Ruta automáticamente añade el depósito al principio y al final
-  Ruta nueva(nuevaRuta, capacidadVehiculo, depotId, distMatrix, clientes);
-
-  // Eliminar rutas viejas del vector
-  // Se elimina primero el índice mayor para no desacomodar los índices
-  if (idx1 > idx2) {
-    rutas.erase(rutas.begin() + idx1);
-    rutas.erase(rutas.begin() + idx2);
-  } else {
-    rutas.erase(rutas.begin() + idx2);
-    rutas.erase(rutas.begin() + idx1);
-  }
-
-  // Agregar la nueva ruta fusionada al vector de rutas
-  rutas.push_back(nueva);
+// Determinar el orden correcto y si hay que invertir
+if (sub1.back() == id1 && sub2.front() == id2) {
+nuevaRuta = sub1;
+nuevaRuta.insert(nuevaRuta.end(), sub2.begin(), sub2.end());
+} else if (sub1.front() == id1 && sub2.back() == id2) {
+nuevaRuta = sub2;
+nuevaRuta.insert(nuevaRuta.end(), sub1.begin(), sub1.end());
+} else if (sub1.back() == id1 && sub2.back() == id2) {
+reverse(sub2.begin(), sub2.end());
+nuevaRuta = sub1;
+nuevaRuta.insert(nuevaRuta.end(), sub2.begin(), sub2.end());
+} else if (sub1.front() == id1 && sub2.front() == id2) {
+reverse(sub1.begin(), sub1.end());
+nuevaRuta = sub1;
+nuevaRuta.insert(nuevaRuta.end(), sub2.begin(), sub2.end());
 }
+
+// Crear la nueva ruta
+Ruta nueva(capacidadVehiculo, depotId, distMatrix, clientes, nuevaRuta);
+
+// Eliminar las rutas originales
+if (idx1 > idx2) {
+rutas.erase(rutas.begin() + idx1);
+rutas.erase(rutas.begin() + idx2);
+} else {
+rutas.erase(rutas.begin() + idx2);
+rutas.erase(rutas.begin() + idx1);
+}
+
+// Agregar la nueva ruta
+rutas.push_back(nueva);
+}
+

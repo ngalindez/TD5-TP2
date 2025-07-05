@@ -16,10 +16,10 @@ TEST_CASE("OperadorRelocate: Construcción básica con solución válida", "[Ope
         {5, 0, 2},
         {6, 2, 0}
     };
-    Ruta ruta1({0, 1, 0}, 10, 0, distMatrix, clientes);
-    Ruta ruta2({0, 2, 0}, 10, 0, distMatrix, clientes);
+    Ruta ruta1(10, 0, distMatrix, clientes, {0, 1, 0});
+    Ruta ruta2(10, 0, distMatrix, clientes, {0, 2, 0});
     vector<Ruta> rutas = {ruta1, ruta2};
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas);
     REQUIRE_NOTHROW(OperadorRelocate(sol));
 }
 
@@ -27,14 +27,14 @@ TEST_CASE("OperadorRelocate: No realiza relocate si no mejora la solución", "[O
     // Si el relocate no mejora el costo, la solución debe permanecer igual
     vector<Cliente> clientes = {Cliente(0, 0), Cliente(1, 3), Cliente(2, 4)};
     vector<vector<double>> distMatrix = {
-        {0, 5, 6},
-        {5, 0, 2},
-        {6, 2, 0}
+        {0, 5, 5},
+        {5, 0, 10},
+        {5, 10, 0}
     };
-    Ruta ruta1({0, 1, 0}, 10, 0, distMatrix, clientes);
-    Ruta ruta2({0, 2, 0}, 10, 0, distMatrix, clientes);
+    Ruta ruta1(10, 0, distMatrix, clientes, {0, 1, 0});
+    Ruta ruta2(10, 0, distMatrix, clientes, {0, 2, 0});
     vector<Ruta> rutas = {ruta1, ruta2};
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas);
     OperadorRelocate op(sol);
     Solucion mejorada = op.aplicar();
     // El costo debe ser igual al original
@@ -50,10 +50,10 @@ TEST_CASE("OperadorRelocate: Realiza relocate que mejora la solución", "[Operad
         {10, 10, 0, 1},
         {10, 2, 1, 0}
     };
-    Ruta ruta1({0, 1, 2, 0}, 10, 0, distMatrix, clientes);
-    Ruta ruta2({0, 3, 0}, 10, 0, distMatrix, clientes);
+    Ruta ruta1(10, 0, distMatrix, clientes, {0, 1, 2, 0});
+    Ruta ruta2(10, 0, distMatrix, clientes, {0, 3, 0});
     vector<Ruta> rutas = {ruta1, ruta2};
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas);
     OperadorRelocate op(sol);
     Solucion mejorada = op.aplicar();
     // El costo debe ser menor al original
@@ -69,10 +69,10 @@ TEST_CASE("OperadorRelocate: Respeta restricciones de capacidad", "[OperadorRelo
         {10, 10, 0, 1},
         {10, 2, 1, 0}
     };
-    Ruta ruta1({0, 1, 3, 0}, 10, 0, distMatrix, clientes);
-    Ruta ruta2({0, 2, 0}, 10, 0, distMatrix, clientes);
+    Ruta ruta1(10, 0, distMatrix, clientes, {0, 1, 3, 0});
+    Ruta ruta2(10, 0, distMatrix, clientes, {0, 2, 0});
     vector<Ruta> rutas = {ruta1, ruta2};
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas);
     OperadorRelocate op(sol);
     Solucion mejorada = op.aplicar();
     // Ninguna ruta debe exceder la capacidad
@@ -90,9 +90,9 @@ TEST_CASE("OperadorRelocate: Caso borde con una sola ruta", "[OperadorRelocate]"
         {5, 0, 2},
         {6, 2, 0}
     };
-    Ruta ruta1({0, 1, 2, 0}, 10, 0, distMatrix, clientes);
+    Ruta ruta1(10, 0, distMatrix, clientes, {0, 1, 2, 0});
     vector<Ruta> rutas = {ruta1};
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas);
     OperadorRelocate op(sol);
     Solucion mejorada = op.aplicar();
     // El costo debe ser igual al original
@@ -118,9 +118,9 @@ TEST_CASE("OperadorRelocate: Regresión/Aleatorio, siempre respeta factibilidad"
     // Crear rutas simples
     vector<Ruta> rutas;
     for (int i = 1; i <= n; ++i) {
-        rutas.push_back(Ruta({0, i, 0}, 10, 0, distMatrix, clientes));
+        rutas.push_back(Ruta(10, 0, distMatrix, clientes, {0, i, 0}));
     }
-    Solucion sol(rutas, clientes, distMatrix);
+    Solucion sol(clientes, distMatrix, rutas.size(), rutas); // TODO: revisar
     OperadorRelocate op(sol);
     Solucion mejorada = op.aplicar();
     // Todas las rutas deben ser factibles

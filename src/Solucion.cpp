@@ -3,50 +3,38 @@
 
 using namespace std;
 
-Solucion::Solucion(int cantCamiones) : _cantCamiones(cantCamiones) {
-  _costoTotal = 0;
-}
-
-Solucion::Solucion(const vector<Ruta> &rutas,
-                   const vector<Cliente> &clientes,
-                   const vector<vector<double>> &distMatrix,
-                   const int cantCamiones)
-    : _rutas(rutas), _cantCamiones(cantCamiones), _clientes(clientes),
-      _distMatrix(distMatrix) {
-  _costoTotal = 0;
-  for (const auto &ruta : rutas) {
-    _costoTotal += ruta.getCosto();
+Solucion::Solucion(
+  const vector<Cliente>& clientes,
+  const vector<vector<double>>& distMatrix,
+  const int cantCamiones,
+  const vector<Ruta>& rutas)
+  : _clientes(clientes),
+    _distMatrix(distMatrix),
+    _cantCamiones(cantCamiones),
+    _rutas(rutas),
+    _costoTotal(0) 
+{
+  for (const auto& ruta : _rutas) {
+      _costoTotal += ruta.getCosto();
   }
 }
 
-Solucion::Solucion(const vector<Cliente> &clientes,
-                   const vector<vector<double>> &distMatrix,
-                   const int cantCamiones)
-    : _cantCamiones(cantCamiones), _clientes(clientes),
-      _distMatrix(distMatrix), _costoTotal(0) {
-  _rutas.clear();
-}
-
-// Verificar que sea independiente (?)
-bool Solucion::agregarRuta(Ruta ruta) {
-
+bool Solucion::agregarRuta(const Ruta& ruta) {
+  if (_rutas.size() >= _cantCamiones) return false;
   _rutas.push_back(ruta);
   _costoTotal += ruta.getCosto();
   return true;
 }
 
+
 // MEJORAR, NO PASAR RUTA COMO PARÁMETRO
-bool Solucion::removerRuta(Ruta ruta) {
-  auto it = find(_rutas.begin(), _rutas.end(), ruta);
-
-  if (it == _rutas.end()) {
-    return false;
-  }
-
-  _costoTotal -= ruta.getCosto();
-  _rutas.erase(it);
+bool Solucion::removerRuta(size_t index) {
+  if (index >= _rutas.size()) return false;
+  _costoTotal -= _rutas[index].getCosto();
+  _rutas.erase(_rutas.begin() + index);
   return true;
 }
+
 
 int Solucion::getCostoTotal() const { return _costoTotal; }
 
