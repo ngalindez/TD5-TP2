@@ -1,29 +1,28 @@
-#include <vector>
-#include <limits>
-#include <stdexcept>
+#pragma once
 #include "Cliente.h"
-#include "Ruta.h"
 #include "Solucion.h"
-
-using namespace std;
+#include <vector>
+#include <unordered_map>
 
 class HeuristicaInsercionCercana {
+public:
+    HeuristicaInsercionCercana(
+        const std::vector<Cliente>& clientes,
+        const std::vector<std::vector<double>>& distMatrix,
+        const std::unordered_map<int,int>& id2pos,
+        int capacidadVehiculo,
+        int depotId,
+        int numVehiculos);
 
-    public:
-        HeuristicaInsercionCercana(const vector<Cliente>& clientes,
-                                const vector<vector<double>>& distMatrix,
-                                int capacidadVehiculo,
-                                int depotId,
-                                int numVehiculos);
+    Solucion resolver();
 
-        Solucion resolver();
+private:
+    Cliente buscarMasCercano(int desde, const std::vector<bool>& visitado);
 
-    private:
-        const vector<Cliente>& clientes;
-        const vector<vector<double>>& distMatrix;
-        int capacidadVehiculo;
-        int depotId;
-        int numVehiculos;
-
-        Cliente buscarMasCercano(int desde, const vector<bool>& candidatos);
+    std::vector<Cliente> clientes;
+    const std::vector<std::vector<double>>& distMatrix;
+    std::unordered_map<int,int> id2pos;
+    int capacidadVehiculo;
+    int depotId;
+    int numVehiculos;
 };

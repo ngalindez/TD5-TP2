@@ -1,20 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o"
-  "CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o.d"
-  "CMakeFiles/runTests.dir/src/Cliente.cpp.o"
-  "CMakeFiles/runTests.dir/src/Cliente.cpp.o.d"
-  "CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o"
-  "CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o.d"
-  "CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o"
-  "CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o.d"
-  "CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o"
-  "CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o.d"
-  "CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o"
-  "CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o.d"
-  "CMakeFiles/runTests.dir/src/Ruta.cpp.o"
-  "CMakeFiles/runTests.dir/src/Ruta.cpp.o.d"
-  "CMakeFiles/runTests.dir/src/Solucion.cpp.o"
-  "CMakeFiles/runTests.dir/src/Solucion.cpp.o.d"
   "CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o"
   "CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o.d"
   "CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o"
@@ -31,8 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o.d"
   "CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o"
   "CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o.d"
-  "runTests"
-  "runTests.pdb"
+  "bin/runTests"
+  "bin/runTests.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

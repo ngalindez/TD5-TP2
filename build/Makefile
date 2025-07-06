@@ -127,6 +127,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named cvrp_core
+
+# Build rule for target.
+cvrp_core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cvrp_core
+.PHONY : cvrp_core
+
+# fast build rule for target.
+cvrp_core/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/build
+.PHONY : cvrp_core/fast
+
+#=============================================================================
+# Target rules for targets named cvrp_algorithms
+
+# Build rule for target.
+cvrp_algorithms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cvrp_algorithms
+.PHONY : cvrp_algorithms
+
+# fast build rule for target.
+cvrp_algorithms/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/build
+.PHONY : cvrp_algorithms/fast
+
+#=============================================================================
+# Target rules for targets named cvrp_solver
+
+# Build rule for target.
+cvrp_solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cvrp_solver
+.PHONY : cvrp_solver
+
+# fast build rule for target.
+cvrp_solver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_solver.dir/build.make CMakeFiles/cvrp_solver.dir/build
+.PHONY : cvrp_solver/fast
+
+#=============================================================================
 # Target rules for targets named runTests
 
 # Build rule for target.
@@ -139,12 +178,142 @@ runTests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
 
+#=============================================================================
+# Target rules for targets named test-all
+
+# Build rule for target.
+test-all: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-all
+.PHONY : test-all
+
+# fast build rule for target.
+test-all/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-all.dir/build.make CMakeFiles/test-all.dir/build
+.PHONY : test-all/fast
+
+#=============================================================================
+# Target rules for targets named test-heuristics
+
+# Build rule for target.
+test-heuristics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-heuristics
+.PHONY : test-heuristics
+
+# fast build rule for target.
+test-heuristics/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-heuristics.dir/build.make CMakeFiles/test-heuristics.dir/build
+.PHONY : test-heuristics/fast
+
+#=============================================================================
+# Target rules for targets named test-local-search
+
+# Build rule for target.
+test-local-search: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-local-search
+.PHONY : test-local-search
+
+# fast build rule for target.
+test-local-search/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-local-search.dir/build.make CMakeFiles/test-local-search.dir/build
+.PHONY : test-local-search/fast
+
+#=============================================================================
+# Target rules for targets named test-insertion
+
+# Build rule for target.
+test-insertion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-insertion
+.PHONY : test-insertion
+
+# fast build rule for target.
+test-insertion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-insertion.dir/build.make CMakeFiles/test-insertion.dir/build
+.PHONY : test-insertion/fast
+
+#=============================================================================
+# Target rules for targets named test-operators
+
+# Build rule for target.
+test-operators: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test-operators
+.PHONY : test-operators
+
+# fast build rule for target.
+test-operators/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-operators.dir/build.make CMakeFiles/test-operators.dir/build
+.PHONY : test-operators/fast
+
+#=============================================================================
+# Target rules for targets named instance-E022-04g
+
+# Build rule for target.
+instance-E022-04g: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 instance-E022-04g
+.PHONY : instance-E022-04g
+
+# fast build rule for target.
+instance-E022-04g/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E022-04g.dir/build.make CMakeFiles/instance-E022-04g.dir/build
+.PHONY : instance-E022-04g/fast
+
+#=============================================================================
+# Target rules for targets named instance-E051-05e
+
+# Build rule for target.
+instance-E051-05e: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 instance-E051-05e
+.PHONY : instance-E051-05e
+
+# fast build rule for target.
+instance-E051-05e/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E051-05e.dir/build.make CMakeFiles/instance-E051-05e.dir/build
+.PHONY : instance-E051-05e/fast
+
+#=============================================================================
+# Target rules for targets named instance-E076-07s
+
+# Build rule for target.
+instance-E076-07s: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 instance-E076-07s
+.PHONY : instance-E076-07s
+
+# fast build rule for target.
+instance-E076-07s/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E076-07s.dir/build.make CMakeFiles/instance-E076-07s.dir/build
+.PHONY : instance-E076-07s/fast
+
+#=============================================================================
+# Target rules for targets named instance-E101-08e
+
+# Build rule for target.
+instance-E101-08e: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 instance-E101-08e
+.PHONY : instance-E101-08e
+
+# fast build rule for target.
+instance-E101-08e/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E101-08e.dir/build.make CMakeFiles/instance-E101-08e.dir/build
+.PHONY : instance-E101-08e/fast
+
+#=============================================================================
+# Target rules for targets named clean-build
+
+# Build rule for target.
+clean-build: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean-build
+.PHONY : clean-build
+
+# fast build rule for target.
+clean-build/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean-build.dir/build.make CMakeFiles/clean-build.dir/build
+.PHONY : clean-build/fast
+
 src/CWwLocalSearch.o: src/CWwLocalSearch.cpp.o
 .PHONY : src/CWwLocalSearch.o
 
 # target to build an object file
 src/CWwLocalSearch.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/CWwLocalSearch.cpp.o
 .PHONY : src/CWwLocalSearch.cpp.o
 
 src/CWwLocalSearch.i: src/CWwLocalSearch.cpp.i
@@ -152,7 +321,7 @@ src/CWwLocalSearch.i: src/CWwLocalSearch.cpp.i
 
 # target to preprocess a source file
 src/CWwLocalSearch.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/CWwLocalSearch.cpp.i
 .PHONY : src/CWwLocalSearch.cpp.i
 
 src/CWwLocalSearch.s: src/CWwLocalSearch.cpp.s
@@ -160,7 +329,7 @@ src/CWwLocalSearch.s: src/CWwLocalSearch.cpp.s
 
 # target to generate assembly for a file
 src/CWwLocalSearch.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/CWwLocalSearch.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/CWwLocalSearch.cpp.s
 .PHONY : src/CWwLocalSearch.cpp.s
 
 src/Cliente.o: src/Cliente.cpp.o
@@ -168,7 +337,7 @@ src/Cliente.o: src/Cliente.cpp.o
 
 # target to build an object file
 src/Cliente.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/Cliente.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/Cliente.cpp.o
 .PHONY : src/Cliente.cpp.o
 
 src/Cliente.i: src/Cliente.cpp.i
@@ -176,7 +345,7 @@ src/Cliente.i: src/Cliente.cpp.i
 
 # target to preprocess a source file
 src/Cliente.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/Cliente.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/Cliente.cpp.i
 .PHONY : src/Cliente.cpp.i
 
 src/Cliente.s: src/Cliente.cpp.s
@@ -184,7 +353,7 @@ src/Cliente.s: src/Cliente.cpp.s
 
 # target to generate assembly for a file
 src/Cliente.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/Cliente.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/Cliente.cpp.s
 .PHONY : src/Cliente.cpp.s
 
 src/HeuristicaClarkeWright.o: src/HeuristicaClarkeWright.cpp.o
@@ -192,7 +361,7 @@ src/HeuristicaClarkeWright.o: src/HeuristicaClarkeWright.cpp.o
 
 # target to build an object file
 src/HeuristicaClarkeWright.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/HeuristicaClarkeWright.cpp.o
 .PHONY : src/HeuristicaClarkeWright.cpp.o
 
 src/HeuristicaClarkeWright.i: src/HeuristicaClarkeWright.cpp.i
@@ -200,7 +369,7 @@ src/HeuristicaClarkeWright.i: src/HeuristicaClarkeWright.cpp.i
 
 # target to preprocess a source file
 src/HeuristicaClarkeWright.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/HeuristicaClarkeWright.cpp.i
 .PHONY : src/HeuristicaClarkeWright.cpp.i
 
 src/HeuristicaClarkeWright.s: src/HeuristicaClarkeWright.cpp.s
@@ -208,7 +377,7 @@ src/HeuristicaClarkeWright.s: src/HeuristicaClarkeWright.cpp.s
 
 # target to generate assembly for a file
 src/HeuristicaClarkeWright.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/HeuristicaClarkeWright.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/HeuristicaClarkeWright.cpp.s
 .PHONY : src/HeuristicaClarkeWright.cpp.s
 
 src/HeuristicaInsercionCercana.o: src/HeuristicaInsercionCercana.cpp.o
@@ -216,7 +385,7 @@ src/HeuristicaInsercionCercana.o: src/HeuristicaInsercionCercana.cpp.o
 
 # target to build an object file
 src/HeuristicaInsercionCercana.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/HeuristicaInsercionCercana.cpp.o
 .PHONY : src/HeuristicaInsercionCercana.cpp.o
 
 src/HeuristicaInsercionCercana.i: src/HeuristicaInsercionCercana.cpp.i
@@ -224,7 +393,7 @@ src/HeuristicaInsercionCercana.i: src/HeuristicaInsercionCercana.cpp.i
 
 # target to preprocess a source file
 src/HeuristicaInsercionCercana.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/HeuristicaInsercionCercana.cpp.i
 .PHONY : src/HeuristicaInsercionCercana.cpp.i
 
 src/HeuristicaInsercionCercana.s: src/HeuristicaInsercionCercana.cpp.s
@@ -232,7 +401,7 @@ src/HeuristicaInsercionCercana.s: src/HeuristicaInsercionCercana.cpp.s
 
 # target to generate assembly for a file
 src/HeuristicaInsercionCercana.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/HeuristicaInsercionCercana.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/HeuristicaInsercionCercana.cpp.s
 .PHONY : src/HeuristicaInsercionCercana.cpp.s
 
 src/OperadorRelocate.o: src/OperadorRelocate.cpp.o
@@ -240,7 +409,7 @@ src/OperadorRelocate.o: src/OperadorRelocate.cpp.o
 
 # target to build an object file
 src/OperadorRelocate.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/OperadorRelocate.cpp.o
 .PHONY : src/OperadorRelocate.cpp.o
 
 src/OperadorRelocate.i: src/OperadorRelocate.cpp.i
@@ -248,7 +417,7 @@ src/OperadorRelocate.i: src/OperadorRelocate.cpp.i
 
 # target to preprocess a source file
 src/OperadorRelocate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/OperadorRelocate.cpp.i
 .PHONY : src/OperadorRelocate.cpp.i
 
 src/OperadorRelocate.s: src/OperadorRelocate.cpp.s
@@ -256,7 +425,7 @@ src/OperadorRelocate.s: src/OperadorRelocate.cpp.s
 
 # target to generate assembly for a file
 src/OperadorRelocate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/OperadorRelocate.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/OperadorRelocate.cpp.s
 .PHONY : src/OperadorRelocate.cpp.s
 
 src/OperadorSwap.o: src/OperadorSwap.cpp.o
@@ -264,7 +433,7 @@ src/OperadorSwap.o: src/OperadorSwap.cpp.o
 
 # target to build an object file
 src/OperadorSwap.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/OperadorSwap.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/OperadorSwap.cpp.o
 .PHONY : src/OperadorSwap.cpp.o
 
 src/OperadorSwap.i: src/OperadorSwap.cpp.i
@@ -272,7 +441,7 @@ src/OperadorSwap.i: src/OperadorSwap.cpp.i
 
 # target to preprocess a source file
 src/OperadorSwap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/OperadorSwap.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/OperadorSwap.cpp.i
 .PHONY : src/OperadorSwap.cpp.i
 
 src/OperadorSwap.s: src/OperadorSwap.cpp.s
@@ -280,7 +449,7 @@ src/OperadorSwap.s: src/OperadorSwap.cpp.s
 
 # target to generate assembly for a file
 src/OperadorSwap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/OperadorSwap.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/src/OperadorSwap.cpp.s
 .PHONY : src/OperadorSwap.cpp.s
 
 src/Ruta.o: src/Ruta.cpp.o
@@ -288,7 +457,7 @@ src/Ruta.o: src/Ruta.cpp.o
 
 # target to build an object file
 src/Ruta.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/Ruta.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/Ruta.cpp.o
 .PHONY : src/Ruta.cpp.o
 
 src/Ruta.i: src/Ruta.cpp.i
@@ -296,7 +465,7 @@ src/Ruta.i: src/Ruta.cpp.i
 
 # target to preprocess a source file
 src/Ruta.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/Ruta.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/Ruta.cpp.i
 .PHONY : src/Ruta.cpp.i
 
 src/Ruta.s: src/Ruta.cpp.s
@@ -304,7 +473,7 @@ src/Ruta.s: src/Ruta.cpp.s
 
 # target to generate assembly for a file
 src/Ruta.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/Ruta.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/Ruta.cpp.s
 .PHONY : src/Ruta.cpp.s
 
 src/Solucion.o: src/Solucion.cpp.o
@@ -312,7 +481,7 @@ src/Solucion.o: src/Solucion.cpp.o
 
 # target to build an object file
 src/Solucion.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/Solucion.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/Solucion.cpp.o
 .PHONY : src/Solucion.cpp.o
 
 src/Solucion.i: src/Solucion.cpp.i
@@ -320,7 +489,7 @@ src/Solucion.i: src/Solucion.cpp.i
 
 # target to preprocess a source file
 src/Solucion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/Solucion.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/Solucion.cpp.i
 .PHONY : src/Solucion.cpp.i
 
 src/Solucion.s: src/Solucion.cpp.s
@@ -328,8 +497,56 @@ src/Solucion.s: src/Solucion.cpp.s
 
 # target to generate assembly for a file
 src/Solucion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/src/Solucion.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/Solucion.cpp.s
 .PHONY : src/Solucion.cpp.s
+
+src/VRPLIBReader.o: src/VRPLIBReader.cpp.o
+.PHONY : src/VRPLIBReader.o
+
+# target to build an object file
+src/VRPLIBReader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/VRPLIBReader.cpp.o
+.PHONY : src/VRPLIBReader.cpp.o
+
+src/VRPLIBReader.i: src/VRPLIBReader.cpp.i
+.PHONY : src/VRPLIBReader.i
+
+# target to preprocess a source file
+src/VRPLIBReader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/VRPLIBReader.cpp.i
+.PHONY : src/VRPLIBReader.cpp.i
+
+src/VRPLIBReader.s: src/VRPLIBReader.cpp.s
+.PHONY : src/VRPLIBReader.s
+
+# target to generate assembly for a file
+src/VRPLIBReader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/src/VRPLIBReader.cpp.s
+.PHONY : src/VRPLIBReader.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_solver.dir/build.make CMakeFiles/cvrp_solver.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_solver.dir/build.make CMakeFiles/cvrp_solver.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_solver.dir/build.make CMakeFiles/cvrp_solver.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 tests/test_CWwLocalSearch.o: tests/test_CWwLocalSearch.cpp.o
 .PHONY : tests/test_CWwLocalSearch.o
@@ -532,6 +749,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... clean-build"
+	@echo "... instance-E022-04g"
+	@echo "... instance-E051-05e"
+	@echo "... instance-E076-07s"
+	@echo "... instance-E101-08e"
+	@echo "... test-all"
+	@echo "... test-heuristics"
+	@echo "... test-insertion"
+	@echo "... test-local-search"
+	@echo "... test-operators"
+	@echo "... cvrp_algorithms"
+	@echo "... cvrp_core"
+	@echo "... cvrp_solver"
 	@echo "... runTests"
 	@echo "... src/CWwLocalSearch.o"
 	@echo "... src/CWwLocalSearch.i"
@@ -557,6 +787,12 @@ help:
 	@echo "... src/Solucion.o"
 	@echo "... src/Solucion.i"
 	@echo "... src/Solucion.s"
+	@echo "... src/VRPLIBReader.o"
+	@echo "... src/VRPLIBReader.i"
+	@echo "... src/VRPLIBReader.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... tests/test_CWwLocalSearch.o"
 	@echo "... tests/test_CWwLocalSearch.i"
 	@echo "... tests/test_CWwLocalSearch.s"

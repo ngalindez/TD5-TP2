@@ -1,4 +1,17 @@
+/workspaces/TD5-TP2/build/CMakeFiles/cvrp_core.dir
+/workspaces/TD5-TP2/build/CMakeFiles/cvrp_algorithms.dir
+/workspaces/TD5-TP2/build/CMakeFiles/cvrp_solver.dir
 /workspaces/TD5-TP2/build/CMakeFiles/runTests.dir
+/workspaces/TD5-TP2/build/CMakeFiles/test-all.dir
+/workspaces/TD5-TP2/build/CMakeFiles/test-heuristics.dir
+/workspaces/TD5-TP2/build/CMakeFiles/test-local-search.dir
+/workspaces/TD5-TP2/build/CMakeFiles/test-insertion.dir
+/workspaces/TD5-TP2/build/CMakeFiles/test-operators.dir
+/workspaces/TD5-TP2/build/CMakeFiles/instance-E022-04g.dir
+/workspaces/TD5-TP2/build/CMakeFiles/instance-E051-05e.dir
+/workspaces/TD5-TP2/build/CMakeFiles/instance-E076-07s.dir
+/workspaces/TD5-TP2/build/CMakeFiles/instance-E101-08e.dir
+/workspaces/TD5-TP2/build/CMakeFiles/clean-build.dir
 /workspaces/TD5-TP2/build/CMakeFiles/test.dir
 /workspaces/TD5-TP2/build/CMakeFiles/edit_cache.dir
 /workspaces/TD5-TP2/build/CMakeFiles/rebuild_cache.dir

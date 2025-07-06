@@ -36,7 +36,7 @@ bool Solucion::removerRuta(size_t index) {
 }
 
 
-int Solucion::getCostoTotal() const { return _costoTotal; }
+double Solucion::getCostoTotal() const { return _costoTotal; }
 
 int Solucion::getCantCamiones() const { return _cantCamiones; }
 

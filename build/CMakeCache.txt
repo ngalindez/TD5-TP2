@@ -15,6 +15,9 @@
 ########################
 
 //Path to a program.
+CLANG_FORMAT:FILEPATH=CLANG_FORMAT-NOTFOUND
+
+//Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
 //Path to a program.
@@ -149,6 +152,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=CVRP_Solver
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=1.0.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
@@ -222,6 +240,12 @@ CVRP_Solver_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 CVRP_Solver_SOURCE_DIR:STATIC=/workspaces/TD5-TP2
+
+//The directory containing a CMake configuration file for Catch2.
+Catch2_DIR:PATH=Catch2_DIR-NOTFOUND
+
+//Dependencies for the target
+cvrp_algorithms_LIB_DEPENDS:STATIC=general;cvrp_core;
 
 
 ########################

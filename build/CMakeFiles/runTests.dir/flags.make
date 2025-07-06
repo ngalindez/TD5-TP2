@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/workspaces/TD5-TP2/src -I/workspaces/TD5-TP2/tests
 
-CXX_FLAGS = -g -std=gnu++17
+CXX_FLAGS = -g -O0 -Wall -Wextra -std=gnu++17
 

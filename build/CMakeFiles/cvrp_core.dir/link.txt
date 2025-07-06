@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libcvrp_core.a CMakeFiles/cvrp_core.dir/src/Cliente.cpp.o CMakeFiles/cvrp_core.dir/src/Ruta.cpp.o CMakeFiles/cvrp_core.dir/src/Solucion.cpp.o CMakeFiles/cvrp_core.dir/src/VRPLIBReader.cpp.o
+/usr/bin/ranlib lib/libcvrp_core.a

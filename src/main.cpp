@@ -9,6 +9,7 @@
 #include "VRPLIBReader.h"
 #include <iostream>
 #include <string>
+#include <unordered_map>
 
 using namespace std;
 
@@ -77,7 +78,15 @@ Solucion runNearestInsertion(const vector<Cliente> &clientes,
                              const vector<vector<double>> &dist_matrix,
                              int capacity, int depotId, int numVehicles) {
   cout << "\n=== Ejecutando Heurística de Inserción Más Cercana ===" << endl;
-  HeuristicaInsercionCercana heuristica(clientes, dist_matrix, capacity,
+  
+  // Create id2pos mapping
+  unordered_map<int, int> id2pos;
+  id2pos[depotId] = 0;  // Depot is always at position 0
+  for (size_t i = 0; i < clientes.size(); ++i) {
+    id2pos[clientes[i].getId()] = i + 1;  // Clients start at position 1
+  }
+  
+  HeuristicaInsercionCercana heuristica(clientes, dist_matrix, id2pos, capacity,
                                         depotId, numVehicles);
   Solucion solucion = heuristica.resolver();
   if(solucion.esFactible()){

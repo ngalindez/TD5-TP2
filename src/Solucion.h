@@ -25,7 +25,7 @@ public:
 
   bool agregarRuta(const Ruta& ruta);
   bool removerRuta(size_t index);
-  int getCostoTotal() const;
+  double getCostoTotal() const;
   int getCantCamiones() const;
   vector<Ruta> getRutas() const;
   const vector<Cliente>& getClientes() const;
