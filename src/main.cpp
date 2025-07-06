@@ -2,6 +2,7 @@
 #include "Cliente.h"
 #include "HeuristicaClarkeWright.h"
 #include "HeuristicaInsercionCercana.h"
+#include "GRASP.h"
 #include "OperadorRelocate.h"
 #include "OperadorSwap.h"
 #include "Ruta.h"
@@ -19,7 +20,6 @@ void printRutas(const Solucion &solucion, int depotId,
   int rutaNum = 1;
   for (const auto &ruta : solucion.getRutas()) {
     cout << "Ruta " << rutaNum++ << ": ";
-    cout << depotId << " -> ";
     for (size_t i = 0; i < ruta.getClientes().size(); ++i) {
       cout << ruta.getClientes()[i];
       if (i < ruta.getClientes().size() - 1) {
@@ -39,7 +39,8 @@ void printMenu() {
   cout << "4. Clarke & Wright + Local Search (Swap + Relocate hasta mínimo "
           "local)"
        << endl;
-  cout << "5. Salir" << endl;
+  cout << "5. GRASP" << endl;
+  cout << "6. Salir" << endl;
   cout << "Elige una opción: ";
 }
 
@@ -72,6 +73,45 @@ Solucion runClarkeWright(const vector<Cliente> &clientes,
 
 
   return solucion;
+}
+
+Solucion runGRASP(const vector<Cliente>& clientes,
+                  const vector<vector<double>>& dist_matrix,
+                  int capacity,
+                  int depotId,
+                  int numVehicles) {
+    cout << "\n=== Ejecutando GRASP ===" << endl;
+    
+    cout << "Ingrese número de iteraciones para GRASP: ";
+    int numIter;
+    cin >> numIter;
+    cin.ignore();
+
+    cout << "Ingrese k para la RCL (ej. 3): ";
+    int kRCL;
+    cin >> kRCL;
+    cin.ignore();
+
+    unordered_map<int, int> id2pos;
+    id2pos[depotId] = 0;
+    for (size_t i = 0; i < clientes.size(); ++i) {
+        id2pos[clientes[i].getId()] = i + 1;
+    }
+
+    GRASP grasp(clientes, dist_matrix, id2pos, capacity, depotId, numVehicles, numIter, kRCL);
+
+    Solucion solucion = grasp.resolver();
+
+    if (solucion.esFactible()){
+      cout << "Costo total: " << solucion.getCostoTotal() << endl;
+      cout << "Número de rutas: " << solucion.getRutas().size() << endl;
+    printRutas(solucion, depotId, "Rutas de GRASP");
+
+  } else {
+    cout << "La metaheuristica GRASP, devuelve una solucion invalida para esta instancia" << endl;
+  }
+
+    return solucion;
 }
 
 Solucion runNearestInsertion(const vector<Cliente> &clientes,
@@ -288,8 +328,12 @@ int main() {
                    "Rutas finales (Clarke & Wright + Local Search):");
         break;
       }
-
-      case 5:
+      case 5:{ //GRASP
+        Solucion solucion = runGRASP(clientes, dist_matrix, reader.getCapacity(), depotId, reader.getNumVehicles()); 
+        break;
+         
+      }
+      case 6:
         cout << "Saliendo..." << endl;
         break;
 

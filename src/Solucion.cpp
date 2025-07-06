@@ -49,3 +49,38 @@ const vector<vector<double>> &Solucion::getDistMatrix() const {
 }
 
 bool Solucion::esFactible() const { return _rutas.size() <= _cantCamiones; }
+
+bool Solucion::vistoTodos() const {
+    vector<bool> visitado(_clientes.size(), false);
+
+    for (const auto& ruta : _rutas) {
+        const vector<int>& clientesRuta = ruta.getClientes();
+        for (int id : clientesRuta) {
+            if (id == ruta.getIdDeposito())
+                continue; // Ignorar depósito
+
+            // Encontrar posición del cliente en _clientes
+            auto it = find_if(_clientes.begin(), _clientes.end(),
+                              [id](const Cliente& c) { return c.getId() == id; });
+
+            if (it == _clientes.end())
+                return false; // Cliente no existe en lista original
+
+            int pos = distance(_clientes.begin(), it);
+
+            // Si ya estaba marcado, hay repetidos
+            if (visitado[pos])
+                return false;
+
+            visitado[pos] = true;
+        }
+    }
+
+    // Verificar que todos estén marcados
+    for (bool v : visitado) {
+        if (!v)
+            return false;
+    }
+
+    return true;
+}

@@ -4,6 +4,7 @@
 #include "Cliente.h"
 #include "Ruta.h"
 #include <vector>
+#include <unordered_set>
 
 using namespace std;
 
@@ -31,6 +32,8 @@ public:
   const vector<Cliente>& getClientes() const;
   const vector<vector<double>>& getDistMatrix() const;
   bool esFactible() const;
+  bool vistoTodos() const;
+
 };
 
 #endif
