@@ -106,6 +106,7 @@ CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o: /workspaces/TD5-TP2/tes
   /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/unique_ptr.h \
   /usr/include/c++/13.2.1/bits/unordered_map.h \
+  /usr/include/c++/13.2.1/bits/unordered_set.h \
   /usr/include/c++/13.2.1/bits/uses_allocator.h \
   /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/13.2.1/bits/utility.h \
@@ -173,6 +174,7 @@ CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o: /workspaces/TD5-TP2/tes
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
   /usr/include/c++/13.2.1/unordered_map \
+  /usr/include/c++/13.2.1/unordered_set \
   /usr/include/c++/13.2.1/utility \
   /usr/include/c++/13.2.1/vector \
   /usr/include/ctype.h \
@@ -551,6 +553,7 @@ CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o: /workspaces/TD5
   /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/unique_ptr.h \
   /usr/include/c++/13.2.1/bits/unordered_map.h \
+  /usr/include/c++/13.2.1/bits/unordered_set.h \
   /usr/include/c++/13.2.1/bits/uses_allocator.h \
   /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/13.2.1/bits/utility.h \
@@ -618,6 +621,7 @@ CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o: /workspaces/TD5
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
   /usr/include/c++/13.2.1/unordered_map \
+  /usr/include/c++/13.2.1/unordered_set \
   /usr/include/c++/13.2.1/utility \
   /usr/include/c++/13.2.1/vector \
   /usr/include/ctype.h \
@@ -746,6 +750,7 @@ CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o: /workspaces
   /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/unique_ptr.h \
   /usr/include/c++/13.2.1/bits/unordered_map.h \
+  /usr/include/c++/13.2.1/bits/unordered_set.h \
   /usr/include/c++/13.2.1/bits/uses_allocator.h \
   /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/13.2.1/bits/utility.h \
@@ -811,6 +816,7 @@ CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o: /workspaces
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
   /usr/include/c++/13.2.1/unordered_map \
+  /usr/include/c++/13.2.1/unordered_set \
   /usr/include/c++/13.2.1/utility \
   /usr/include/c++/13.2.1/vector \
   /usr/include/ctype.h \
@@ -938,6 +944,7 @@ CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o: /workspaces/TD5-TP2/t
   /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/unique_ptr.h \
   /usr/include/c++/13.2.1/bits/unordered_map.h \
+  /usr/include/c++/13.2.1/bits/unordered_set.h \
   /usr/include/c++/13.2.1/bits/uses_allocator.h \
   /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/13.2.1/bits/utility.h \
@@ -1003,6 +1010,7 @@ CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o: /workspaces/TD5-TP2/t
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
   /usr/include/c++/13.2.1/unordered_map \
+  /usr/include/c++/13.2.1/unordered_set \
   /usr/include/c++/13.2.1/utility \
   /usr/include/c++/13.2.1/vector \
   /usr/include/ctype.h \
@@ -1130,6 +1138,7 @@ CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o: /workspaces/TD5-TP2/tests
   /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/unique_ptr.h \
   /usr/include/c++/13.2.1/bits/unordered_map.h \
+  /usr/include/c++/13.2.1/bits/unordered_set.h \
   /usr/include/c++/13.2.1/bits/uses_allocator.h \
   /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/13.2.1/bits/utility.h \
@@ -1195,6 +1204,7 @@ CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o: /workspaces/TD5-TP2/tests
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
   /usr/include/c++/13.2.1/unordered_map \
+  /usr/include/c++/13.2.1/unordered_set \
   /usr/include/c++/13.2.1/utility \
   /usr/include/c++/13.2.1/vector \
   /usr/include/ctype.h \
@@ -1515,6 +1525,7 @@ CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o: /workspaces/TD5-TP2/tests/tes
   /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
   /usr/include/c++/13.2.1/bits/unique_ptr.h \
   /usr/include/c++/13.2.1/bits/unordered_map.h \
+  /usr/include/c++/13.2.1/bits/unordered_set.h \
   /usr/include/c++/13.2.1/bits/uses_allocator.h \
   /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/13.2.1/bits/utility.h \
@@ -1580,6 +1591,7 @@ CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o: /workspaces/TD5-TP2/tests/tes
   /usr/include/c++/13.2.1/type_traits \
   /usr/include/c++/13.2.1/typeinfo \
   /usr/include/c++/13.2.1/unordered_map \
+  /usr/include/c++/13.2.1/unordered_set \
   /usr/include/c++/13.2.1/utility \
   /usr/include/c++/13.2.1/vector \
   /usr/include/ctype.h \
@@ -1604,6 +1616,8 @@ CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o: /workspaces/TD5-TP2/tests/tes
 
 
 /workspaces/TD5-TP2/tests/test_OperadorSwap.cpp:
+
+/workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp:
 
 /usr/include/c++/13.2.1/cstdio:
 
@@ -1640,6 +1654,8 @@ CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o: /workspaces/TD5-TP2/tests/tes
 /usr/include/c++/13.2.1/bits/uses_allocator.h:
 
 /usr/include/c++/13.2.1/bits/fstream.tcc:
+
+/usr/include/c++/13.2.1/bits/unordered_set.h:
 
 /usr/include/c++/13.2.1/bits/streambuf.tcc:
 
@@ -1825,8 +1841,6 @@ CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o: /workspaces/TD5-TP2/tests/tes
 
 /usr/include/c++/13.2.1/bits/stl_multiset.h:
 
-/usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h:
-
 /usr/include/c++/13.2.1/pstl/glue_memory_defs.h:
 
 /usr/include/c++/13.2.1/bits/stl_map.h:
@@ -1908,6 +1922,10 @@ CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o: /workspaces/TD5-TP2/tests/tes
 /usr/include/c++/13.2.1/bits/exception_defines.h:
 
 /usr/include/c++/13.2.1/bits/exception_ptr.h:
+
+/usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/ctype_base.h:
+
+/usr/include/c++/13.2.1/unordered_set:
 
 /workspaces/TD5-TP2/tests/test_Cliente.cpp:
 
@@ -2120,5 +2138,3 @@ CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o: /workspaces/TD5-TP2/tests/tes
 /workspaces/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp:
 
 /workspaces/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp:
-
-/workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp:

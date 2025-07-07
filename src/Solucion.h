@@ -24,6 +24,7 @@ public:
     const vector<Ruta>& rutas = {}
   );
 
+  double getCostoTotalRounding(const vector<vector<double>>& distMatrixRounded) const;
   bool agregarRuta(const Ruta& ruta);
   bool removerRuta(size_t index);
   double getCostoTotal() const;

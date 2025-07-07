@@ -50,6 +50,14 @@ CMakeFiles/cvrp_core.dir/src/Solucion.cpp.o: \
  /usr/include/c++/13.2.1/bits/uses_allocator.h \
  /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
  /usr/include/c++/13.2.1/tuple /workspaces/TD5-TP2/src/Ruta.h \
+ /usr/include/c++/13.2.1/unordered_set \
+ /usr/include/c++/13.2.1/bits/unordered_set.h \
+ /usr/include/c++/13.2.1/bits/hashtable.h \
+ /usr/include/c++/13.2.1/bits/hashtable_policy.h \
+ /usr/include/c++/13.2.1/ext/aligned_buffer.h \
+ /usr/include/c++/13.2.1/bits/enable_special_members.h \
+ /usr/include/c++/13.2.1/bits/node_handle.h \
+ /usr/include/c++/13.2.1/bits/erase_if.h \
  /usr/include/c++/13.2.1/algorithm \
  /usr/include/c++/13.2.1/bits/stl_algo.h \
  /usr/include/c++/13.2.1/bits/algorithmfwd.h \

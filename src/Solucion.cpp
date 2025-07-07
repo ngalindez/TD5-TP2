@@ -8,19 +8,30 @@ Solucion::Solucion(
   const vector<vector<double>>& distMatrix,
   const int cantCamiones,
   const vector<Ruta>& rutas)
-  : _clientes(clientes),
-    _distMatrix(distMatrix),
+  : _rutas(rutas),
+    _costoTotal(0),
     _cantCamiones(cantCamiones),
-    _rutas(rutas),
-    _costoTotal(0) 
+    _clientes(clientes),
+    _distMatrix(distMatrix)
 {
   for (const auto& ruta : _rutas) {
       _costoTotal += ruta.getCosto();
   }
 }
 
+double Solucion::getCostoTotalRounding(const vector<vector<double>>& distMatrixRounded) const {
+  double total = 0.0;
+  for (const auto& ruta : _rutas) {
+      const auto& clientesRuta = ruta.getClientes();
+      for (size_t i = 0; i < clientesRuta.size() - 1; ++i) {
+          total += distMatrixRounded[clientesRuta[i]][clientesRuta[i+1]];
+      }
+  }
+  return total;
+}
+
 bool Solucion::agregarRuta(const Ruta& ruta) {
-  if (_rutas.size() >= _cantCamiones) return false;
+  if (_rutas.size() >= static_cast<size_t>(_cantCamiones)) return false;
   _rutas.push_back(ruta);
   _costoTotal += ruta.getCosto();
   return true;
@@ -48,7 +59,7 @@ const vector<vector<double>> &Solucion::getDistMatrix() const {
   return _distMatrix;
 }
 
-bool Solucion::esFactible() const { return _rutas.size() <= _cantCamiones; }
+bool Solucion::esFactible() const { return _rutas.size() <= static_cast<size_t>(_cantCamiones); }
 
 bool Solucion::vistoTodos() const {
     vector<bool> visitado(_clientes.size(), false);

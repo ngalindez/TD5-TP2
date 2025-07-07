@@ -242,16 +242,21 @@ CMakeFiles/cvrp_core.dir/src/Solucion.cpp.o: /workspaces/TD5-TP2/src/Solucion.cp
   /usr/include/c++/13.2.1/bits/allocator.h \
   /usr/include/c++/13.2.1/bits/concept_check.h \
   /usr/include/c++/13.2.1/bits/cpp_type_traits.h \
+  /usr/include/c++/13.2.1/bits/enable_special_members.h \
+  /usr/include/c++/13.2.1/bits/erase_if.h \
   /usr/include/c++/13.2.1/bits/exception.h \
   /usr/include/c++/13.2.1/bits/exception_defines.h \
   /usr/include/c++/13.2.1/bits/functexcept.h \
   /usr/include/c++/13.2.1/bits/functional_hash.h \
   /usr/include/c++/13.2.1/bits/hash_bytes.h \
+  /usr/include/c++/13.2.1/bits/hashtable.h \
+  /usr/include/c++/13.2.1/bits/hashtable_policy.h \
   /usr/include/c++/13.2.1/bits/invoke.h \
   /usr/include/c++/13.2.1/bits/memory_resource.h \
   /usr/include/c++/13.2.1/bits/memoryfwd.h \
   /usr/include/c++/13.2.1/bits/move.h \
   /usr/include/c++/13.2.1/bits/new_allocator.h \
+  /usr/include/c++/13.2.1/bits/node_handle.h \
   /usr/include/c++/13.2.1/bits/predefined_ops.h \
   /usr/include/c++/13.2.1/bits/ptr_traits.h \
   /usr/include/c++/13.2.1/bits/range_access.h \
@@ -272,6 +277,7 @@ CMakeFiles/cvrp_core.dir/src/Solucion.cpp.o: /workspaces/TD5-TP2/src/Solucion.cp
   /usr/include/c++/13.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/13.2.1/bits/stl_vector.h \
   /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
+  /usr/include/c++/13.2.1/bits/unordered_set.h \
   /usr/include/c++/13.2.1/bits/uses_allocator.h \
   /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/13.2.1/bits/utility.h \
@@ -280,6 +286,7 @@ CMakeFiles/cvrp_core.dir/src/Solucion.cpp.o: /workspaces/TD5-TP2/src/Solucion.cp
   /usr/include/c++/13.2.1/cstdlib \
   /usr/include/c++/13.2.1/debug/assertions.h \
   /usr/include/c++/13.2.1/debug/debug.h \
+  /usr/include/c++/13.2.1/ext/aligned_buffer.h \
   /usr/include/c++/13.2.1/ext/alloc_traits.h \
   /usr/include/c++/13.2.1/ext/numeric_traits.h \
   /usr/include/c++/13.2.1/ext/type_traits.h \
@@ -290,6 +297,7 @@ CMakeFiles/cvrp_core.dir/src/Solucion.cpp.o: /workspaces/TD5-TP2/src/Solucion.cp
   /usr/include/c++/13.2.1/pstl/pstl_config.h \
   /usr/include/c++/13.2.1/tuple \
   /usr/include/c++/13.2.1/type_traits \
+  /usr/include/c++/13.2.1/unordered_set \
   /usr/include/c++/13.2.1/vector \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
@@ -475,6 +483,16 @@ CMakeFiles/cvrp_core.dir/src/VRPLIBReader.cpp.o: /workspaces/TD5-TP2/src/VRPLIBR
 
 /workspaces/TD5-TP2/src/Solucion.h:
 
+/usr/include/c++/13.2.1/ext/aligned_buffer.h:
+
+/usr/include/c++/13.2.1/bits/node_handle.h:
+
+/usr/include/c++/13.2.1/bits/hashtable_policy.h:
+
+/usr/include/c++/13.2.1/bits/enable_special_members.h:
+
+/usr/include/c++/13.2.1/bits/unordered_set.h:
+
 /workspaces/TD5-TP2/src/Solucion.cpp:
 
 /usr/include/time.h:
@@ -528,6 +546,8 @@ CMakeFiles/cvrp_core.dir/src/VRPLIBReader.cpp.o: /workspaces/TD5-TP2/src/VRPLIBR
 /usr/include/c++/13.2.1/bits/range_access.h:
 
 /usr/include/c++/13.2.1/bits/sstream.tcc:
+
+/usr/include/c++/13.2.1/bits/hashtable.h:
 
 /usr/include/c++/13.2.1/bits/predefined_ops.h:
 
@@ -622,6 +642,8 @@ CMakeFiles/cvrp_core.dir/src/VRPLIBReader.cpp.o: /workspaces/TD5-TP2/src/VRPLIBR
 /usr/include/c++/13.2.1/string:
 
 /usr/include/c++/13.2.1/bits/ios_base.h:
+
+/usr/include/c++/13.2.1/unordered_set:
 
 /usr/include/c++/13.2.1/bits/exception_ptr.h:
 
@@ -744,6 +766,8 @@ CMakeFiles/cvrp_core.dir/src/VRPLIBReader.cpp.o: /workspaces/TD5-TP2/src/VRPLIBR
 /usr/include/c++/13.2.1/aarch64-alpine-linux-musl/bits/c++allocator.h:
 
 /usr/include/c++/13.2.1/bits/stl_tempbuf.h:
+
+/usr/include/c++/13.2.1/bits/erase_if.h:
 
 /usr/include/c++/13.2.1/bits/postypes.h:
 

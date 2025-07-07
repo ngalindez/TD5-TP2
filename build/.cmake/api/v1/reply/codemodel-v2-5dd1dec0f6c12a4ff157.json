@@ -1,0 +1,177 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CVRP_Solver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "clean-build::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clean-build-Debug-28030b4190fc5ce57025.json",
+					"name" : "clean-build",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cvrp_algorithms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cvrp_algorithms-Debug-c7656364d5dba06c5768.json",
+					"name" : "cvrp_algorithms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cvrp_core::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cvrp_core-Debug-3ae7466c6849552dad5b.json",
+					"name" : "cvrp_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cvrp_solver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cvrp_solver-Debug-ac57803d75c8f9c87c9e.json",
+					"name" : "cvrp_solver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "instance-E022-04g::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-instance-E022-04g-Debug-f4a465c0916e20b39954.json",
+					"name" : "instance-E022-04g",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "instance-E051-05e::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-instance-E051-05e-Debug-9159a33d03362edea925.json",
+					"name" : "instance-E051-05e",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "instance-E076-07s::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-instance-E076-07s-Debug-1952c0cc3fcc25f71641.json",
+					"name" : "instance-E076-07s",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "instance-E101-08e::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-instance-E101-08e-Debug-28cef14e52afdd53cbe2.json",
+					"name" : "instance-E101-08e",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "runTests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-runTests-Debug-e2b69795177c0d2f74b1.json",
+					"name" : "runTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test-all::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-all-Debug-4029eae522a2f7042cd7.json",
+					"name" : "test-all",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test-heuristics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-heuristics-Debug-f79731cc2931e1fd7f45.json",
+					"name" : "test-heuristics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test-insertion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-insertion-Debug-029a8c9aba8703943fe5.json",
+					"name" : "test-insertion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test-local-search::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-local-search-Debug-05141188f0c0fa515e37.json",
+					"name" : "test-local-search",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test-operators::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-operators-Debug-0b4f410fb451a452bc17.json",
+					"name" : "test-operators",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspaces/TD5-TP2/build",
+		"source" : "/workspaces/TD5-TP2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

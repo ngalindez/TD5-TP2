@@ -21,21 +21,8 @@ HeuristicaInsercionCercana::HeuristicaInsercionCercana(
 Solucion HeuristicaInsercionCercana::resolver() {
     std::vector<Ruta> rutas;
     
-    // Create a distance matrix indexed by client IDs instead of positions
-    int maxId = depotId;
-    for (const auto& pair : id2pos) {
-        maxId = std::max(maxId, pair.first);
-    }
-    std::vector<std::vector<double>> idDistMatrix(maxId + 1, std::vector<double>(maxId + 1, 0.0));
-    
-    // Copy distances from position-based matrix to ID-based matrix
-    for (const auto& pair1 : id2pos) {
-        for (const auto& pair2 : id2pos) {
-            idDistMatrix[pair1.first][pair2.first] = distMatrix[pair1.second][pair2.second];
-        }
-    }
-    
-    Solucion sol(clientes, idDistMatrix, numVehiculos);
+    // Use the original distMatrix and id2pos mapping
+    Solucion sol(clientes, distMatrix, numVehiculos);
 
     // Find the maximum position in id2pos to size the visited vector correctly
     int maxPos = 0;
@@ -48,19 +35,16 @@ Solucion HeuristicaInsercionCercana::resolver() {
     size_t cantidadVisitados = 0;
     size_t cantidadClientes = clientes.size();
 
-
-
     while (cantidadVisitados < cantidadClientes) {
-        Ruta ruta(capacidadVehiculo, depotId, idDistMatrix, clientes);
+        Ruta ruta(capacidadVehiculo, depotId, distMatrix, clientes);
         int actual = depotId;
         int carga = 0;
         bool added = false;
-
-            while (true) {
-        Cliente masCercano = buscarMasCercano(actual, visitado);
-
-        if (masCercano.getId() == depotId) break;
-
+        while (true) {
+            Cliente masCercano = buscarMasCercano(actual, visitado);
+            if (masCercano.getId() == depotId) {
+                break;
+            }
             int demanda = masCercano.getDemand();
             if (carga + demanda <= capacidadVehiculo) {
                 ruta.agregarCliente(masCercano.getId());
@@ -73,12 +57,21 @@ Solucion HeuristicaInsercionCercana::resolver() {
                 break;
             }
         }
-
-        if (added)
+        if (added) {
             rutas.push_back(ruta);
-        else
+        } else {
             break;
+        }
+        
     }
+
+    std::cout << "\n[InsercionCercana] Todos los clientes visitados? " << (cantidadVisitados == cantidadClientes ? "SI" : "NO") << std::endl;
+    std::cout << "[InsercionCercana] Clientes visitados: ";
+    for (const auto& c : clientes) {
+        int pos = id2pos.at(c.getId());
+        std::cout << c.getId() << ":" << visitado[pos] << " ";
+    }
+    std::cout << std::endl;
 
     for (const auto& ruta : rutas) {
         sol.agregarRuta(ruta);

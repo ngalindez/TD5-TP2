@@ -35,7 +35,7 @@ Solucion OperadorRelocate::mejorRelocateEntreRutas(size_t i, size_t j) {
   Ruta mejorRuta_j = ruta_j;
   int mejorCosto = costo_i + costo_j;
 
-  for (size_t pos_i = 1; pos_i < size_i - 1; pos_i++) {
+  for (size_t pos_i = 1; pos_i < static_cast<size_t>(size_i - 1); pos_i++) {
     vector<int> clientes_i = ruta_i.getClientes();
     vector<int> clientes_j = ruta_j.getClientes();
 
@@ -52,7 +52,7 @@ Solucion OperadorRelocate::mejorRelocateEntreRutas(size_t i, size_t j) {
       }
     }
 
-    for (size_t pos_j = 1; pos_j < size_j; pos_j++) {
+    for (size_t pos_j = 1; pos_j < static_cast<size_t>(size_j); pos_j++) {
       // Calcular nuevos costos (simplificado - podrías querer recalcular
       // apropiadamente)
       int nuevoCosto_i =

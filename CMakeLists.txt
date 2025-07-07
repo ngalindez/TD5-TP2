@@ -45,6 +45,7 @@ set(ALGORITHM_SOURCES
     src/CWwLocalSearch.cpp
     src/OperadorSwap.cpp
     src/OperadorRelocate.cpp
+    src/GRASP.cpp
 )
 
 # All sources combined

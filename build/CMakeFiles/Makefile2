@@ -97,7 +97,7 @@ clean: CMakeFiles/clean-build.dir/clean
 CMakeFiles/cvrp_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_core.dir/build.make CMakeFiles/cvrp_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=8,9,10,11,12 "Built target cvrp_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=9,10,11,12,13 "Built target cvrp_core"
 .PHONY : CMakeFiles/cvrp_core.dir/all
 
 # Build rule for subdir invocation for target.
@@ -123,12 +123,12 @@ CMakeFiles/cvrp_core.dir/clean:
 CMakeFiles/cvrp_algorithms.dir/all: CMakeFiles/cvrp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_algorithms.dir/build.make CMakeFiles/cvrp_algorithms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=2,3,4,5,6,7 "Built target cvrp_algorithms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=2,3,4,5,6,7,8 "Built target cvrp_algorithms"
 .PHONY : CMakeFiles/cvrp_algorithms.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cvrp_algorithms.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cvrp_algorithms.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/cvrp_algorithms.dir/rule
@@ -150,12 +150,12 @@ CMakeFiles/cvrp_solver.dir/all: CMakeFiles/cvrp_algorithms.dir/all
 CMakeFiles/cvrp_solver.dir/all: CMakeFiles/cvrp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_solver.dir/build.make CMakeFiles/cvrp_solver.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cvrp_solver.dir/build.make CMakeFiles/cvrp_solver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=13,14 "Built target cvrp_solver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=14,15 "Built target cvrp_solver"
 .PHONY : CMakeFiles/cvrp_solver.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cvrp_solver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cvrp_solver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/cvrp_solver.dir/rule
@@ -177,12 +177,12 @@ CMakeFiles/runTests.dir/all: CMakeFiles/cvrp_algorithms.dir/all
 CMakeFiles/runTests.dir/all: CMakeFiles/cvrp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27 "Built target runTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=20,21,22,23,24,25,26,27,28 "Built target runTests"
 .PHONY : CMakeFiles/runTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/runTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/runTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/runTests.dir/rule
@@ -203,12 +203,12 @@ CMakeFiles/runTests.dir/clean:
 CMakeFiles/test-all.dir/all: CMakeFiles/runTests.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-all.dir/build.make CMakeFiles/test-all.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-all.dir/build.make CMakeFiles/test-all.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=28 "Built target test-all"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=29 "Built target test-all"
 .PHONY : CMakeFiles/test-all.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-all.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test-all.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/test-all.dir/rule
@@ -229,12 +229,12 @@ CMakeFiles/test-all.dir/clean:
 CMakeFiles/test-heuristics.dir/all: CMakeFiles/runTests.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-heuristics.dir/build.make CMakeFiles/test-heuristics.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-heuristics.dir/build.make CMakeFiles/test-heuristics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=29 "Built target test-heuristics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=30 "Built target test-heuristics"
 .PHONY : CMakeFiles/test-heuristics.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-heuristics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test-heuristics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/test-heuristics.dir/rule
@@ -255,12 +255,12 @@ CMakeFiles/test-heuristics.dir/clean:
 CMakeFiles/test-local-search.dir/all: CMakeFiles/runTests.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-local-search.dir/build.make CMakeFiles/test-local-search.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-local-search.dir/build.make CMakeFiles/test-local-search.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=31 "Built target test-local-search"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=32 "Built target test-local-search"
 .PHONY : CMakeFiles/test-local-search.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-local-search.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test-local-search.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/test-local-search.dir/rule
@@ -281,12 +281,12 @@ CMakeFiles/test-local-search.dir/clean:
 CMakeFiles/test-insertion.dir/all: CMakeFiles/runTests.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-insertion.dir/build.make CMakeFiles/test-insertion.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-insertion.dir/build.make CMakeFiles/test-insertion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=30 "Built target test-insertion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=31 "Built target test-insertion"
 .PHONY : CMakeFiles/test-insertion.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-insertion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test-insertion.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/test-insertion.dir/rule
@@ -307,12 +307,12 @@ CMakeFiles/test-insertion.dir/clean:
 CMakeFiles/test-operators.dir/all: CMakeFiles/runTests.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-operators.dir/build.make CMakeFiles/test-operators.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-operators.dir/build.make CMakeFiles/test-operators.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=32 "Built target test-operators"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=33 "Built target test-operators"
 .PHONY : CMakeFiles/test-operators.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test-operators.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test-operators.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/test-operators.dir/rule
@@ -333,12 +333,12 @@ CMakeFiles/test-operators.dir/clean:
 CMakeFiles/instance-E022-04g.dir/all: CMakeFiles/cvrp_solver.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E022-04g.dir/build.make CMakeFiles/instance-E022-04g.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E022-04g.dir/build.make CMakeFiles/instance-E022-04g.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=15 "Built target instance-E022-04g"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=16 "Built target instance-E022-04g"
 .PHONY : CMakeFiles/instance-E022-04g.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/instance-E022-04g.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/instance-E022-04g.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/instance-E022-04g.dir/rule
@@ -359,12 +359,12 @@ CMakeFiles/instance-E022-04g.dir/clean:
 CMakeFiles/instance-E051-05e.dir/all: CMakeFiles/cvrp_solver.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E051-05e.dir/build.make CMakeFiles/instance-E051-05e.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E051-05e.dir/build.make CMakeFiles/instance-E051-05e.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=16 "Built target instance-E051-05e"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=17 "Built target instance-E051-05e"
 .PHONY : CMakeFiles/instance-E051-05e.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/instance-E051-05e.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/instance-E051-05e.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/instance-E051-05e.dir/rule
@@ -385,12 +385,12 @@ CMakeFiles/instance-E051-05e.dir/clean:
 CMakeFiles/instance-E076-07s.dir/all: CMakeFiles/cvrp_solver.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E076-07s.dir/build.make CMakeFiles/instance-E076-07s.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E076-07s.dir/build.make CMakeFiles/instance-E076-07s.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=17 "Built target instance-E076-07s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=18 "Built target instance-E076-07s"
 .PHONY : CMakeFiles/instance-E076-07s.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/instance-E076-07s.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/instance-E076-07s.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/instance-E076-07s.dir/rule
@@ -411,12 +411,12 @@ CMakeFiles/instance-E076-07s.dir/clean:
 CMakeFiles/instance-E101-08e.dir/all: CMakeFiles/cvrp_solver.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E101-08e.dir/build.make CMakeFiles/instance-E101-08e.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/instance-E101-08e.dir/build.make CMakeFiles/instance-E101-08e.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=18 "Built target instance-E101-08e"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspaces/TD5-TP2/build/CMakeFiles --progress-num=19 "Built target instance-E101-08e"
 .PHONY : CMakeFiles/instance-E101-08e.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/instance-E101-08e.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/instance-E101-08e.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/TD5-TP2/build/CMakeFiles 0
 .PHONY : CMakeFiles/instance-E101-08e.dir/rule

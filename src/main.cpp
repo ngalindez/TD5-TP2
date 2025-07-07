@@ -16,6 +16,7 @@ using namespace std;
 
 void printRutas(const Solucion &solucion, int depotId,
                 const string &label = "Rutas generadas:") {
+  (void)depotId; // Mark as unused to avoid warning
   cout << "\n" << label << endl;
   int rutaNum = 1;
   for (const auto &ruta : solucion.getRutas()) {
@@ -175,10 +176,19 @@ void applyRelocateOperator(const Solucion &originalSolucion, int depotId,
              "Rutas mejoradas después del relocate:");
 }
 
-void applyBothOperators(const Solucion &originalSolucion, int depotId,
-                        const string &heuristicName) {
-  applySwapOperator(originalSolucion, depotId, heuristicName);
-  applyRelocateOperator(originalSolucion, depotId, heuristicName);
+void applyBothOperators(const Solucion &originalSolucion, int depotId, const string &heuristicName) {
+  cout << "\n=== Aplicando ambos operadores (Swap + Relocate) a " << heuristicName << " ===" << endl;
+  cout << "Costo original: " << originalSolucion.getCostoTotal() << endl;
+
+  OperadorSwap swapOperator(originalSolucion);
+  Solucion swapSol = swapOperator.aplicar();
+
+  OperadorRelocate relocateOperator(swapSol);
+  Solucion finalSol = relocateOperator.aplicar();
+
+  cout << "Costo después de ambos operadores: " << finalSol.getCostoTotal() << endl;
+  cout << "Mejora total: " << originalSolucion.getCostoTotal() - finalSol.getCostoTotal() << endl;
+  printRutas(finalSol, depotId, "Rutas mejoradas después de ambos operadores:");
 }
 
 int main() {
@@ -206,7 +216,7 @@ int main() {
     vector<Cliente> clientes;
     int depotId = reader.getDepotId();
 
-    for (int i = 0; i < nodos.size(); i++) {
+    for (size_t i = 0; i < nodos.size(); ++i) {
       if (nodos[i].id != depotId) {
         clientes.push_back(Cliente(nodos[i].id, demandas[nodos[i].id]));
       }
@@ -214,133 +224,107 @@ int main() {
 
     vector<vector<double>> dist_matrix = reader.getDistanceMatrix();
 
-    int choice;
-    do {
-      printMenu();
-      cin >> choice;
-      cin.ignore(); // Limpiar el salto de línea del buffer de entrada
+    // Main menu: choose heuristic
+    int heuristicChoice = 0;
+    while (heuristicChoice != 1 && heuristicChoice != 2) {
+      cout << "\n=== Menú Principal ===" << endl;
+      cout << "1. Heurística de Clarke & Wright" << endl;
+      cout << "2. Heurística de Inserción Más Cercana" << endl;
+      cout << "Elige una opción: ";
+      cin >> heuristicChoice;
+      cin.ignore();
+      if (heuristicChoice != 1 && heuristicChoice != 2) {
+        cout << "Opción inválida. Intenta de nuevo." << endl;
+      }
+    }
 
-      switch (choice) {
-      case 1: { // Clarke & Wright
-        Solucion solucion =
-            runClarkeWright(clientes, dist_matrix, reader.getCapacity(),
-                            depotId, reader.getNumVehicles());
+    Solucion baseSolucion = (heuristicChoice == 1)
+        ? runClarkeWright(clientes, dist_matrix, reader.getCapacity(), depotId, reader.getNumVehicles())
+        : runNearestInsertion(clientes, dist_matrix, reader.getCapacity(), depotId, reader.getNumVehicles());
+    string heuristicaNombre = (heuristicChoice == 1) ? "Clarke & Wright" : "Inserción Más Cercana";
+    
 
-        int operatorChoice;
-        printOperatorMenu();
-        cin >> operatorChoice;
-        cin.ignore();
-
-        switch (operatorChoice) {
-        case 1:
-          applySwapOperator(solucion, depotId, "Clarke & Wright");
+    // Operator/Metaheuristic menu
+    bool running = true;
+    Solucion bestSol = baseSolucion;
+    double bestCost = baseSolucion.getCostoTotal();
+    int bestNumRutas = baseSolucion.getRutas().size();
+    string bestLabel = "Solución base (" + heuristicaNombre + ")";
+    while (running) {
+      cout << "\n=== Opciones de Optimización ===" << endl;
+      cout << "1. Aplicar Operador Swap" << endl;
+      cout << "2. Aplicar Operador Relocate" << endl;
+      cout << "3. Aplicar Ambos Operadores (Swap + Relocate)" << endl;
+      cout << "4. Ejecutar GRASP" << endl;
+      cout << "5. Salir y mostrar resumen" << endl;
+      cout << "Elige una opción: ";
+      int opChoice;
+      cin >> opChoice;
+      cin.ignore();
+      switch (opChoice) {
+        case 1: {
+          OperadorSwap swapOperator(baseSolucion);
+          Solucion swapSol = swapOperator.aplicar();
+          applySwapOperator(baseSolucion, depotId, heuristicaNombre);
+          if (swapSol.esFactible() && swapSol.getCostoTotal() < bestCost) {
+            bestSol = swapSol;
+            bestCost = swapSol.getCostoTotal();
+            bestNumRutas = swapSol.getRutas().size();
+            bestLabel = "Swap aplicado a " + heuristicaNombre;
+          }
           break;
-        case 2:
-          applyRelocateOperator(solucion, depotId, "Clarke & Wright");
-          break;
-        case 3:
-          applyBothOperators(solucion, depotId, "Clarke & Wright");
-          break;
-        case 4:
-          cout << "No se aplicó búsqueda local." << endl;
-          break;
-        default:
-          cout << "Opción inválida. No se aplicó búsqueda local." << endl;
         }
-        break;
-      }
-
-      case 2: { // Inserción Más Cercana
-        Solucion solucion =
-            runNearestInsertion(clientes, dist_matrix, reader.getCapacity(),
-                                depotId, reader.getNumVehicles());
-
-        int operatorChoice;
-        printOperatorMenu();
-        cin >> operatorChoice;
-        cin.ignore();
-
-        switch (operatorChoice) {
-        case 1:
-          applySwapOperator(solucion, depotId, "Inserción Más Cercana");
+        case 2: {
+          OperadorRelocate relocateOperator(baseSolucion);
+          Solucion relocateSol = relocateOperator.aplicar();
+          applyRelocateOperator(baseSolucion, depotId, heuristicaNombre);
+          if (relocateSol.esFactible() && relocateSol.getCostoTotal() < bestCost) {
+            bestSol = relocateSol;
+            bestCost = relocateSol.getCostoTotal();
+            bestNumRutas = relocateSol.getRutas().size();
+            bestLabel = "Relocate aplicado a " + heuristicaNombre;
+          }
           break;
-        case 2:
-          applyRelocateOperator(solucion, depotId, "Inserción Más Cercana");
-          break;
-        case 3:
-          applyBothOperators(solucion, depotId, "Inserción Más Cercana");
-          break;
-        case 4:
-          cout << "No se aplicó búsqueda local." << endl;
-          break;
-        default:
-          cout << "Opción inválida. No se aplicó búsqueda local." << endl;
         }
-        break;
-      }
-
-      case 3: { // Ambas Heurísticas
-        Solucion solucionCW =
-            runClarkeWright(clientes, dist_matrix, reader.getCapacity(),
-                            depotId, reader.getNumVehicles());
-        Solucion solucionNI =
-            runNearestInsertion(clientes, dist_matrix, reader.getCapacity(),
-                                depotId, reader.getNumVehicles());
-
-        int operatorChoice;
-        printOperatorMenu();
-        cin >> operatorChoice;
-        cin.ignore();
-
-        switch (operatorChoice) {
-        case 1:
-          applySwapOperator(solucionCW, depotId, "Clarke & Wright");
-          applySwapOperator(solucionNI, depotId, "Inserción Más Cercana");
+        case 3: {
+          OperadorSwap swapOperator(baseSolucion);
+          Solucion swapSol = swapOperator.aplicar();
+          OperadorRelocate relocateOperator(swapSol);
+          Solucion finalSol = relocateOperator.aplicar();
+          applyBothOperators(baseSolucion, depotId, heuristicaNombre);
+          if (finalSol.esFactible() && finalSol.getCostoTotal() < bestCost) {
+            bestSol = finalSol;
+            bestCost = finalSol.getCostoTotal();
+            bestNumRutas = finalSol.getRutas().size();
+            bestLabel = "Swap + Relocate aplicados a " + heuristicaNombre;
+          }
           break;
-        case 2:
-          applyRelocateOperator(solucionCW, depotId, "Clarke & Wright");
-          applyRelocateOperator(solucionNI, depotId, "Inserción Más Cercana");
-          break;
-        case 3:
-          applyBothOperators(solucionCW, depotId, "Clarke & Wright");
-          applyBothOperators(solucionNI, depotId, "Inserción Más Cercana");
-          break;
-        case 4:
-          cout << "No se aplicó búsqueda local." << endl;
-          break;
-        default:
-          cout << "Opción inválida. No se aplicó búsqueda local." << endl;
         }
-        break;
+        case 4: {
+          Solucion graspSol = runGRASP(clientes, dist_matrix, reader.getCapacity(), depotId, reader.getNumVehicles());
+          if (graspSol.esFactible() && (bestCost == 0 || graspSol.getCostoTotal() < bestCost)) {
+            bestSol = graspSol;
+            bestCost = graspSol.getCostoTotal();
+            bestNumRutas = graspSol.getRutas().size();
+            bestLabel = "GRASP";
+          }
+          break;
+        }
+        case 5: {
+          running = false;
+          break;
+        }
+        default:
+          cout << "Opción inválida. Intenta de nuevo." << endl;
       }
+    }
 
-      case 4: { // Clarke & Wright + Local Search
-        cout << "\n=== Clarke & Wright + Local Search (Swap + Relocate hasta "
-                "mínimo local) ==="
-             << endl;
-        CWwLocalSearch cwwls(clientes, dist_matrix, reader.getCapacity(),
-                             depotId, reader.getNumVehicles());
-        Solucion solucion = cwwls.resolver();
-        cout << "Costo total después de búsqueda local: "
-             << solucion.getCostoTotal() << endl;
-        cout << "Número de rutas: " << solucion.getRutas().size() << endl;
-        printRutas(solucion, depotId,
-                   "Rutas finales (Clarke & Wright + Local Search):");
-        break;
-      }
-      case 5:{ //GRASP
-        Solucion solucion = runGRASP(clientes, dist_matrix, reader.getCapacity(), depotId, reader.getNumVehicles()); 
-        break;
-         
-      }
-      case 6:
-        cout << "Saliendo..." << endl;
-        break;
-
-      default:
-        cout << "Opción inválida. Por favor intenta de nuevo." << endl;
-      }
-    } while (choice != 5);
+    // Print summary
+    cout << "\n=== Resumen Final ===" << endl;
+    cout << "Mejor solución encontrada: " << bestLabel << endl;
+    cout << "Costo total: " << bestCost << endl;
+    cout << "Número de rutas: " << bestNumRutas << endl;
+    printRutas(bestSol, depotId, "Rutas de la mejor solución:");
 
   } catch (const exception &e) {
     cerr << "Error leyendo archivo: " << e.what() << endl;

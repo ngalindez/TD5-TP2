@@ -103,7 +103,8 @@ void Ruta::eliminarCliente(int cliente) {
 double Ruta::calcularCosto() {
   double costo = 0;
   for (size_t i = 0; i < clientes.size() - 1; i++) {
-    costo += (*distMatrix)[clientes[i]][clientes[i+1]];
+    double d = (*distMatrix)[clientes[i]][clientes[i+1]];
+    costo += d;
   }
   return costo;
 }
