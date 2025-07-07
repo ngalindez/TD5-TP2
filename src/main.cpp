@@ -11,6 +11,7 @@
 #include <iostream>
 #include <string>
 #include <unordered_map>
+#include <chrono>
 
 using namespace std;
 
@@ -62,7 +63,7 @@ Solucion runClarkeWright(const vector<Cliente> &clientes,
                                     numVehicles);
   Solucion solucion = heuristica.resolver();
   
-  if (solucion.esFactible()){
+  if (solucion.esFactible() && solucion.vistoTodos()){
     cout << "Costo total: " << solucion.getCostoTotal() << endl;
     cout << "Número de rutas: " << solucion.getRutas().size() << endl;
     printRutas(solucion, depotId, "Rutas de Clarke & Wright:");
@@ -83,12 +84,12 @@ Solucion runGRASP(const vector<Cliente>& clientes,
                   int numVehicles) {
     cout << "\n=== Ejecutando GRASP ===" << endl;
     
-    cout << "Ingrese número de iteraciones para GRASP: ";
+    cout << "Ingrese número de iteraciones para GRASP: " << flush;
     int numIter;
     cin >> numIter;
     cin.ignore();
 
-    cout << "Ingrese k para la RCL (ej. 3): ";
+    cout << "Ingrese k para la RCL (ej. 3): " << flush;
     int kRCL;
     cin >> kRCL;
     cin.ignore();
@@ -192,8 +193,9 @@ void applyBothOperators(const Solucion &originalSolucion, int depotId, const str
 }
 
 int main() {
+  auto start = std::chrono::high_resolution_clock::now();
   string filePath;
-  cout << "Ingresa la ruta al archivo de instancia VRP: ";
+  cout << "Ingresa la ruta al archivo de instancia VRP: " << flush;
   getline(cin, filePath);
 
   // Validar ruta del archivo
@@ -226,24 +228,39 @@ int main() {
 
     // Main menu: choose heuristic
     int heuristicChoice = 0;
-    while (heuristicChoice != 1 && heuristicChoice != 2) {
+    while (heuristicChoice < 1 || heuristicChoice > 3) {
       cout << "\n=== Menú Principal ===" << endl;
       cout << "1. Heurística de Clarke & Wright" << endl;
       cout << "2. Heurística de Inserción Más Cercana" << endl;
-      cout << "Elige una opción: ";
+      cout << "-----------------------------" << endl;
+      cout << "3. GRASP (metaheurística, usa Inserción Más Cercana como base)" << endl;
+      cout << "Elige una opción: " << flush;
       cin >> heuristicChoice;
       cin.ignore();
-      if (heuristicChoice != 1 && heuristicChoice != 2) {
+      if (heuristicChoice < 1 || heuristicChoice > 3) {
         cout << "Opción inválida. Intenta de nuevo." << endl;
       }
     }
+
+    if (heuristicChoice == 3) {
+      Solucion graspSol = runGRASP(clientes, dist_matrix, reader.getCapacity(), depotId, reader.getNumVehicles());
+      if(graspSol.esFactible() && graspSol.vistoTodos()){
+        cout << "\n=== Resumen Final ===" << endl;
+        cout << "Mejor solución encontrada: GRASP" << endl;
+        cout << "Costo total: " << graspSol.getCostoTotal() << endl;
+        cout << "Número de rutas: " << graspSol.getRutas().size() << endl;
+        printRutas(graspSol, depotId, "Rutas de la mejor solución:");
+        return 0;
+      } else {
+        cout << "La metaheuristica GRASP, devuelve una solucion invalida para esta instancia" << endl;
+      }
+      }
 
     Solucion baseSolucion = (heuristicChoice == 1)
         ? runClarkeWright(clientes, dist_matrix, reader.getCapacity(), depotId, reader.getNumVehicles())
         : runNearestInsertion(clientes, dist_matrix, reader.getCapacity(), depotId, reader.getNumVehicles());
     string heuristicaNombre = (heuristicChoice == 1) ? "Clarke & Wright" : "Inserción Más Cercana";
     
-
     // Operator/Metaheuristic menu
     bool running = true;
     Solucion bestSol = baseSolucion;
@@ -255,9 +272,8 @@ int main() {
       cout << "1. Aplicar Operador Swap" << endl;
       cout << "2. Aplicar Operador Relocate" << endl;
       cout << "3. Aplicar Ambos Operadores (Swap + Relocate)" << endl;
-      cout << "4. Ejecutar GRASP" << endl;
-      cout << "5. Salir y mostrar resumen" << endl;
-      cout << "Elige una opción: ";
+      cout << "4. Salir y mostrar resumen" << endl;
+      cout << "Elige una opción: " << flush;
       int opChoice;
       cin >> opChoice;
       cin.ignore();
@@ -301,16 +317,6 @@ int main() {
           break;
         }
         case 4: {
-          Solucion graspSol = runGRASP(clientes, dist_matrix, reader.getCapacity(), depotId, reader.getNumVehicles());
-          if (graspSol.esFactible() && (bestCost == 0 || graspSol.getCostoTotal() < bestCost)) {
-            bestSol = graspSol;
-            bestCost = graspSol.getCostoTotal();
-            bestNumRutas = graspSol.getRutas().size();
-            bestLabel = "GRASP";
-          }
-          break;
-        }
-        case 5: {
           running = false;
           break;
         }
@@ -325,6 +331,12 @@ int main() {
     cout << "Costo total: " << bestCost << endl;
     cout << "Número de rutas: " << bestNumRutas << endl;
     printRutas(bestSol, depotId, "Rutas de la mejor solución:");
+
+    // Print COST and TIME for experiment automation
+    cout << "COST: " << bestCost << endl;
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsed = end - start;
+    cout << "TIME: " << elapsed.count() << endl;
 
   } catch (const exception &e) {
     cerr << "Error leyendo archivo: " << e.what() << endl;
