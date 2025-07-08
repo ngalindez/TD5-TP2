@@ -1,2 +1,2 @@
-/usr/bin/ar qc lib/libcvrp_algorithms.a CMakeFiles/cvrp_algorithms.dir/src/HeuristicaClarkeWright.cpp.o CMakeFiles/cvrp_algorithms.dir/src/HeuristicaInsercionCercana.cpp.o CMakeFiles/cvrp_algorithms.dir/src/CWwLocalSearch.cpp.o CMakeFiles/cvrp_algorithms.dir/src/OperadorSwap.cpp.o CMakeFiles/cvrp_algorithms.dir/src/OperadorRelocate.cpp.o CMakeFiles/cvrp_algorithms.dir/src/GRASP.cpp.o
-/usr/bin/ranlib lib/libcvrp_algorithms.a
+/Library/Developer/CommandLineTools/usr/bin/ar qc lib/libcvrp_algorithms.a CMakeFiles/cvrp_algorithms.dir/src/HeuristicaClarkeWright.cpp.o CMakeFiles/cvrp_algorithms.dir/src/HeuristicaInsercionCercana.cpp.o CMakeFiles/cvrp_algorithms.dir/src/CWwLocalSearch.cpp.o CMakeFiles/cvrp_algorithms.dir/src/OperadorSwap.cpp.o CMakeFiles/cvrp_algorithms.dir/src/OperadorRelocate.cpp.o CMakeFiles/cvrp_algorithms.dir/src/GRASP.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib lib/libcvrp_algorithms.a

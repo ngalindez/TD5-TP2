@@ -80,6 +80,14 @@ target_link_libraries(cvrp_solver cvrp_algorithms cvrp_core)
 target_include_directories(cvrp_solver PRIVATE src)
 
 # =============================================================================
+# Main experiment target
+# =============================================================================
+
+add_executable(main_experiment experiments/main_experiment.cpp)
+target_link_libraries(main_experiment cvrp_algorithms cvrp_core)
+target_include_directories(main_experiment PRIVATE src)
+
+# =============================================================================
 # Test targets
 # =============================================================================
 

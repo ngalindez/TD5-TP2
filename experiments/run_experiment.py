@@ -59,7 +59,7 @@ def get_best_cost(instance_file):
     return None
 
 def run_experiment(instance_file, heuristic, local_search):
-    args = ["./build/main_experiment", os.path.join(INSTANCE_DIR, instance_file), heuristic]
+    args = ["./build/bin/main_experiment", os.path.join(INSTANCE_DIR, instance_file), heuristic]
     if heuristic != "grasp":
         args.append(local_search)
     else:

@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspaces/TD5-TP2/tests/test_CWwLocalSearch.cpp" "CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o.d"
-  "/workspaces/TD5-TP2/tests/test_Cliente.cpp" "CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o.d"
-  "/workspaces/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp" "CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o.d"
-  "/workspaces/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp" "CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o.d"
-  "/workspaces/TD5-TP2/tests/test_OperadorRelocate.cpp" "CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o.d"
-  "/workspaces/TD5-TP2/tests/test_OperadorSwap.cpp" "CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o.d"
-  "/workspaces/TD5-TP2/tests/test_Ruta.cpp" "CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o.d"
-  "/workspaces/TD5-TP2/tests/test_Solucion.cpp" "CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o.d"
+  "/Users/nicogalindez/UTDT/TD5/TD5-TP2/tests/test_CWwLocalSearch.cpp" "CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_CWwLocalSearch.cpp.o.d"
+  "/Users/nicogalindez/UTDT/TD5/TD5-TP2/tests/test_Cliente.cpp" "CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_Cliente.cpp.o.d"
+  "/Users/nicogalindez/UTDT/TD5/TD5-TP2/tests/test_HeuristicaClarkeWright.cpp" "CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_HeuristicaClarkeWright.cpp.o.d"
+  "/Users/nicogalindez/UTDT/TD5/TD5-TP2/tests/test_HeuristicaInsercionCercana.cpp" "CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_HeuristicaInsercionCercana.cpp.o.d"
+  "/Users/nicogalindez/UTDT/TD5/TD5-TP2/tests/test_OperadorRelocate.cpp" "CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_OperadorRelocate.cpp.o.d"
+  "/Users/nicogalindez/UTDT/TD5/TD5-TP2/tests/test_OperadorSwap.cpp" "CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_OperadorSwap.cpp.o.d"
+  "/Users/nicogalindez/UTDT/TD5/TD5-TP2/tests/test_Ruta.cpp" "CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_Ruta.cpp.o.d"
+  "/Users/nicogalindez/UTDT/TD5/TD5-TP2/tests/test_Solucion.cpp" "CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o" "gcc" "CMakeFiles/runTests.dir/tests/test_Solucion.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
