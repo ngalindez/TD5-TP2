@@ -73,13 +73,13 @@ Mostrá el menú de comandos disponibles con:
 - `build` — Compila el proyecto
 - `clean` — Limpia el build
 - `run` — Ejecuta la app principal y pide el nombre de la instancia
-- `instance <nombre>` — Corre el solver directamente en una instancia específica
+- `instancia <nombre | path>` — Corre el solver directamente en una instancia específica
 - `test` — Ejecuta todos los tests
-- `test-heuristics` — Solo tests de heurísticas
+- `test-heuristica-CW` — Solo tests de heurística Clarke & Wright
+- `test-heuristica-IC` — Solo tests de heurística Inserción Cercana
 - `test-local` — Solo tests de búsqueda local
-- `test-insertion` — Solo tests de inserción
-- `test-operators` — Solo tests de operadores
-- `help` — Muestra ayuda
+- `test-operadores` — Solo tests de operadores
+- `help` — Muestra mensaje de ayuda con todos los comandos
 
 ### Ejemplo de uso rápido
 
@@ -95,7 +95,7 @@ Mostrá el menú de comandos disponibles con:
 
    O directamente en una instancia:
    ```bash
-   ./run.sh instance <nombre_instancia>
+   ./run.sh instancia <nombre | path>
    ```
 
 3. **Correr todos los tests**  
@@ -105,10 +105,10 @@ Mostrá el menú de comandos disponibles con:
 
    O tests específicos:
    ```bash
-   ./run.sh test-heuristics
+   ./run.sh test-heuristica-CW
+   ./run.sh test-heuristica-IC
    ./run.sh test-local
-   ./run.sh test-insertion
-   ./run.sh test-operators
+   ./run.sh test-operadores
    ```
 
 ---
@@ -157,27 +157,4 @@ Resultado tras aplicar búsqueda local:
 
 ```
 [Swap+Reloc] Costo inicial=1454.11  Costo final=1437.37  Δ=16.73  Tiempo=1.58s
-```
-
----
-
-## Estructura del Proyecto
-
-```
-.
-├── CMakeLists.txt
-├── run.sh              # Script para construir/ejecutar/tests
-├── instancias/         # Instancias VRPLIB de ejemplo
-├── src/                # Código fuente
-│   ├── Cliente.cpp/.h
-│   ├── Ruta.cpp/.h
-│   ├── Solucion.cpp/.h
-│   ├── VRPLIBReader.cpp/.h
-│   ├── HeuristicaClarkeWright.cpp/.h
-│   ├── HeuristicaInsercionCercana.cpp/.h
-│   ├── GRASP.cpp/.h
-│   ├── OperadorSwap.cpp/.h
-│   ├── OperadorRelocate.cpp/.h
-│   └── CWwLocalSearch.cpp/.h
-└── build/              # Archivos generados por cmake & make
 ```
