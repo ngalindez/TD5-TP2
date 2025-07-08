@@ -13,7 +13,6 @@ Esta herramienta de línea de comandos permite resolver el Problema de Ruteo de 
 - [Construcción](#-construcción)
 - [Uso](#-uso)
 - [Ejemplo](#-ejemplo)
-- [Notas](#-notas)
 - [Estructura del proyecto](#-estructura-del-proyecto)
 
 ---
@@ -70,34 +69,23 @@ El ejecutable principal (`cvrp_solver`) quedará en el directorio `build/`.
 
 ## 💻 Uso
 
-### 1. Interactivo
+### Por script 'run.sh'
 
 ```bash
-./build/cvrp_solver
+./run.sh 
 ```
-Introduce la ruta al archivo `.vrp`.
+Dara la lista de comandos disponibles para usar el codigo.
 
 Navega por el menú en pantalla para elegir heurística, metaheurística y/o operadores de búsqueda local.
 
 Opcionalmente, tras cada paso puedes elegir mostrar o no el detalle completo de rutas.
-
-### 2. Por script (`run.sh`)
-
-```bash
-./run.sh <ruta_instancia.vrp>
-```
-Compila (si no está compilado) y ejecuta el solver sobre la instancia indicada.
-
-Ideal para ejecuciones por lotes o experimentos automatizados.
-
-La salida incluye líneas con `COST:` y `TIME:`, fáciles de parsear.
 
 ---
 
 ## 📝 Ejemplo
 
 ```bash
-$ ./run.sh instancias/2l-cvrp-0/E200-17C.vrp
+$ ./run.sh run
 ```
 
 ```
@@ -121,15 +109,6 @@ Seleccione: 2
 Seleccione: 4
 
 ```
-
----
-
-## ⚠️ Notas
-
-- **Errores de compilación:** Verifica que dispones de un compilador C++17 y CMake instalado.
-- **Fallos por segmentación:** Comprueba que tu archivo de instancia respeta el formato VRPLIB y que los IDs de nodo no desbordan las dimensiones de la matriz de distancias.
-- Para extender o modificar heurísticas y operadores, explora el código en `src/`.
-
 ---
 
 ## 📁 Estructura del proyecto
