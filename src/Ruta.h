@@ -13,8 +13,8 @@ private:
     int demandaActual;
     double costoTotal;
     int idDeposito;
-    const vector<vector<double>>* distMatrix;
-    const vector<Cliente>* allClientes;
+    vector<vector<double>> distMatrix;
+    vector<Cliente> allClientes;
 
 public:
     // Constructor básico
@@ -34,8 +34,8 @@ public:
     int getCapacidadMaxima() const;
     int getDemandaActual() const;
     int getIdDeposito() const;
-    const vector<vector<double>>* getDistMatrix() const;
-    const vector<Cliente>* getAllClientes() const;
+    const vector<vector<double>> getDistMatrix() const;
+    const vector<Cliente> getAllClientes() const;
     
     // Operador de igualdad
     bool operator==(const Ruta& otra) const {

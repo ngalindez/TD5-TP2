@@ -20,35 +20,35 @@ HeuristicaInsercionCercana::HeuristicaInsercionCercana(
 
 Solucion HeuristicaInsercionCercana::resolver() {
     std::vector<Ruta> rutas;
-    
-    // Use the original distMatrix and id2pos mapping
-    Solucion sol(clientes, distMatrix, numVehiculos);
 
-    // Find the maximum position in id2pos to size the visited vector correctly
-    int maxPos = 0;
-    for (const auto& pair : id2pos) {
-        maxPos = std::max(maxPos, pair.second);
-    }
-    std::vector<bool> visitado(maxPos + 1, false);
-    visitado.at(id2pos.at(depotId)) = true;
+    // Use the original matrix directly (already indexed by node IDs)
+    std::vector<std::vector<double>> idDistMatrix = distMatrix;
+
+    Solucion sol(clientes, idDistMatrix, numVehiculos);
+
+    // Prepare visited flags by client ID
+    int maxId = static_cast<int>(idDistMatrix.size()) - 1;
+    std::vector<bool> visitado(maxId + 1, false);
+    visitado.at(depotId) = true;
 
     size_t cantidadVisitados = 0;
     size_t cantidadClientes = clientes.size();
 
     while (cantidadVisitados < cantidadClientes) {
-        Ruta ruta(capacidadVehiculo, depotId, distMatrix, clientes);
+        Ruta ruta(capacidadVehiculo, depotId, idDistMatrix, clientes);
         int actual = depotId;
         int carga = 0;
         bool added = false;
+
         while (true) {
-            Cliente masCercano = buscarMasCercano(actual, visitado);
+            Cliente masCercano = buscarMasCercano(actual, visitado, idDistMatrix);
             if (masCercano.getId() == depotId) {
                 break;
             }
             int demanda = masCercano.getDemand();
             if (carga + demanda <= capacidadVehiculo) {
                 ruta.agregarCliente(masCercano.getId());
-                visitado.at(id2pos.at(masCercano.getId())) = true;
+                visitado.at(masCercano.getId()) = true;
                 carga += demanda;
                 actual = masCercano.getId();
                 cantidadVisitados++;
@@ -62,16 +62,7 @@ Solucion HeuristicaInsercionCercana::resolver() {
         } else {
             break;
         }
-        
     }
-
-    std::cout << "\n[InsercionCercana] Todos los clientes visitados? " << (cantidadVisitados == cantidadClientes ? "SI" : "NO") << std::endl;
-    std::cout << "[InsercionCercana] Clientes visitados: ";
-    for (const auto& c : clientes) {
-        int pos = id2pos.at(c.getId());
-        std::cout << c.getId() << ":" << visitado[pos] << " ";
-    }
-    std::cout << std::endl;
 
     for (const auto& ruta : rutas) {
         sol.agregarRuta(ruta);
@@ -80,20 +71,22 @@ Solucion HeuristicaInsercionCercana::resolver() {
     return sol;
 }
 
-Cliente HeuristicaInsercionCercana::buscarMasCercano(int desde, const std::vector<bool>& visitado) {
+Cliente HeuristicaInsercionCercana::buscarMasCercano(
+    int desde,
+    const std::vector<bool>& visitado,
+    const std::vector<std::vector<double>>& idDistMatrix) {
     double mejorDist = std::numeric_limits<double>::max();
     Cliente mejor(depotId, 0);
 
     for (const Cliente& c : clientes) {
-        int pos = id2pos.at(c.getId());
-        if (!visitado[pos] && c.getId() != depotId) {
-            double dist = distMatrix.at(id2pos.at(desde)).at(pos);
+        int cid = c.getId();
+        if (!visitado[cid] && cid != depotId) {
+            double dist = idDistMatrix[desde][cid];
             if (dist < mejorDist) {
                 mejorDist = dist;
                 mejor = c;
             }
         }
     }
-
     return mejor;
 }

@@ -17,8 +17,7 @@ public:
     Solucion resolver();
 
 private:
-    Cliente buscarMasCercano(int desde, const std::vector<bool>& visitado);
-
+    Cliente buscarMasCercano(int desde, const std::vector<bool>& visitado, const std::vector<std::vector<double>>& distMatrix);
     std::vector<Cliente> clientes;
     const std::vector<std::vector<double>>& distMatrix;
     std::unordered_map<int,int> id2pos;

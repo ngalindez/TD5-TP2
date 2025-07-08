@@ -44,7 +44,7 @@ Solucion OperadorRelocate::mejorRelocateEntreRutas(size_t i, size_t j) {
 
     // Obtener demanda individual del cliente
     int demanda_cliente = 0;
-    const vector<Cliente> &allClientes = *ruta_i.getAllClientes();
+    const vector<Cliente> &allClientes = ruta_i.getAllClientes();
     for (const auto &cliente : allClientes) {
       if (cliente.getId() == cliente_a_mover) {
         demanda_cliente = cliente.getDemand();
@@ -86,10 +86,10 @@ Solucion OperadorRelocate::mejorRelocateEntreRutas(size_t i, size_t j) {
         // Crear nuevas rutas
         Ruta nuevaRuta_i =
             Ruta(ruta_i.getCapacidadMaxima(),
-                 ruta_i.getIdDeposito(), distMatrix, *ruta_i.getAllClientes(), nuevos_clientes_i);
+                 ruta_i.getIdDeposito(), distMatrix, ruta_i.getAllClientes(), nuevos_clientes_i);
         Ruta nuevaRuta_j =
             Ruta(ruta_j.getCapacidadMaxima(),
-                 ruta_j.getIdDeposito(), distMatrix, *ruta_j.getAllClientes(), nuevos_clientes_j);
+                 ruta_j.getIdDeposito(), distMatrix, ruta_j.getAllClientes(), nuevos_clientes_j);
 
         // Verificar si las nuevas rutas son factibles
         if (nuevaRuta_i.esFactible() && nuevaRuta_j.esFactible()) {

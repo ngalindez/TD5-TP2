@@ -17,8 +17,8 @@ Ruta::Ruta(
   demandaActual(0),
   costoTotal(0),
   idDeposito(deposito),
-  distMatrix(&distMatrix),
-  allClientes(&allClientes)
+  distMatrix(distMatrix),
+  allClientes(allClientes)
 {
   // Si el vector inicial ya contiene el depósito, úsalo tal cual
   if (!clientesIniciales.empty() &&
@@ -60,7 +60,7 @@ void Ruta::agregarCliente(int cliente) {
 
   // Encontrar la demanda del cliente
   int demanda = 0;
-  for (const auto &c : *allClientes) {
+  for (const auto &c : allClientes) {
     if (c.getId() == cliente) {
       demanda = c.getDemand();
       break;
@@ -87,7 +87,7 @@ void Ruta::eliminarCliente(int cliente) {
   if (it != clientes.end() - 1) {
     // Encontrar la demanda del cliente
     int demanda = 0;
-    for (const auto &c : *allClientes) {
+    for (const auto &c : allClientes) {
       if (c.getId() == cliente) {
         demanda = c.getDemand();
         break;
@@ -103,7 +103,7 @@ void Ruta::eliminarCliente(int cliente) {
 double Ruta::calcularCosto() {
   double costo = 0;
   for (size_t i = 0; i < clientes.size() - 1; i++) {
-    double d = (*distMatrix)[clientes[i]][clientes[i+1]];
+    double d = (distMatrix)[clientes[i]][clientes[i+1]];
     costo += d;
   }
   return costo;
@@ -129,6 +129,6 @@ int Ruta::getDemandaActual() const { return demandaActual; }
 
 int Ruta::getIdDeposito() const { return idDeposito; }
 
-const vector<vector<double>> *Ruta::getDistMatrix() const { return distMatrix; }
+const vector<vector<double>> Ruta::getDistMatrix() const { return distMatrix; }
 
-const vector<Cliente> *Ruta::getAllClientes() const { return allClientes; }
+const vector<Cliente> Ruta::getAllClientes() const { return allClientes; }

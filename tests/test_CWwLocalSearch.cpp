@@ -134,20 +134,8 @@ TEST_CASE("CWwLocalSearch: Mejora intra-ruta significativa", "[CWwLocalSearch]")
     vector<int> rutaMala = {0, 1, 4, 3, 2, 0};
     vector<Ruta> rutas = {Ruta(capacidad, depotId, distMatrix, clientes, rutaMala)};
     Solucion suboptima(clientes, distMatrix, rutas.size(), rutas);
-    std::cout << "Costo subóptimo: " << suboptima.getCostoTotal() << std::endl;
-    for (const auto& ruta : suboptima.getRutas()) {
-        std::cout << "Ruta subóptima: ";
-        for (int id : ruta.getClientes()) std::cout << id << " ";
-        std::cout << std::endl;
-    }
     // Aplicar búsqueda local (swap)
     Solucion mejorada = aplicarSwapHastaMejorar(suboptima);
-    std::cout << "Costo mejorado: " << mejorada.getCostoTotal() << std::endl;
-    for (const auto& ruta : mejorada.getRutas()) {
-        std::cout << "Ruta mejorada: ";
-        for (int id : ruta.getClientes()) std::cout << id << " ";
-        std::cout << std::endl;
-    }
     REQUIRE(mejorada.getCostoTotal() <= suboptima.getCostoTotal());
     REQUIRE(suboptima.getCostoTotal() > 100);
 }
@@ -183,21 +171,9 @@ TEST_CASE("CWwLocalSearch: Mejora significativa en rutas con costos desbalancead
         Ruta(capacidad, depotId, distMatrix, clientes, ruta2)
     };
     Solucion suboptima(clientes, distMatrix, rutas.size(), rutas);
-    std::cout << "Costo subóptimo: " << suboptima.getCostoTotal() << std::endl;
-    for (const auto& ruta : suboptima.getRutas()) {
-        std::cout << "Ruta subóptima: ";
-        for (int id : ruta.getClientes()) std::cout << id << " ";
-        std::cout << std::endl;
-    }
     // Aplicar búsqueda local (swap y relocate)
     Solucion trasSwap = aplicarSwapHastaMejorar(suboptima);
     Solucion mejorada = aplicarRelocateHastaMejorar(trasSwap);
-    std::cout << "Costo mejorado: " << mejorada.getCostoTotal() << std::endl;
-    for (const auto& ruta : mejorada.getRutas()) {
-        std::cout << "Ruta mejorada: ";
-        for (int id : ruta.getClientes()) std::cout << id << " ";
-        std::cout << std::endl;
-    }
     REQUIRE(mejorada.getCostoTotal() <= suboptima.getCostoTotal());
     REQUIRE(suboptima.getCostoTotal() == 26);
 }

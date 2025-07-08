@@ -37,15 +37,12 @@ bool Solucion::agregarRuta(const Ruta& ruta) {
   return true;
 }
 
-
-// MEJORAR, NO PASAR RUTA COMO PARÁMETRO
 bool Solucion::removerRuta(size_t index) {
   if (index >= _rutas.size()) return false;
   _costoTotal -= _rutas[index].getCosto();
   _rutas.erase(_rutas.begin() + index);
   return true;
 }
-
 
 double Solucion::getCostoTotal() const { return _costoTotal; }
 
