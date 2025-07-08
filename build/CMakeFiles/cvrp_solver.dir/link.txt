@@ -1,1 +1,0 @@
-/usr/bin/g++ -g -O0 -Wall -Wextra CMakeFiles/cvrp_solver.dir/src/main.cpp.o -o bin/cvrp_solver  lib/libcvrp_algorithms.a lib/libcvrp_core.a

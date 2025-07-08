@@ -30,64 +30,47 @@ endif()
 # Source files organization
 # =============================================================================
 
-# Core library sources
-set(CORE_SOURCES
-    src/Cliente.cpp
-    src/Ruta.cpp
-    src/Solucion.cpp
-    src/VRPLIBReader.cpp
-)
-
-# Algorithm sources
-set(ALGORITHM_SOURCES
+# List all your source files (except main.cpp and main_experiment.cpp)
+set(SRC_FILES
+    src/GRASP.cpp
     src/HeuristicaClarkeWright.cpp
     src/HeuristicaInsercionCercana.cpp
-    src/CWwLocalSearch.cpp
-    src/OperadorSwap.cpp
     src/OperadorRelocate.cpp
-    src/GRASP.cpp
+    src/OperadorSwap.cpp
+    src/Ruta.cpp
+    src/Solucion.cpp
+    src/Cliente.cpp
+    src/VRPLIBReader.cpp
+    # ...add any other .cpp files needed
 )
 
-# All sources combined
-set(ALL_SOURCES ${CORE_SOURCES} ${ALGORITHM_SOURCES})
+# Interactive menu executable
+add_executable(solver src/main.cpp ${SRC_FILES})
 
-# Test files
-file(GLOB TEST_FILES tests/test_*.cpp)
+# Experiment script-friendly executable
+add_executable(experiment experiments/main_experiment.cpp ${SRC_FILES})
+
+# If you need to link libraries (e.g., pthread, math), add:
+# target_link_libraries(solver m)
+# target_link_libraries(experiment m)
 
 # =============================================================================
 # Core library target
 # =============================================================================
 
-add_library(cvrp_core STATIC ${CORE_SOURCES})
-target_include_directories(cvrp_core PUBLIC src)
-target_compile_features(cvrp_core PUBLIC cxx_std_17)
-
 # =============================================================================
 # Algorithm library target
 # =============================================================================
 
-add_library(cvrp_algorithms STATIC ${ALGORITHM_SOURCES})
-target_include_directories(cvrp_algorithms PUBLIC src)
-target_compile_features(cvrp_algorithms PUBLIC cxx_std_17)
-target_link_libraries(cvrp_algorithms cvrp_core)
-
 # =============================================================================
 # Main application target
 # =============================================================================
-
-add_executable(cvrp_solver src/main.cpp)
-target_link_libraries(cvrp_solver cvrp_algorithms cvrp_core)
-target_include_directories(cvrp_solver PRIVATE src)
 
 # =============================================================================
 # Test targets
 # =============================================================================
 
 # Main test executable
-add_executable(runTests ${TEST_FILES})
-target_link_libraries(runTests cvrp_algorithms cvrp_core)
-target_include_directories(runTests PRIVATE src tests)
-
 # Enable testing
 enable_testing()
 

@@ -1,117 +1,111 @@
+import os
 import subprocess
 import csv
-import os
-import shutil
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
+INSTANCE_DIR = "instancias/2l-cvrp-0"
+SOLUTION_DIR = os.path.join(INSTANCE_DIR, "soluciones")
+INSTANCE_FILES = [f for f in os.listdir(INSTANCE_DIR) if f.endswith('.dat') or f.endswith('.DAT')]
 
-# Configurable
-instances_dir = os.path.join(script_dir, "../benchmarks")
-# Try multiple possible solver locations
-possible_executables = [
-    os.path.join(script_dir, "../build/bin/cvrp_solver"),
-    os.path.join(script_dir, "../build/cvrp_solver"),
-    os.path.join(script_dir, "../bin/cvrp_solver")
-]
-executable = None
-for path in possible_executables:
-    if os.path.isfile(path) and os.access(path, os.X_OK):
-        executable = path
-        break
-if executable is None:
-    run_sh_path = os.path.join(script_dir, "../run.sh")
-    if os.path.isfile(run_sh_path) and os.access(run_sh_path, os.X_OK):
-        executable = run_sh_path
-        use_run_sh = True
+HEURISTICS = ["cw", "ni", "grasp"]
+LOCAL_SEARCH = ["none", "swap", "relocate", "both"]
+
+CSV_FILE = "experiments/results/output.csv"
+
+def parse_output(output):
+    result = {}
+    for line in output.splitlines():
+        if ':' in line:
+            key, value = line.split(':', 1)
+            result[key.strip()] = value.strip()
+    for k in ["capacity", "total_demand", "cost", "num_routes", "time"]:
+        if k in result:
+            try:
+                if k in ["capacity", "total_demand", "num_routes"]:
+                    result[k] = int(float(result[k]))
+                else:
+                    result[k] = float(result[k])
+            except Exception:
+                pass
+    return result
+
+def find_solution_file(instance_file):
+    # Busca un archivo de solución que coincida con el nombre base de la instancia
+    base = os.path.splitext(os.path.basename(instance_file))[0].lower()
+    for fname in os.listdir(SOLUTION_DIR):
+        if fname.lower().startswith(base):
+            return os.path.join(SOLUTION_DIR, fname)
+    return None
+
+def get_best_cost(instance_file):
+    sol_file = find_solution_file(instance_file)
+    if not sol_file:
+        return None
+    with open(sol_file) as f:
+        for line in f:
+            if line.strip().upper().startswith("COST"):
+                # Puede ser: COST    : 723.541  o  COST    :723.541
+                parts = line.split(":")
+                if len(parts) > 1:
+                    try:
+                        return float(parts[1].strip())
+                    except Exception:
+                        pass
+                # Alternativamente, buscar el primer número en la línea
+                for token in line.split():
+                    try:
+                        return float(token)
+                    except Exception:
+                        continue
+    return None
+
+def run_experiment(instance_file, heuristic, local_search):
+    args = ["./build/main_experiment", os.path.join(INSTANCE_DIR, instance_file), heuristic]
+    if heuristic != "grasp":
+        args.append(local_search)
     else:
-        print("ERROR: Could not find cvrp_solver executable or run.sh script. Please build the project.")
-        exit(1)
-else:
-    use_run_sh = False
-results_path = os.path.join(script_dir, "results/output.csv")
+        args.append("none")
+        args.append("100")  # Iteraciones
+        args.append("5")   # rcl_size
+    proc = subprocess.run(
+        args,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        timeout=120
+    )
+    output = proc.stdout.decode()
+    return output
 
-# Experiments definition
-experiments = [
-    {
-        "instance": "E051.dat",
-        "heuristic": "1",  # Clarke & Wright
-        "operator": "3",   # Both Swap + Relocate
-    },
-    {
-        "instance": "E051.dat",
-        "heuristic": "2",  # Nearest Insertion
-        "operator": "3",
-    },
-    {
-        "instance": "E051.dat",
-        "heuristic": "3",  # GRASP
-        "grasp_iter": "50",
-        "grasp_rcl": "3",
-    }
-]
+def main():
+    results = []
+    for instance_file in INSTANCE_FILES:
+        best = get_best_cost(instance_file)
+        for heuristic in HEURISTICS:
+            if heuristic == "grasp":
+                local_searches = ["none"]
+            else:
+                local_searches = LOCAL_SEARCH
+            for local_search in local_searches:
+                print(f"Running {instance_file} with {heuristic} + {local_search}")
+                output = run_experiment(instance_file, heuristic, local_search)
+                data = parse_output(output)
+                data["heuristic"] = heuristic
+                data["local_search"] = local_search
+                if best and data.get("cost"):
+                    data["gap"] = 100 * (data["cost"] - best) / best
+                else:
+                    data["gap"] = ""
+                data["best_known"] = best if best is not None else ""
+                results.append(data)
 
-# Prepare CSV
-os.makedirs(os.path.dirname(results_path), exist_ok=True)
-with open(results_path, "w", newline="") as csvfile:
-    writer = csv.writer(csvfile)
-    writer.writerow(["Instance", "Heuristic", "Operator", "Cost", "Time"])
-
-    for exp in experiments:
-        print(f"Running {exp['instance']} heuristic {exp['heuristic']}...")
-
-        # Build the input string as if the user typed it interactively
-        inputs = []
-        inputs.append(os.path.join(instances_dir, exp["instance"]))
-        inputs.append(exp["heuristic"])
-
-        if exp["heuristic"] == "3":
-            # GRASP requires extra inputs
-            inputs.append(exp["grasp_iter"])
-            inputs.append(exp["grasp_rcl"])
-        else:
-            # For heuristics 1 or 2, select operator
-            inputs.append(exp["operator"])
-            inputs.append("4")  # Exit immediately after operator
-
-        # Join all inputs as lines separated by \n
-        input_str = "\n".join(inputs) + "\n"
-
-        # Run the subprocess
-        if use_run_sh:
-            # Use run.sh run
-            result = subprocess.run(
-                [executable, "run"],
-                input=input_str,
-                capture_output=True,
-                text=True
-            )
-        else:
-            result = subprocess.run(
-                [executable],
-                input=input_str,
-                capture_output=True,
-                text=True
-            )
-
-        # Output raw for debugging
-        print(result.stdout)
-
-        # Extract COST and TIME
-        cost = None
-        time_ = None
-        for line in result.stdout.splitlines():
-            if line.startswith("COST:"):
-                cost = line.split(":")[1].strip()
-            if line.startswith("TIME:"):
-                time_ = line.split(":")[1].strip()
-
-        if cost is None or time_ is None:
-            print("WARNING: Could not find COST or TIME in output.")
-        
-        writer.writerow([
-            exp["instance"],
-            exp["heuristic"],
-            exp.get("operator", "-"),
-            cost,
-            time_
+    with open(CSV_FILE, "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=[
+            "instance", "capacity", "total_demand", "heuristic", "local_search",
+            "cost", "num_routes", "time", "gap", "best_known", "status", "msg"
         ])
+        writer.writeheader()
+        for row in results:
+            filtered_row = {k: row.get(k, "") for k in writer.fieldnames}
+            writer.writerow(filtered_row)
+
+if __name__ == "__main__":
+    main()
