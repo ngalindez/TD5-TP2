@@ -1,0 +1,30 @@
+# Ignore build artifacts
+build/
+*.o
+*.a
+*.so
+*.exe
+*.out
+*.log
+
+# Ignore CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Ignore test and temporary files
+Testing/
+*.tmp
+*.swp
+*.swo
+
+# Ignore editor/project files
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore results and extras if not source
+results/
+extras/
