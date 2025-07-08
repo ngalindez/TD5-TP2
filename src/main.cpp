@@ -43,9 +43,14 @@ Solucion runClarkeWright(const vector<Cliente>& clientes,
     HeuristicaClarkeWright hw(clientes, dist, cap, depot, numVeh);
     Solucion sol = hw.resolver();
     double dt = chrono::duration<double>(Clock::now() - t0).count();
-    cout << "[Clarke&Wright] Costo=" << sol.getCostoTotal()
-         << "  Rutas=" << sol.getRutas().size()
-         << "  Tiempo=" << dt << "s\n";
+    if(sol.esFactible() && sol.vistoTodos()){
+      cout << "[Clarke&Wright] Costo=" << sol.getCostoTotal()
+          << "  Rutas=" << sol.getRutas().size()
+          << "  Tiempo=" << dt << "s\n";
+    }
+    else{
+      cout << "La heuristica de Clarke & Wright no encontro una solución factible. Por favor intentar con otra heuristica." << endl;
+    }
     return sol;
 }
 
@@ -62,9 +67,14 @@ Solucion runNearestInsertion(const vector<Cliente>& clientes,
     HeuristicaInsercionCercana hic(clientes, dist, id2pos, cap, depot, numVeh);
     Solucion sol = hic.resolver();
     double dt = chrono::duration<double>(Clock::now() - t0).count();
-    cout << "[Inserción Cercana] Costo=" << sol.getCostoTotal()
+    if(sol.esFactible() && sol.vistoTodos()){
+      cout << "[Inserción Cercana] Costo=" << sol.getCostoTotal()
          << "  Rutas=" << sol.getRutas().size()
          << "  Tiempo=" << dt << "s\n";
+    }
+    else{
+      cout << "La heuristica de insercion cercana no encontro una solución factible. Por favor intentar con otra heuristica." << endl;
+    }
     return sol;
 }
 
@@ -83,9 +93,14 @@ Solucion runGRASP(const vector<Cliente>& clientes,
     GRASP g(clientes, dist, id2pos, cap, depot, numVeh, it, k);
     Solucion sol = g.resolver();
     double dt = chrono::duration<double>(Clock::now() - t0).count();
-    cout << "[GRASP] Costo=" << sol.getCostoTotal()
-         << "  Rutas=" << sol.getRutas().size()
-         << "  Tiempo=" << dt << "s\n";
+    if(sol.esFactible() && sol.vistoTodos()){
+      cout << "[GRASP] Costo=" << sol.getCostoTotal()
+           << "  Rutas=" << sol.getRutas().size()
+           << "  Tiempo=" << dt << "s\n";
+    }
+    else{
+      cout << "La meta-heuristica no encontro una solución factible. Por favor intentar con otra heuristica." << endl;
+    }
     return sol;
 }
 
@@ -198,12 +213,15 @@ int main(int argc, char* argv[]) {
           : /* h==3 */
             runGRASP            (clientes, dist, cap, depot, numVehic);
 
-        printRoutesIfDesired(sol);
-
-        string name = (h==1 ? "Clarke&Wright"
-                     : h==2 ? "Inserción Cercana"
-                            : "GRASP");
-        localSearchMenu(sol, name);
+        // Only proceed if the solution is feasible and all clients are visited
+        if (sol.esFactible() && sol.vistoTodos()) {
+            printRoutesIfDesired(sol);
+            string name = (h==1 ? "Clarke&Wright"
+                         : h==2 ? "Inserción Cercana"
+                                : "GRASP");
+            localSearchMenu(sol, name);
+        } else {
+        }
       }
 
     } catch (const exception &e) {
