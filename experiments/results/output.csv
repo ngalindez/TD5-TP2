@@ -1,478 +1,478 @@
-instance,capacity,total_demand,heuristic,local_search,cost,num_routes,time,gap,best_known,status,msg
-instancias/2l-cvrp-0/E076-15s.dat,100,1364,cw,none,1054.6,15,0.00394508,,,ok,
-instancias/2l-cvrp-0/E076-15s.dat,100,1364,cw,swap,1054.6,15,0.0515995,,,ok,
-instancias/2l-cvrp-0/E076-15s.dat,100,1364,cw,relocate,1054.6,15,0.0413507,,,ok,
-instancias/2l-cvrp-0/E076-15s.dat,100,1364,cw,both,1054.6,15,0.0775056,,,ok,
-instancias/2l-cvrp-0/E076-15s.dat,100,1364,ni,none,1142.27,15,0.00034125,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-15s.dat,100,1364,ni,swap,1133.75,15,0.0390023,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-15s.dat,100,1364,ni,relocate,1138.86,15,0.0393252,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-15s.dat,100,1364,ni,both,1130.34,15,0.077131,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-15s.dat,100,1364,grasp,none,726.65,15,8.0289,,,ok,
-instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,cw,none,534.448,4,0.00133171,,,ok,
-instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,cw,swap,534.448,4,0.000453375,,,ok,
-instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,cw,relocate,534.448,4,0.00059975,,,ok,
-instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,cw,both,534.448,4,0.000826416,,,ok,
-instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,ni,none,611.596,3,6.2459e-05,,,ok,
-instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,ni,swap,604.142,3,0.000185792,,,ok,
-instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,ni,relocate,592.348,3,0.000186167,,,ok,
-instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,ni,both,600.519,3,0.000294334,,,ok,
-instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,grasp,none,407.766,4,0.0499282,,,ok,
-instancias/2l-cvrp-0/E076-14u.dat,100,1364,cw,none,1033.83,14,0.00191654,0.4897982194634272,1028.791,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14u.dat,100,1364,cw,swap,1033.83,14,0.0333837,0.4897982194634272,1028.791,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14u.dat,100,1364,cw,relocate,1033.83,14,0.0328907,0.4897982194634272,1028.791,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14u.dat,100,1364,cw,both,1033.83,14,0.0648156,0.4897982194634272,1028.791,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14u.dat,100,1364,ni,none,985.702,14,0.0003255,-4.188314244584172,1028.791,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14u.dat,100,1364,ni,swap,977.181,14,0.0314683,-5.016567990971918,1028.791,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14u.dat,100,1364,ni,relocate,982.992,14,0.033736,-4.451730234809595,1028.791,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14u.dat,100,1364,ni,both,973.772,14,0.0646282,-5.347927810410462,1028.791,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14u.dat,100,1364,grasp,none,0.0,0,6.40292,,1028.791,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151-12b.dat,200,2235,cw,none,1133.43,12,0.0121064,,,ok,
-instancias/2l-cvrp-0/E151-12b.dat,200,2235,cw,swap,1133.43,12,0.0575777,,,ok,
-instancias/2l-cvrp-0/E151-12b.dat,200,2235,cw,relocate,1133.43,12,0.0575882,,,ok,
-instancias/2l-cvrp-0/E151-12b.dat,200,2235,cw,both,1133.43,12,0.102504,,,ok,
-instancias/2l-cvrp-0/E151-12b.dat,200,2235,ni,none,1353.27,12,0.0008095,,,ok,
-instancias/2l-cvrp-0/E151-12b.dat,200,2235,ni,swap,1349.4,12,0.0491637,,,ok,
-instancias/2l-cvrp-0/E151-12b.dat,200,2235,ni,relocate,1326.18,12,0.048702,,,ok,
-instancias/2l-cvrp-0/E151-12b.dat,200,2235,ni,both,1322.3,12,0.0961436,,,ok,
-instancias/2l-cvrp-0/E151-12b.dat,200,2235,grasp,none,1269.37,12,8.99237,,,ok,
-instancias/2l-cvrp-0/E151C14r.dat,2021,28048,cw,none,2398.04,14,0.014217,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151C14r.dat,2021,28048,cw,swap,2395.6,14,0.0873716,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151C14r.dat,2021,28048,cw,relocate,2398.04,14,0.084412,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151C14r.dat,2021,28048,cw,both,2395.6,14,0.156264,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151C14r.dat,2021,28048,ni,none,2713.93,14,0.00104792,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151C14r.dat,2021,28048,ni,swap,2709.43,14,0.0737578,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151C14r.dat,2021,28048,ni,relocate,2664.11,14,0.0758559,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151C14r.dat,2021,28048,ni,both,2659.62,14,0.148825,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151C14r.dat,2021,28048,grasp,none,0.0,0,13.8301,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151A15r.dat,1544,21831,cw,none,3124.49,15,0.0146934,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151A15r.dat,1544,21831,cw,swap,3119.64,15,0.132982,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151A15r.dat,1544,21831,cw,relocate,3120.98,15,0.0998305,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151A15r.dat,1544,21831,cw,both,3116.13,15,0.218026,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151A15r.dat,1544,21831,ni,none,3143.89,15,0.00114908,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151A15r.dat,1544,21831,ni,swap,3131.08,15,0.12384,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151A15r.dat,1544,21831,ni,relocate,3122.78,15,0.137195,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151A15r.dat,1544,21831,ni,both,3109.98,15,0.263188,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151A15r.dat,1544,21831,grasp,none,0.0,0,18.9174,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151-12c.dat,200,2235,cw,none,1133.43,12,0.0130518,9.927231146582246,1031.073,ok,
-instancias/2l-cvrp-0/E151-12c.dat,200,2235,cw,swap,1133.43,12,0.0601497,9.927231146582246,1031.073,ok,
-instancias/2l-cvrp-0/E151-12c.dat,200,2235,cw,relocate,1133.43,12,0.0593343,9.927231146582246,1031.073,ok,
-instancias/2l-cvrp-0/E151-12c.dat,200,2235,cw,both,1133.43,12,0.105957,9.927231146582246,1031.073,ok,
-instancias/2l-cvrp-0/E151-12c.dat,200,2235,ni,none,1355.42,12,0.000850084,31.45722950751304,1031.073,ok,
-instancias/2l-cvrp-0/E151-12c.dat,200,2235,ni,swap,1351.54,12,0.0469772,31.08092249530342,1031.073,ok,
-instancias/2l-cvrp-0/E151-12c.dat,200,2235,ni,relocate,1328.32,12,0.0487661,28.82889960264693,1031.073,ok,
-instancias/2l-cvrp-0/E151-12c.dat,200,2235,ni,both,1324.44,12,0.0952986,28.452592590437334,1031.073,ok,
-instancias/2l-cvrp-0/E151-12c.dat,200,2235,grasp,none,1265.27,12,9.05014,22.713910654240763,1031.073,ok,
-instancias/2l-cvrp-0/E021-06m.dat,58,329,cw,none,352.768,6,0.0009205,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-06m.dat,58,329,cw,swap,352.768,6,0.000697375,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-06m.dat,58,329,cw,relocate,352.768,6,0.000685583,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-06m.dat,58,329,cw,both,352.768,6,0.00126242,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-06m.dat,58,329,ni,none,458.496,6,6.1042e-05,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-06m.dat,58,329,ni,swap,445.159,6,0.00063725,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-06m.dat,58,329,ni,relocate,446.448,6,0.000619709,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-06m.dat,58,329,ni,both,445.159,6,0.001203,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-06m.dat,58,329,grasp,none,232.991,6,0.118794,,,ok,
-instancias/2l-cvrp-0/E101-10c.dat,200,1810,cw,none,833.509,10,0.00370271,1.702383116732576,819.557,ok,
-instancias/2l-cvrp-0/E101-10c.dat,200,1810,cw,swap,831.123,10,0.0223254,1.4112502242064957,819.557,ok,
-instancias/2l-cvrp-0/E101-10c.dat,200,1810,cw,relocate,832.186,10,0.0219235,1.5409544424609904,819.557,ok,
-instancias/2l-cvrp-0/E101-10c.dat,200,1810,cw,both,830.199,10,0.0401056,1.29850638820728,819.557,ok,
-instancias/2l-cvrp-0/E101-10c.dat,200,1810,ni,none,1146.38,10,0.000400583,39.87800726490044,819.557,ok,
-instancias/2l-cvrp-0/E101-10c.dat,200,1810,ni,swap,1113.2,10,0.0191915,35.82947860856536,819.557,ok,
-instancias/2l-cvrp-0/E101-10c.dat,200,1810,ni,relocate,1085.76,10,0.0191995,32.48132832737686,819.557,ok,
-instancias/2l-cvrp-0/E101-10c.dat,200,1810,ni,both,1052.91,10,0.0373192,28.473065326755805,819.557,ok,
-instancias/2l-cvrp-0/E101-10c.dat,200,1810,grasp,none,871.483,10,3.76961,6.335861935167405,819.557,ok,
-instancias/2l-cvrp-0/E076C09r.dat,1122,9520,cw,none,1334.84,9,0.00256338,,,ok,
-instancias/2l-cvrp-0/E076C09r.dat,1122,9520,cw,swap,1334.84,9,0.0103382,,,ok,
-instancias/2l-cvrp-0/E076C09r.dat,1122,9520,cw,relocate,1334.84,9,0.0119353,,,ok,
-instancias/2l-cvrp-0/E076C09r.dat,1122,9520,cw,both,1334.84,9,0.0183502,,,ok,
-instancias/2l-cvrp-0/E076C09r.dat,1122,9520,ni,none,1507.67,9,0.000283917,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076C09r.dat,1122,9520,ni,swap,1502.28,9,0.0102182,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076C09r.dat,1122,9520,ni,relocate,1473.07,9,0.00914925,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076C09r.dat,1122,9520,ni,both,1480.83,9,0.016977,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076C09r.dat,1122,9520,grasp,none,0.0,0,1.86468,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14s.dat,100,1364,cw,none,1033.83,14,0.00255738,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14s.dat,100,1364,cw,swap,1033.83,14,0.0337267,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14s.dat,100,1364,cw,relocate,1033.83,14,0.0337222,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14s.dat,100,1364,cw,both,1033.83,14,0.0661332,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14s.dat,100,1364,ni,none,985.702,14,0.000368791,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14s.dat,100,1364,ni,swap,977.181,14,0.0318736,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14s.dat,100,1364,ni,relocate,982.992,14,0.0321601,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14s.dat,100,1364,ni,both,973.772,14,0.0641764,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-14s.dat,100,1364,grasp,none,0.0,0,6.49683,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E023-03g.dat,4500,10189,cw,none,621.087,3,0.000952125,,,ok,
-instancias/2l-cvrp-0/E023-03g.dat,4500,10189,cw,swap,621.087,3,0.000248667,,,ok,
-instancias/2l-cvrp-0/E023-03g.dat,4500,10189,cw,relocate,621.087,3,0.000262042,,,ok,
-instancias/2l-cvrp-0/E023-03g.dat,4500,10189,cw,both,621.087,3,0.000358875,,,ok,
-instancias/2l-cvrp-0/E023-03g.dat,4500,10189,ni,none,489.088,3,6.0958e-05,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E023-03g.dat,4500,10189,ni,swap,489.088,3,0.000162125,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E023-03g.dat,4500,10189,ni,relocate,474.43,3,0.000156292,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E023-03g.dat,4500,10189,ni,both,474.43,3,0.000244792,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E023-03g.dat,4500,10189,grasp,none,534.295,3,0.0257355,,,ok,
-instancias/2l-cvrp-0/E135-07f.dat,2210,14620,cw,none,1219.32,7,0.0091735,4.846615005210863,1162.956,ok,
-instancias/2l-cvrp-0/E135-07f.dat,2210,14620,cw,swap,1219.32,7,0.0196258,4.846615005210863,1162.956,ok,
-instancias/2l-cvrp-0/E135-07f.dat,2210,14620,cw,relocate,1219.32,7,0.0175393,4.846615005210863,1162.956,ok,
-instancias/2l-cvrp-0/E135-07f.dat,2210,14620,cw,both,1219.32,7,0.0264293,4.846615005210863,1162.956,ok,
-instancias/2l-cvrp-0/E135-07f.dat,2210,14620,ni,none,1428.15,7,0.000545834,22.803442262647962,1162.956,ok,
-instancias/2l-cvrp-0/E135-07f.dat,2210,14620,ni,swap,1428.15,7,0.00923892,22.803442262647962,1162.956,ok,
-instancias/2l-cvrp-0/E135-07f.dat,2210,14620,ni,relocate,1366.05,7,0.00937779,17.463601374428617,1162.956,ok,
-instancias/2l-cvrp-0/E135-07f.dat,2210,14620,ni,both,1366.05,7,0.0184978,17.463601374428617,1162.956,ok,
-instancias/2l-cvrp-0/E135-07f.dat,2210,14620,grasp,none,1530.19,7,1.78898,31.577634923419303,1162.956,ok,
-instancias/2l-cvrp-0/E033-04g.dat,8000,29370,cw,none,843.098,4,0.00106567,,,ok,
-instancias/2l-cvrp-0/E033-04g.dat,8000,29370,cw,swap,843.098,4,0.0005775,,,ok,
-instancias/2l-cvrp-0/E033-04g.dat,8000,29370,cw,relocate,843.098,4,0.000569167,,,ok,
-instancias/2l-cvrp-0/E033-04g.dat,8000,29370,cw,both,843.098,4,0.000866792,,,ok,
-instancias/2l-cvrp-0/E033-04g.dat,8000,29370,ni,none,794.522,4,9.3625e-05,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E033-04g.dat,8000,29370,ni,swap,794.522,4,0.000397875,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E033-04g.dat,8000,29370,ni,relocate,792.949,4,0.000380542,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E033-04g.dat,8000,29370,ni,both,792.949,4,0.000629916,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E033-04g.dat,8000,29370,grasp,none,512.148,4,0.0691788,,,ok,
-instancias/2l-cvrp-0/E101C11r.dat,2043,20999,cw,none,1434.07,11,0.00491204,,,ok,
-instancias/2l-cvrp-0/E101C11r.dat,2043,20999,cw,swap,1434.07,11,0.0310604,,,ok,
-instancias/2l-cvrp-0/E101C11r.dat,2043,20999,cw,relocate,1429.58,11,0.0307058,,,ok,
-instancias/2l-cvrp-0/E101C11r.dat,2043,20999,cw,both,1429.58,11,0.0566363,,,ok,
-instancias/2l-cvrp-0/E101C11r.dat,2043,20999,ni,none,1446.74,11,0.000510083,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101C11r.dat,2043,20999,ni,swap,1446.74,11,0.0278625,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101C11r.dat,2043,20999,ni,relocate,1431.92,11,0.029617,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101C11r.dat,2043,20999,ni,both,1431.92,11,0.0547409,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101C11r.dat,2043,20999,grasp,none,1775.1,11,5.31795,,,ok,
-instancias/2l-cvrp-0/E076-08u.dat,180,1364,cw,none,794.741,8,0.00198217,7.024005429703386,742.582,ok,
-instancias/2l-cvrp-0/E076-08u.dat,180,1364,cw,swap,791.512,8,0.00752871,6.589171296907271,742.582,ok,
-instancias/2l-cvrp-0/E076-08u.dat,180,1364,cw,relocate,793.222,8,0.00764017,6.81944889587951,742.582,ok,
-instancias/2l-cvrp-0/E076-08u.dat,180,1364,cw,both,791.512,8,0.0134767,6.589171296907271,742.582,ok,
-instancias/2l-cvrp-0/E076-08u.dat,180,1364,ni,none,952.56,8,0.000259458,28.27674250116485,742.582,ok,
-instancias/2l-cvrp-0/E076-08u.dat,180,1364,ni,swap,944.823,8,0.00595004,27.23483736476241,742.582,ok,
-instancias/2l-cvrp-0/E076-08u.dat,180,1364,ni,relocate,948.789,8,0.00646242,27.768919796062928,742.582,ok,
-instancias/2l-cvrp-0/E076-08u.dat,180,1364,ni,both,941.644,8,0.0121116,26.806736495094146,742.582,ok,
-instancias/2l-cvrp-0/E076-08u.dat,180,1364,grasp,none,862.512,8,1.1697,16.150404938444503,742.582,ok,
-instancias/2l-cvrp-0/E101A11r.dat,1409,15203,cw,none,1932.66,11,0.00471246,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101A11r.dat,1409,15203,cw,swap,1932.66,11,0.0315463,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101A11r.dat,1409,15203,cw,relocate,1931.95,11,0.0307028,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101A11r.dat,1409,15203,cw,both,1931.95,11,0.0569121,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101A11r.dat,1409,15203,ni,none,2148.12,11,0.000498041,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101A11r.dat,1409,15203,ni,swap,2122.68,11,0.0275793,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101A11r.dat,1409,15203,ni,relocate,2107.52,11,0.0276571,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101A11r.dat,1409,15203,ni,both,2071.89,11,0.0538023,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101A11r.dat,1409,15203,grasp,none,0.0,0,5.36499,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-04g.dat,6000,22500,cw,none,388.772,4,0.000946542,,,ok,
-instancias/2l-cvrp-0/E022-04g.dat,6000,22500,cw,swap,385.497,4,0.000378833,,,ok,
-instancias/2l-cvrp-0/E022-04g.dat,6000,22500,cw,relocate,387.543,4,0.00035125,,,ok,
-instancias/2l-cvrp-0/E022-04g.dat,6000,22500,cw,both,384.267,4,0.000539083,,,ok,
-instancias/2l-cvrp-0/E022-04g.dat,6000,22500,ni,none,462.4,4,7.85e-05,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-04g.dat,6000,22500,ni,swap,449.416,4,0.000280583,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-04g.dat,6000,22500,ni,relocate,442.562,4,0.000270916,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-04g.dat,6000,22500,ni,both,442.562,4,0.000486042,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-04g.dat,6000,22500,grasp,none,268.835,4,0.0460288,,,ok,
-instancias/2l-cvrp-0/E030-03g.dat,4500,12750,cw,none,393.242,3,0.000991583,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E030-03g.dat,4500,12750,cw,swap,393.242,3,0.000351417,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E030-03g.dat,4500,12750,cw,relocate,393.242,3,0.000355708,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E030-03g.dat,4500,12750,cw,both,393.242,3,0.000441959,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E030-03g.dat,4500,12750,ni,none,611.596,3,6.7458e-05,,,ok,
-instancias/2l-cvrp-0/E030-03g.dat,4500,12750,ni,swap,604.142,3,0.000203042,,,ok,
-instancias/2l-cvrp-0/E030-03g.dat,4500,12750,ni,relocate,592.348,3,0.000199417,,,ok,
-instancias/2l-cvrp-0/E030-03g.dat,4500,12750,ni,both,600.519,3,0.000324541,,,ok,
-instancias/2l-cvrp-0/E030-03g.dat,4500,12750,grasp,none,520.869,3,0.0327343,,,ok,
-instancias/2l-cvrp-0/E026-08m.dat,48,367,cw,none,576.884,8,0.00204596,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E026-08m.dat,48,367,cw,swap,572.058,8,0.00185779,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E026-08m.dat,48,367,cw,relocate,576.884,8,0.00176258,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E026-08m.dat,48,367,cw,both,572.058,8,0.00338333,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E026-08m.dat,48,367,ni,none,528.62,8,9.9042e-05,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E026-08m.dat,48,367,ni,swap,528.62,8,0.00167037,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E026-08m.dat,48,367,ni,relocate,506.999,8,0.00161888,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E026-08m.dat,48,367,ni,both,506.999,8,0.00324387,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E026-08m.dat,48,367,grasp,none,0.0,0,0.318391,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E051-05e.dat,160,777,cw,none,514.243,5,0.000746417,-1.9763215029802919,524.611,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E051-05e.dat,160,777,cw,swap,514.243,5,0.00164179,-1.9763215029802919,524.611,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E051-05e.dat,160,777,cw,relocate,514.243,5,0.00150983,-1.9763215029802919,524.611,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E051-05e.dat,160,777,cw,both,514.243,5,0.00236475,-1.9763215029802919,524.611,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E051-05e.dat,160,777,ni,none,660.218,5,0.000123667,25.84905768274016,524.611,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E051-05e.dat,160,777,ni,swap,660.218,5,0.000997042,25.84905768274016,524.611,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E051-05e.dat,160,777,ni,relocate,653.917,5,0.00100442,24.647977263153088,524.611,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E051-05e.dat,160,777,ni,both,653.917,5,0.001931,24.647977263153088,524.611,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E051-05e.dat,160,777,grasp,none,670.285,5,0.194547,27.76800333961735,524.611,ok,
-instancias/2l-cvrp-0/E022-06m.dat,4000,22500,cw,none,467.917,6,0.000404125,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-06m.dat,4000,22500,cw,swap,467.917,6,0.00071925,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-06m.dat,4000,22500,cw,relocate,467.917,6,0.000745667,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-06m.dat,4000,22500,cw,both,467.917,6,0.00136404,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-06m.dat,4000,22500,ni,none,505.64,6,7.0042e-05,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-06m.dat,4000,22500,ni,swap,490.882,6,0.000659542,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-06m.dat,4000,22500,ni,relocate,503.488,6,0.000659583,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-06m.dat,4000,22500,ni,both,482.725,6,0.00125342,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E022-06m.dat,4000,22500,grasp,none,274.662,6,0.1266,,,ok,
-instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,cw,none,621.087,3,0.0004185,,,ok,
-instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,cw,swap,621.087,3,0.000241583,,,ok,
-instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,cw,relocate,621.087,3,0.000267292,,,ok,
-instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,cw,both,621.087,3,0.000330875,,,ok,
-instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,ni,none,652.654,4,7.0333e-05,,,ok,
-instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,ni,swap,638.545,4,0.000288042,,,ok,
-instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,ni,relocate,637.996,4,0.00027225,,,ok,
-instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,ni,both,623.886,4,0.000468958,,,ok,
-instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,grasp,none,476.617,3,0.0491855,,,ok,
-instancias/2l-cvrp-0/E033-05s.dat,8000,29370,cw,none,843.098,4,0.000556125,,,ok,
-instancias/2l-cvrp-0/E033-05s.dat,8000,29370,cw,swap,843.098,4,0.00054825,,,ok,
-instancias/2l-cvrp-0/E033-05s.dat,8000,29370,cw,relocate,843.098,4,0.000579584,,,ok,
-instancias/2l-cvrp-0/E033-05s.dat,8000,29370,cw,both,843.098,4,0.000815417,,,ok,
-instancias/2l-cvrp-0/E033-05s.dat,8000,29370,ni,none,1090.95,5,7.95e-05,,,ok,
-instancias/2l-cvrp-0/E033-05s.dat,8000,29370,ni,swap,1090.95,5,0.000589583,,,ok,
-instancias/2l-cvrp-0/E033-05s.dat,8000,29370,ni,relocate,1077.55,5,0.000616417,,,ok,
-instancias/2l-cvrp-0/E033-05s.dat,8000,29370,ni,both,1077.55,5,0.00115408,,,ok,
-instancias/2l-cvrp-0/E033-05s.dat,8000,29370,grasp,none,474.308,5,0.0910362,,,ok,
-instancias/2l-cvrp-0/E076-08s.dat,180,1364,cw,none,794.741,8,0.00227954,,,ok,
-instancias/2l-cvrp-0/E076-08s.dat,180,1364,cw,swap,791.512,8,0.00794596,,,ok,
-instancias/2l-cvrp-0/E076-08s.dat,180,1364,cw,relocate,793.222,8,0.00739617,,,ok,
-instancias/2l-cvrp-0/E076-08s.dat,180,1364,cw,both,791.512,8,0.0133703,,,ok,
-instancias/2l-cvrp-0/E076-08s.dat,180,1364,ni,none,952.56,8,0.000237041,,,ok,
-instancias/2l-cvrp-0/E076-08s.dat,180,1364,ni,swap,944.823,8,0.00620217,,,ok,
-instancias/2l-cvrp-0/E076-08s.dat,180,1364,ni,relocate,948.789,8,0.00595962,,,ok,
-instancias/2l-cvrp-0/E076-08s.dat,180,1364,ni,both,941.644,8,0.0124041,,,ok,
-instancias/2l-cvrp-0/E076-08s.dat,180,1364,grasp,none,821.844,8,1.1861,,,ok,
-instancias/2l-cvrp-0/E101-14s.dat,112,1458,cw,none,1139.07,14,0.00446942,,,ok,
-instancias/2l-cvrp-0/E101-14s.dat,112,1458,cw,swap,1139.07,14,0.0630265,,,ok,
-instancias/2l-cvrp-0/E101-14s.dat,112,1458,cw,relocate,1139.07,14,0.0615029,,,ok,
-instancias/2l-cvrp-0/E101-14s.dat,112,1458,cw,both,1139.07,14,0.105027,,,ok,
-instancias/2l-cvrp-0/E101-14s.dat,112,1458,ni,none,1289.1,14,0.000519708,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101-14s.dat,112,1458,ni,swap,1277.52,14,0.0469511,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101-14s.dat,112,1458,ni,relocate,1276.73,14,0.0536369,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101-14s.dat,112,1458,ni,both,1264.93,14,0.103758,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101-14s.dat,112,1458,grasp,none,980.503,14,10.9649,,,ok,
-instancias/2l-cvrp-0/E048-04y.dat,15,47,cw,none,43477.4,4,0.000880166,,,ok,
-instancias/2l-cvrp-0/E048-04y.dat,15,47,cw,swap,43335.4,4,0.00105287,,,ok,
-instancias/2l-cvrp-0/E048-04y.dat,15,47,cw,relocate,43477.4,4,0.00105179,,,ok,
-instancias/2l-cvrp-0/E048-04y.dat,15,47,cw,both,43335.4,4,0.00145933,,,ok,
-instancias/2l-cvrp-0/E048-04y.dat,15,47,ni,none,52006.2,4,0.000103875,,,ok,
-instancias/2l-cvrp-0/E048-04y.dat,15,47,ni,swap,51788.1,4,0.000563625,,,ok,
-instancias/2l-cvrp-0/E048-04y.dat,15,47,ni,relocate,50566.6,4,0.00057275,,,ok,
-instancias/2l-cvrp-0/E048-04y.dat,15,47,ni,both,50529.1,4,0.00100192,,,ok,
-instancias/2l-cvrp-0/E048-04y.dat,15,47,grasp,none,43140.5,4,0.107268,,,ok,
-instancias/2l-cvrp-0/E200-16b.dat,200,3186,cw,none,1385.67,16,0.0269143,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16b.dat,200,3186,cw,swap,1385.67,16,0.285344,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16b.dat,200,3186,cw,relocate,1385.67,16,0.341367,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16b.dat,200,3186,cw,both,1385.67,16,0.53158,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16b.dat,200,3186,ni,none,1493.03,16,0.00190092,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16b.dat,200,3186,ni,swap,1488.31,16,0.346657,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16b.dat,200,3186,ni,relocate,1482.17,16,0.272862,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16b.dat,200,3186,ni,both,1477.45,16,0.536154,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16b.dat,200,3186,grasp,none,0.0,0,55.3968,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101D11r.dat,1297,13592,cw,none,1605.78,11,0.005071,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101D11r.dat,1297,13592,cw,swap,1605.78,11,0.0317907,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101D11r.dat,1297,13592,cw,relocate,1605.78,11,0.0323871,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101D11r.dat,1297,13592,cw,both,1605.78,11,0.0545731,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101D11r.dat,1297,13592,ni,none,1823.46,11,0.000492708,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101D11r.dat,1297,13592,ni,swap,1817.59,11,0.0269988,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101D11r.dat,1297,13592,ni,relocate,1773.25,11,0.0283019,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101D11r.dat,1297,13592,ni,both,1767.38,11,0.0555486,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101D11r.dat,1297,13592,grasp,none,0.0,0,5.39983,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E045-04f.dat,2010,7220,cw,none,739.019,4,0.000717084,2.139201510349787,723.541,ok,
-instancias/2l-cvrp-0/E045-04f.dat,2010,7220,cw,swap,739.019,4,0.000932375,2.139201510349787,723.541,ok,
-instancias/2l-cvrp-0/E045-04f.dat,2010,7220,cw,relocate,739.019,4,0.00250304,2.139201510349787,723.541,ok,
-instancias/2l-cvrp-0/E045-04f.dat,2010,7220,cw,both,739.019,4,0.0125854,2.139201510349787,723.541,ok,
-instancias/2l-cvrp-0/E045-04f.dat,2010,7220,ni,none,931.591,4,0.00214025,28.75441751054881,723.541,ok,
-instancias/2l-cvrp-0/E045-04f.dat,2010,7220,ni,swap,918.435,4,0.0005635,26.936137689502033,723.541,ok,
-instancias/2l-cvrp-0/E045-04f.dat,2010,7220,ni,relocate,915.55,4,0.000817625,26.537404238322345,723.541,ok,
-instancias/2l-cvrp-0/E045-04f.dat,2010,7220,ni,both,841.056,4,0.00182512,16.241650438606793,723.541,ok,
-instancias/2l-cvrp-0/E045-04f.dat,2010,7220,grasp,none,943.89,4,0.107298,30.454252074174086,723.541,ok,
-instancias/2l-cvrp-0/E200-16c.dat,200,3186,cw,none,1385.67,16,0.026997,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16c.dat,200,3186,cw,swap,1385.67,16,0.280581,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16c.dat,200,3186,cw,relocate,1385.67,16,0.276033,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16c.dat,200,3186,cw,both,1385.67,16,0.554429,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16c.dat,200,3186,ni,none,1454.11,16,0.00186404,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16c.dat,200,3186,ni,swap,1450.05,16,0.275081,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16c.dat,200,3186,ni,relocate,1438.36,16,0.300208,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16c.dat,200,3186,ni,both,1437.37,16,0.505907,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-16c.dat,200,3186,grasp,none,0.0,0,52.3654,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-07s.dat,220,1364,cw,none,730.234,7,0.00193512,,,ok,
-instancias/2l-cvrp-0/E076-07s.dat,220,1364,cw,swap,730.234,7,0.00578304,,,ok,
-instancias/2l-cvrp-0/E076-07s.dat,220,1364,cw,relocate,730.234,7,0.00575354,,,ok,
-instancias/2l-cvrp-0/E076-07s.dat,220,1364,cw,both,730.234,7,0.00944021,,,ok,
-instancias/2l-cvrp-0/E076-07s.dat,220,1364,ni,none,907.16,7,0.000235541,,,ok,
-instancias/2l-cvrp-0/E076-07s.dat,220,1364,ni,swap,898.056,7,0.00431504,,,ok,
-instancias/2l-cvrp-0/E076-07s.dat,220,1364,ni,relocate,857.149,7,0.00425554,,,ok,
-instancias/2l-cvrp-0/E076-07s.dat,220,1364,ni,both,836.719,7,0.00835408,,,ok,
-instancias/2l-cvrp-0/E076-07s.dat,220,1364,grasp,none,821.237,7,0.82485,,,ok,
-instancias/2l-cvrp-0/E101-14u.dat,112,1458,cw,none,1139.07,14,0.00387429,4.397628788878621,1091.088,ok,
-instancias/2l-cvrp-0/E101-14u.dat,112,1458,cw,swap,1139.07,14,0.0574947,4.397628788878621,1091.088,ok,
-instancias/2l-cvrp-0/E101-14u.dat,112,1458,cw,relocate,1139.07,14,0.0533842,4.397628788878621,1091.088,ok,
-instancias/2l-cvrp-0/E101-14u.dat,112,1458,cw,both,1139.07,14,0.112052,4.397628788878621,1091.088,ok,
-instancias/2l-cvrp-0/E101-14u.dat,112,1458,ni,none,1289.1,14,0.000548625,18.148123707711928,1091.088,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101-14u.dat,112,1458,ni,swap,1277.52,14,0.056272,17.086797765166512,1091.088,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101-14u.dat,112,1458,ni,relocate,1276.73,14,0.0553645,17.014392972885783,1091.088,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101-14u.dat,112,1458,ni,both,1264.93,14,0.112122,15.932903670464722,1091.088,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101-14u.dat,112,1458,grasp,none,982.274,14,10.2826,-9.97298109776663,1091.088,ok,
-instancias/2l-cvrp-0/E200-17c.dat,200,3186,cw,none,1395.74,17,0.0263227,6.435515210302684,1311.348,ok,
-instancias/2l-cvrp-0/E200-17c.dat,200,3186,cw,swap,1395.74,17,0.32962,6.435515210302684,1311.348,ok,
-instancias/2l-cvrp-0/E200-17c.dat,200,3186,cw,relocate,1395.74,17,0.341425,6.435515210302684,1311.348,ok,
-instancias/2l-cvrp-0/E200-17c.dat,200,3186,cw,both,1395.74,17,0.608306,6.435515210302684,1311.348,ok,
-instancias/2l-cvrp-0/E200-17c.dat,200,3186,ni,none,1706.14,17,0.00197675,30.105814779905877,1311.348,ok,
-instancias/2l-cvrp-0/E200-17c.dat,200,3186,ni,swap,1683.19,17,0.320905,28.355707256960024,1311.348,ok,
-instancias/2l-cvrp-0/E200-17c.dat,200,3186,ni,relocate,1689.68,17,0.289747,28.850617837522925,1311.348,ok,
-instancias/2l-cvrp-0/E200-17c.dat,200,3186,ni,both,1672.74,17,0.571624,27.558817339104497,1311.348,ok,
-instancias/2l-cvrp-0/E200-17c.dat,200,3186,grasp,none,1474.8,17,60.699,12.46442591897803,1311.348,ok,
-instancias/2l-cvrp-0/E016-03m.dat,90,258,cw,none,249.381,3,0.000281291,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-03m.dat,90,258,cw,swap,249.381,3,0.000153,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-03m.dat,90,258,cw,relocate,249.381,3,0.000153833,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-03m.dat,90,258,cw,both,249.381,3,0.00021275,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-03m.dat,90,258,ni,none,267.076,3,4.6125e-05,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-03m.dat,90,258,ni,swap,267.076,3,0.000118833,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-03m.dat,90,258,ni,relocate,267.076,3,0.000113292,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-03m.dat,90,258,ni,both,267.076,3,0.000186208,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-03m.dat,90,258,grasp,none,189.461,3,0.017801,,,ok,
-instancias/2l-cvrp-0/E076-10e.dat,140,1364,cw,none,907.392,10,0.00196742,8.364074974174637,837.355,ok,
-instancias/2l-cvrp-0/E076-10e.dat,140,1364,cw,swap,901.653,10,0.0142686,7.678702581342441,837.355,ok,
-instancias/2l-cvrp-0/E076-10e.dat,140,1364,cw,relocate,907.392,10,0.0134238,8.364074974174637,837.355,ok,
-instancias/2l-cvrp-0/E076-10e.dat,140,1364,cw,both,901.653,10,0.0238513,7.678702581342441,837.355,ok,
-instancias/2l-cvrp-0/E076-10e.dat,140,1364,ni,none,856.434,10,0.000280417,2.2784840360420553,837.355,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-10e.dat,140,1364,ni,swap,854.477,10,0.0115717,2.044771930662617,837.355,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-10e.dat,140,1364,ni,relocate,840.819,10,0.0119844,0.4136835631243549,837.355,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-10e.dat,140,1364,ni,both,838.862,10,0.0227741,0.1799714577449168,837.355,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-10e.dat,140,1364,grasp,none,0.0,0,2.29817,,837.355,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E200-17b.dat,200,3186,cw,none,1395.74,17,0.027346,8.075837530827878,1291.445,ok,
-instancias/2l-cvrp-0/E200-17b.dat,200,3186,cw,swap,1395.74,17,0.356573,8.075837530827878,1291.445,ok,
-instancias/2l-cvrp-0/E200-17b.dat,200,3186,cw,relocate,1395.74,17,0.314054,8.075837530827878,1291.445,ok,
-instancias/2l-cvrp-0/E200-17b.dat,200,3186,cw,both,1395.74,17,0.659389,8.075837530827878,1291.445,ok,
-instancias/2l-cvrp-0/E200-17b.dat,200,3186,ni,none,1614.32,17,0.00198796,25.001064698845095,1291.445,ok,
-instancias/2l-cvrp-0/E200-17b.dat,200,3186,ni,swap,1609.59,17,0.294651,24.634808296133404,1291.445,ok,
-instancias/2l-cvrp-0/E200-17b.dat,200,3186,ni,relocate,1603.46,17,0.355774,24.16014619283052,1291.445,ok,
-instancias/2l-cvrp-0/E200-17b.dat,200,3186,ni,both,1598.73,17,0.578215,23.793889790118826,1291.445,ok,
-instancias/2l-cvrp-0/E200-17b.dat,200,3186,grasp,none,1474.4,17,60.6677,14.166689251187636,1291.445,ok,
-instancias/2l-cvrp-0/E076B09r.dat,1679,14906,cw,none,1342.64,9,0.00207354,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076B09r.dat,1679,14906,cw,swap,1342.64,9,0.0100272,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076B09r.dat,1679,14906,cw,relocate,1342.64,9,0.0103722,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076B09r.dat,1679,14906,cw,both,1342.64,9,0.0194993,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076B09r.dat,1679,14906,ni,none,1330.87,9,0.000274333,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076B09r.dat,1679,14906,ni,swap,1330.87,9,0.00830171,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076B09r.dat,1679,14906,ni,relocate,1295.62,9,0.00930242,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076B09r.dat,1679,14906,ni,both,1295.62,9,0.0180407,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076B09r.dat,1679,14906,grasp,none,0.0,0,1.83196,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E072-04f.dat,30000,114840,cw,none,172.033,4,0.00188725,-28.90405127844843,241.973,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E072-04f.dat,30000,114840,cw,swap,172.033,4,0.00259696,-28.90405127844843,241.973,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E072-04f.dat,30000,114840,cw,relocate,172.033,4,0.002188,-28.90405127844843,241.973,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E072-04f.dat,30000,114840,cw,both,172.033,4,0.00290608,-28.90405127844843,241.973,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E072-04f.dat,30000,114840,ni,none,224.592,4,0.000173958,-7.183032817711066,241.973,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E072-04f.dat,30000,114840,ni,swap,220.987,4,0.000976542,-8.672868460530728,241.973,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E072-04f.dat,30000,114840,ni,relocate,216.382,4,0.00104633,-10.575973352398824,241.973,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E072-04f.dat,30000,114840,ni,both,212.953,4,0.00178612,-11.99307360738595,241.973,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E072-04f.dat,30000,114840,grasp,none,327.613,4,0.190664,35.39237848850904,241.973,ok,
-instancias/2l-cvrp-0/E121-07c.dat,200,1375,cw,none,1071.07,7,0.00701417,2.7784841404259537,1042.115,ok,
-instancias/2l-cvrp-0/E121-07c.dat,200,1375,cw,swap,1070.31,7,0.0164,2.705555528900355,1042.115,ok,
-instancias/2l-cvrp-0/E121-07c.dat,200,1375,cw,relocate,1068.14,7,0.015267,2.4973251512549086,1042.115,ok,
-instancias/2l-cvrp-0/E121-07c.dat,200,1375,cw,both,1068.14,7,0.0256094,2.4973251512549086,1042.115,ok,
-instancias/2l-cvrp-0/E121-07c.dat,200,1375,ni,none,1112.11,7,0.000472875,6.716629162808316,1042.115,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E121-07c.dat,200,1375,ni,swap,1112.11,7,0.0102119,6.716629162808316,1042.115,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E121-07c.dat,200,1375,ni,relocate,1106.73,7,0.0101963,6.200371360166585,1042.115,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E121-07c.dat,200,1375,ni,both,1106.73,7,0.0191481,6.200371360166585,1042.115,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E121-07c.dat,200,1375,grasp,none,1035.25,7,1.84777,-0.65875647121479,1042.115,ok,
-instancias/2l-cvrp-0/E036-11h.dat,67,699,cw,none,706.607,11,0.00142246,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E036-11h.dat,67,699,cw,swap,706.607,11,0.00605721,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E036-11h.dat,67,699,cw,relocate,706.607,11,0.00577958,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E036-11h.dat,67,699,cw,both,706.607,11,0.0113957,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E036-11h.dat,67,699,ni,none,664.937,11,0.000133084,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E036-11h.dat,67,699,ni,swap,659.393,11,0.00573421,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E036-11h.dat,67,699,ni,relocate,652.073,11,0.00590004,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E036-11h.dat,67,699,ni,both,646.529,11,0.0112599,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E036-11h.dat,67,699,grasp,none,0.0,0,1.08993,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151B14r.dat,1918,25485,cw,none,2890.4,14,0.01359,,,ok,
-instancias/2l-cvrp-0/E151B14r.dat,1918,25485,cw,swap,2887.85,14,0.0859953,,,ok,
-instancias/2l-cvrp-0/E151B14r.dat,1918,25485,cw,relocate,2887.63,14,0.0837905,,,ok,
-instancias/2l-cvrp-0/E151B14r.dat,1918,25485,cw,both,2885.08,14,0.155639,,,ok,
-instancias/2l-cvrp-0/E151B14r.dat,1918,25485,ni,none,2969.59,14,0.00101842,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151B14r.dat,1918,25485,ni,swap,2948.43,14,0.0760465,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151B14r.dat,1918,25485,ni,relocate,2954.74,14,0.0748491,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151B14r.dat,1918,25485,ni,both,2933.57,14,0.151288,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151B14r.dat,1918,25485,grasp,none,0.0,0,13.9388,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076-07u.dat,220,1364,cw,none,730.234,7,0.00196862,5.707841877001301,690.804,ok,
-instancias/2l-cvrp-0/E076-07u.dat,220,1364,cw,swap,730.234,7,0.00603617,5.707841877001301,690.804,ok,
-instancias/2l-cvrp-0/E076-07u.dat,220,1364,cw,relocate,730.234,7,0.00558492,5.707841877001301,690.804,ok,
-instancias/2l-cvrp-0/E076-07u.dat,220,1364,cw,both,730.234,7,0.00966054,5.707841877001301,690.804,ok,
-instancias/2l-cvrp-0/E076-07u.dat,220,1364,ni,none,907.16,7,0.000219791,31.31944806341596,690.804,ok,
-instancias/2l-cvrp-0/E076-07u.dat,220,1364,ni,swap,898.056,7,0.00428175,30.001563395695463,690.804,ok,
-instancias/2l-cvrp-0/E076-07u.dat,220,1364,ni,relocate,857.149,7,0.00423167,24.079912681455237,690.804,ok,
-instancias/2l-cvrp-0/E076-07u.dat,220,1364,ni,both,836.719,7,0.00817083,21.122489157561347,690.804,ok,
-instancias/2l-cvrp-0/E076-07u.dat,220,1364,grasp,none,825.569,7,0.838407,19.50842786086936,690.804,ok,
-instancias/2l-cvrp-0/E101-08e.dat,200,1458,cw,none,889.001,8,0.00382921,7.609521918909237,826.136,ok,
-instancias/2l-cvrp-0/E101-08e.dat,200,1458,cw,swap,889.001,8,0.013306,7.609521918909237,826.136,ok,
-instancias/2l-cvrp-0/E101-08e.dat,200,1458,cw,relocate,889.001,8,0.0131859,7.609521918909237,826.136,ok,
-instancias/2l-cvrp-0/E101-08e.dat,200,1458,cw,both,889.001,8,0.0234229,7.609521918909237,826.136,ok,
-instancias/2l-cvrp-0/E101-08e.dat,200,1458,ni,none,1096.08,8,0.000415667,32.67549168659881,826.136,ok,
-instancias/2l-cvrp-0/E101-08e.dat,200,1458,ni,swap,1092.14,8,0.0102202,32.19857263210901,826.136,ok,
-instancias/2l-cvrp-0/E101-08e.dat,200,1458,ni,relocate,1088.54,8,0.0106438,31.76280902902186,826.136,ok,
-instancias/2l-cvrp-0/E101-08e.dat,200,1458,ni,both,1084.59,8,0.0205885,31.284679520079013,826.136,ok,
-instancias/2l-cvrp-0/E101-08e.dat,200,1458,grasp,none,1044.26,8,2.12413,26.40291671105,826.136,ok,
-instancias/2l-cvrp-0/E101B11r.dat,1842,19503,cw,none,1936.52,11,0.00457871,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101B11r.dat,1842,19503,cw,swap,1935.54,11,0.0308982,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101B11r.dat,1842,19503,cw,relocate,1936.52,11,0.0303876,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101B11r.dat,1842,19503,cw,both,1935.54,11,0.0558525,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101B11r.dat,1842,19503,ni,none,2085.89,11,0.000504583,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101B11r.dat,1842,19503,ni,swap,2072.59,11,0.024968,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101B11r.dat,1842,19503,ni,relocate,2054.49,11,0.0272725,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101B11r.dat,1842,19503,ni,both,2041.18,11,0.0531424,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E101B11r.dat,1842,19503,grasp,none,0.0,0,5.31236,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-04m.dat,85,329,cw,none,327.856,4,0.00104992,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-04m.dat,85,329,cw,swap,327.856,4,0.000328,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-04m.dat,85,329,cw,relocate,327.856,4,0.000321291,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-04m.dat,85,329,cw,both,327.856,4,0.000495917,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-04m.dat,85,329,ni,none,342.976,4,5.7958e-05,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-04m.dat,85,329,ni,swap,340.596,4,0.000248,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-04m.dat,85,329,ni,relocate,341.988,4,0.000243792,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-04m.dat,85,329,ni,both,340.596,4,0.000456625,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E021-04m.dat,85,329,grasp,none,306.17,4,0.0431519,,,ok,
-instancias/2l-cvrp-0/E076A10r.dat,1445,13756,cw,none,1645.5,10,0.00259375,,,ok,
-instancias/2l-cvrp-0/E076A10r.dat,1445,13756,cw,swap,1645.5,10,0.0133803,,,ok,
-instancias/2l-cvrp-0/E076A10r.dat,1445,13756,cw,relocate,1645.5,10,0.0133207,,,ok,
-instancias/2l-cvrp-0/E076A10r.dat,1445,13756,cw,both,1645.5,10,0.0239045,,,ok,
-instancias/2l-cvrp-0/E076A10r.dat,1445,13756,ni,none,1711.6,10,0.000308292,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076A10r.dat,1445,13756,ni,swap,1698.38,10,0.0116663,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076A10r.dat,1445,13756,ni,relocate,1642.16,10,0.0120438,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076A10r.dat,1445,13756,ni,both,1628.94,10,0.0228232,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076A10r.dat,1445,13756,grasp,none,0.0,0,2.32015,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151D14r.dat,1874,25578,cw,none,2539.07,14,0.0145023,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151D14r.dat,1874,25578,cw,swap,2539.07,14,0.083702,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151D14r.dat,1874,25578,cw,relocate,2539.07,14,0.0848414,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151D14r.dat,1874,25578,cw,both,2539.07,14,0.158136,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151D14r.dat,1874,25578,ni,none,2569.92,14,0.00115654,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151D14r.dat,1874,25578,ni,swap,2565.88,14,0.0762385,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151D14r.dat,1874,25578,ni,relocate,2534.87,14,0.075045,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151D14r.dat,1874,25578,ni,both,2530.84,14,0.147013,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E151D14r.dat,1874,25578,grasp,none,0.0,0,13.8123,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E041-14h.dat,60,798,cw,none,853.405,14,0.000649792,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E041-14h.dat,60,798,cw,swap,853.405,14,0.0132458,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E041-14h.dat,60,798,cw,relocate,853.405,14,0.013122,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E041-14h.dat,60,798,cw,both,853.405,14,0.0256855,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E041-14h.dat,60,798,ni,none,726.98,14,0.000177083,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E041-14h.dat,60,798,ni,swap,719.986,14,0.013347,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E041-14h.dat,60,798,ni,relocate,716.373,14,0.0148209,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E041-14h.dat,60,798,ni,both,713.517,14,0.0253988,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E041-14h.dat,60,798,grasp,none,0.0,0,2.488,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-05m.dat,55,258,cw,none,302.541,5,0.000992042,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-05m.dat,55,258,cw,swap,302.541,5,0.000360667,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-05m.dat,55,258,cw,relocate,302.541,5,0.00037225,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-05m.dat,55,258,cw,both,302.541,5,0.000661666,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-05m.dat,55,258,ni,none,310.294,5,5.0541e-05,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-05m.dat,55,258,ni,swap,310.294,5,0.000319583,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-05m.dat,55,258,ni,relocate,310.294,5,0.000315042,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-05m.dat,55,258,ni,both,310.294,5,0.000581291,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E016-05m.dat,55,258,grasp,none,160.435,5,0.0598489,,,ok,
-instancias/2l-cvrp-0/E076D09r.dat,1699,14175,cw,none,1372.28,9,0.00191967,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076D09r.dat,1699,14175,cw,swap,1372.28,9,0.011283,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076D09r.dat,1699,14175,cw,relocate,1371.41,9,0.0114754,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076D09r.dat,1699,14175,cw,both,1371.41,9,0.0207383,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076D09r.dat,1699,14175,ni,none,1391.86,9,0.000281084,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076D09r.dat,1699,14175,ni,swap,1391.86,9,0.00846296,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076D09r.dat,1699,14175,ni,relocate,1388.68,9,0.0082365,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076D09r.dat,1699,14175,ni,both,1388.68,9,0.0167302,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E076D09r.dat,1699,14175,grasp,none,1049.56,9,1.90256,,,ok,
-instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,cw,none,2076.58,3,0.00106354,,,ok,
-instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,cw,swap,2076.58,3,0.0004125,,,ok,
-instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,cw,relocate,2076.58,3,0.000409459,,,ok,
-instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,cw,both,2076.58,3,0.000537584,,,ok,
-instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,ni,none,2788.43,3,7.4458e-05,,,ok,
-instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,ni,swap,2749.85,3,0.000217417,,,ok,
-instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,ni,relocate,2731.32,3,0.000236792,,,ok,
-instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,ni,both,2671.28,3,0.000374625,,,ok,
-instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,grasp,none,1964.82,3,0.0385262,,,ok,
-instancias/2l-cvrp-0/E031-09h.dat,68,590,cw,none,602.824,9,0.00100537,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E031-09h.dat,68,590,cw,swap,601.541,9,0.00288146,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E031-09h.dat,68,590,cw,relocate,602.824,9,0.00286046,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E031-09h.dat,68,590,cw,both,601.541,9,0.00545204,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E031-09h.dat,68,590,ni,none,522.361,9,9.8208e-05,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E031-09h.dat,68,590,ni,swap,504.019,9,0.00293154,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E031-09h.dat,68,590,ni,relocate,505.956,9,0.00267342,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E031-09h.dat,68,590,ni,both,487.614,9,0.00529704,,,infeasible,Solution infeasible or not all clients visited
-instancias/2l-cvrp-0/E031-09h.dat,68,590,grasp,none,0.0,0,0.525563,,,infeasible,Solution infeasible or not all clients visited
+instance,capacity,total_demand,num_clientes,heuristic,local_search,cost,num_routes,time,gap,best_known,status,msg
+instancias/2l-cvrp-0/E076-15s.dat,100,1364,76,cw,none,1054.6,15,0.00485129,,,ok,
+instancias/2l-cvrp-0/E076-15s.dat,100,1364,76,cw,swap,1054.6,15,0.0565113,,,ok,
+instancias/2l-cvrp-0/E076-15s.dat,100,1364,76,cw,relocate,1054.6,15,0.0403172,,,ok,
+instancias/2l-cvrp-0/E076-15s.dat,100,1364,76,cw,both,1054.6,15,0.0766274,,,ok,
+instancias/2l-cvrp-0/E076-15s.dat,100,1364,76,ni,none,1142.27,15,0.000331167,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-15s.dat,100,1364,76,ni,swap,1133.75,15,0.0369029,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-15s.dat,100,1364,76,ni,relocate,1138.86,15,0.038614,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-15s.dat,100,1364,76,ni,both,1130.34,15,0.0748888,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-15s.dat,100,1364,76,grasp,none,719.301,15,7.93978,,,ok,
+instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,30,cw,none,534.448,4,0.000223916,,,ok,
+instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,30,cw,swap,534.448,4,0.000447,,,ok,
+instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,30,cw,relocate,534.448,4,0.000457875,,,ok,
+instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,30,cw,both,534.448,4,0.000692875,,,ok,
+instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,30,ni,none,611.596,3,8.2833e-05,,,ok,
+instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,30,ni,swap,604.142,3,0.00018825,,,ok,
+instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,30,ni,relocate,592.348,3,0.000189,,,ok,
+instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,30,ni,both,600.519,3,0.000297333,,,ok,
+instancias/2l-cvrp-0/E030-04S.DAT,4500,12750,30,grasp,none,423.954,4,0.0488706,,,ok,
+instancias/2l-cvrp-0/E076-14u.dat,100,1364,76,cw,none,1033.83,14,0.00179,0.4897982194634272,1028.791,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14u.dat,100,1364,76,cw,swap,1033.83,14,0.0330792,0.4897982194634272,1028.791,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14u.dat,100,1364,76,cw,relocate,1033.83,14,0.0328543,0.4897982194634272,1028.791,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14u.dat,100,1364,76,cw,both,1033.83,14,0.0648005,0.4897982194634272,1028.791,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14u.dat,100,1364,76,ni,none,985.702,14,0.00033575,-4.188314244584172,1028.791,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14u.dat,100,1364,76,ni,swap,977.181,14,0.0324172,-5.016567990971918,1028.791,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14u.dat,100,1364,76,ni,relocate,982.992,14,0.0316818,-4.451730234809595,1028.791,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14u.dat,100,1364,76,ni,both,973.772,14,0.0638447,-5.347927810410462,1028.791,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14u.dat,100,1364,76,grasp,none,0.0,0,6.4786,,1028.791,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151-12b.dat,200,2235,151,cw,none,1133.43,12,0.0119256,,,ok,
+instancias/2l-cvrp-0/E151-12b.dat,200,2235,151,cw,swap,1133.43,12,0.0578883,,,ok,
+instancias/2l-cvrp-0/E151-12b.dat,200,2235,151,cw,relocate,1133.43,12,0.0560918,,,ok,
+instancias/2l-cvrp-0/E151-12b.dat,200,2235,151,cw,both,1133.43,12,0.100635,,,ok,
+instancias/2l-cvrp-0/E151-12b.dat,200,2235,151,ni,none,1353.27,12,0.000811917,,,ok,
+instancias/2l-cvrp-0/E151-12b.dat,200,2235,151,ni,swap,1349.4,12,0.0468498,,,ok,
+instancias/2l-cvrp-0/E151-12b.dat,200,2235,151,ni,relocate,1326.18,12,0.0477198,,,ok,
+instancias/2l-cvrp-0/E151-12b.dat,200,2235,151,ni,both,1322.3,12,0.0913218,,,ok,
+instancias/2l-cvrp-0/E151-12b.dat,200,2235,151,grasp,none,1241.89,12,9.05022,,,ok,
+instancias/2l-cvrp-0/E151C14r.dat,2021,28048,151,cw,none,2398.04,14,0.0625346,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151C14r.dat,2021,28048,151,cw,swap,2395.6,14,0.0914363,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151C14r.dat,2021,28048,151,cw,relocate,2398.04,14,0.0834399,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151C14r.dat,2021,28048,151,cw,both,2395.6,14,0.155076,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151C14r.dat,2021,28048,151,ni,none,2713.93,14,0.00104029,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151C14r.dat,2021,28048,151,ni,swap,2709.43,14,0.0731618,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151C14r.dat,2021,28048,151,ni,relocate,2664.11,14,0.0759739,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151C14r.dat,2021,28048,151,ni,both,2659.62,14,0.147703,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151C14r.dat,2021,28048,151,grasp,none,0.0,0,14.1113,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151A15r.dat,1544,21831,151,cw,none,3124.49,15,0.0125612,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151A15r.dat,1544,21831,151,cw,swap,3119.64,15,0.122977,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151A15r.dat,1544,21831,151,cw,relocate,3120.98,15,0.149041,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151A15r.dat,1544,21831,151,cw,both,3116.13,15,0.266091,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151A15r.dat,1544,21831,151,ni,none,3143.89,15,0.00106258,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151A15r.dat,1544,21831,151,ni,swap,3131.08,15,0.130355,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151A15r.dat,1544,21831,151,ni,relocate,3122.78,15,0.101677,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151A15r.dat,1544,21831,151,ni,both,3109.98,15,0.214476,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151A15r.dat,1544,21831,151,grasp,none,2366.05,15,18.6101,,,ok,
+instancias/2l-cvrp-0/E151-12c.dat,200,2235,151,cw,none,1133.43,12,0.0122722,9.927231146582246,1031.073,ok,
+instancias/2l-cvrp-0/E151-12c.dat,200,2235,151,cw,swap,1133.43,12,0.0545977,9.927231146582246,1031.073,ok,
+instancias/2l-cvrp-0/E151-12c.dat,200,2235,151,cw,relocate,1133.43,12,0.0542497,9.927231146582246,1031.073,ok,
+instancias/2l-cvrp-0/E151-12c.dat,200,2235,151,cw,both,1133.43,12,0.0968202,9.927231146582246,1031.073,ok,
+instancias/2l-cvrp-0/E151-12c.dat,200,2235,151,ni,none,1355.42,12,0.000871417,31.45722950751304,1031.073,ok,
+instancias/2l-cvrp-0/E151-12c.dat,200,2235,151,ni,swap,1351.54,12,0.0439945,31.08092249530342,1031.073,ok,
+instancias/2l-cvrp-0/E151-12c.dat,200,2235,151,ni,relocate,1328.32,12,0.0458264,28.82889960264693,1031.073,ok,
+instancias/2l-cvrp-0/E151-12c.dat,200,2235,151,ni,both,1324.44,12,0.0895918,28.452592590437334,1031.073,ok,
+instancias/2l-cvrp-0/E151-12c.dat,200,2235,151,grasp,none,1247.06,12,9.16019,20.94778934178277,1031.073,ok,
+instancias/2l-cvrp-0/E021-06m.dat,58,329,21,cw,none,352.768,6,0.000145792,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-06m.dat,58,329,21,cw,swap,352.768,6,0.000699458,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-06m.dat,58,329,21,cw,relocate,352.768,6,0.000707083,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-06m.dat,58,329,21,cw,both,352.768,6,0.00129321,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-06m.dat,58,329,21,ni,none,458.496,6,6.8917e-05,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-06m.dat,58,329,21,ni,swap,445.159,6,0.000637416,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-06m.dat,58,329,21,ni,relocate,446.448,6,0.000623625,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-06m.dat,58,329,21,ni,both,445.159,6,0.00119771,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-06m.dat,58,329,21,grasp,none,240.747,6,0.117621,,,ok,
+instancias/2l-cvrp-0/E101-10c.dat,200,1810,101,cw,none,833.509,10,0.0035505,1.702383116732576,819.557,ok,
+instancias/2l-cvrp-0/E101-10c.dat,200,1810,101,cw,swap,831.123,10,0.0216261,1.4112502242064957,819.557,ok,
+instancias/2l-cvrp-0/E101-10c.dat,200,1810,101,cw,relocate,832.186,10,0.021457,1.5409544424609904,819.557,ok,
+instancias/2l-cvrp-0/E101-10c.dat,200,1810,101,cw,both,830.199,10,0.0394148,1.29850638820728,819.557,ok,
+instancias/2l-cvrp-0/E101-10c.dat,200,1810,101,ni,none,1146.38,10,0.000395958,39.87800726490044,819.557,ok,
+instancias/2l-cvrp-0/E101-10c.dat,200,1810,101,ni,swap,1113.2,10,0.0183511,35.82947860856536,819.557,ok,
+instancias/2l-cvrp-0/E101-10c.dat,200,1810,101,ni,relocate,1085.76,10,0.0185127,32.48132832737686,819.557,ok,
+instancias/2l-cvrp-0/E101-10c.dat,200,1810,101,ni,both,1052.91,10,0.0358076,28.473065326755805,819.557,ok,
+instancias/2l-cvrp-0/E101-10c.dat,200,1810,101,grasp,none,817.631,10,3.66566,-0.23500500880354197,819.557,ok,
+instancias/2l-cvrp-0/E076C09r.dat,1122,9520,76,cw,none,1334.84,9,0.00185283,,,ok,
+instancias/2l-cvrp-0/E076C09r.dat,1122,9520,76,cw,swap,1334.84,9,0.0113557,,,ok,
+instancias/2l-cvrp-0/E076C09r.dat,1122,9520,76,cw,relocate,1334.84,9,0.0112284,,,ok,
+instancias/2l-cvrp-0/E076C09r.dat,1122,9520,76,cw,both,1334.84,9,0.0177928,,,ok,
+instancias/2l-cvrp-0/E076C09r.dat,1122,9520,76,ni,none,1507.67,9,0.000289625,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076C09r.dat,1122,9520,76,ni,swap,1502.28,9,0.00948258,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076C09r.dat,1122,9520,76,ni,relocate,1473.07,9,0.008669,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076C09r.dat,1122,9520,76,ni,both,1480.83,9,0.0168328,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076C09r.dat,1122,9520,76,grasp,none,1518.13,9,1.80268,,,ok,
+instancias/2l-cvrp-0/E076-14s.dat,100,1364,76,cw,none,1033.83,14,0.00176854,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14s.dat,100,1364,76,cw,swap,1033.83,14,0.0351568,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14s.dat,100,1364,76,cw,relocate,1033.83,14,0.0328439,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14s.dat,100,1364,76,cw,both,1033.83,14,0.0639687,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14s.dat,100,1364,76,ni,none,985.702,14,0.000340208,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14s.dat,100,1364,76,ni,swap,977.181,14,0.0328995,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14s.dat,100,1364,76,ni,relocate,982.992,14,0.0332371,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14s.dat,100,1364,76,ni,both,973.772,14,0.0637588,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-14s.dat,100,1364,76,grasp,none,0.0,0,6.42958,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E023-03g.dat,4500,10189,23,cw,none,621.087,3,0.000161417,,,ok,
+instancias/2l-cvrp-0/E023-03g.dat,4500,10189,23,cw,swap,621.087,3,0.000250542,,,ok,
+instancias/2l-cvrp-0/E023-03g.dat,4500,10189,23,cw,relocate,621.087,3,0.000242833,,,ok,
+instancias/2l-cvrp-0/E023-03g.dat,4500,10189,23,cw,both,621.087,3,0.00033175,,,ok,
+instancias/2l-cvrp-0/E023-03g.dat,4500,10189,23,ni,none,489.088,3,5.6167e-05,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E023-03g.dat,4500,10189,23,ni,swap,489.088,3,0.000151833,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E023-03g.dat,4500,10189,23,ni,relocate,474.43,3,0.000156,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E023-03g.dat,4500,10189,23,ni,both,474.43,3,0.000247375,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E023-03g.dat,4500,10189,23,grasp,none,538.757,3,0.0259004,,,ok,
+instancias/2l-cvrp-0/E135-07f.dat,2210,14620,135,cw,none,1219.32,7,0.008507,4.846615005210863,1162.956,ok,
+instancias/2l-cvrp-0/E135-07f.dat,2210,14620,135,cw,swap,1219.32,7,0.0167839,4.846615005210863,1162.956,ok,
+instancias/2l-cvrp-0/E135-07f.dat,2210,14620,135,cw,relocate,1219.32,7,0.0164069,4.846615005210863,1162.956,ok,
+instancias/2l-cvrp-0/E135-07f.dat,2210,14620,135,cw,both,1219.32,7,0.0248237,4.846615005210863,1162.956,ok,
+instancias/2l-cvrp-0/E135-07f.dat,2210,14620,135,ni,none,1428.15,7,0.00055075,22.803442262647962,1162.956,ok,
+instancias/2l-cvrp-0/E135-07f.dat,2210,14620,135,ni,swap,1428.15,7,0.00879392,22.803442262647962,1162.956,ok,
+instancias/2l-cvrp-0/E135-07f.dat,2210,14620,135,ni,relocate,1366.05,7,0.00962871,17.463601374428617,1162.956,ok,
+instancias/2l-cvrp-0/E135-07f.dat,2210,14620,135,ni,both,1366.05,7,0.0174885,17.463601374428617,1162.956,ok,
+instancias/2l-cvrp-0/E135-07f.dat,2210,14620,135,grasp,none,1365.08,7,1.83723,17.38019323173018,1162.956,ok,
+instancias/2l-cvrp-0/E033-04g.dat,8000,29370,33,cw,none,843.098,4,0.000310583,,,ok,
+instancias/2l-cvrp-0/E033-04g.dat,8000,29370,33,cw,swap,843.098,4,0.000585375,,,ok,
+instancias/2l-cvrp-0/E033-04g.dat,8000,29370,33,cw,relocate,843.098,4,0.000571291,,,ok,
+instancias/2l-cvrp-0/E033-04g.dat,8000,29370,33,cw,both,843.098,4,0.00085225,,,ok,
+instancias/2l-cvrp-0/E033-04g.dat,8000,29370,33,ni,none,794.522,4,8.825e-05,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E033-04g.dat,8000,29370,33,ni,swap,794.522,4,0.000385084,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E033-04g.dat,8000,29370,33,ni,relocate,792.949,4,0.000402916,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E033-04g.dat,8000,29370,33,ni,both,792.949,4,0.000651167,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E033-04g.dat,8000,29370,33,grasp,none,492.215,4,0.071963,,,ok,
+instancias/2l-cvrp-0/E101C11r.dat,2043,20999,101,cw,none,1434.07,11,0.00405117,,,ok,
+instancias/2l-cvrp-0/E101C11r.dat,2043,20999,101,cw,swap,1434.07,11,0.0316924,,,ok,
+instancias/2l-cvrp-0/E101C11r.dat,2043,20999,101,cw,relocate,1429.58,11,0.0298439,,,ok,
+instancias/2l-cvrp-0/E101C11r.dat,2043,20999,101,cw,both,1429.58,11,0.056205,,,ok,
+instancias/2l-cvrp-0/E101C11r.dat,2043,20999,101,ni,none,1446.74,11,0.000485667,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101C11r.dat,2043,20999,101,ni,swap,1446.74,11,0.0282665,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101C11r.dat,2043,20999,101,ni,relocate,1431.92,11,0.0285812,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101C11r.dat,2043,20999,101,ni,both,1431.92,11,0.053561,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101C11r.dat,2043,20999,101,grasp,none,1678.83,11,5.40698,,,ok,
+instancias/2l-cvrp-0/E076-08u.dat,180,1364,76,cw,none,794.741,8,0.00176992,7.024005429703386,742.582,ok,
+instancias/2l-cvrp-0/E076-08u.dat,180,1364,76,cw,swap,791.512,8,0.00764058,6.589171296907271,742.582,ok,
+instancias/2l-cvrp-0/E076-08u.dat,180,1364,76,cw,relocate,793.222,8,0.00741608,6.81944889587951,742.582,ok,
+instancias/2l-cvrp-0/E076-08u.dat,180,1364,76,cw,both,791.512,8,0.0134188,6.589171296907271,742.582,ok,
+instancias/2l-cvrp-0/E076-08u.dat,180,1364,76,ni,none,952.56,8,0.0002385,28.27674250116485,742.582,ok,
+instancias/2l-cvrp-0/E076-08u.dat,180,1364,76,ni,swap,944.823,8,0.00589442,27.23483736476241,742.582,ok,
+instancias/2l-cvrp-0/E076-08u.dat,180,1364,76,ni,relocate,948.789,8,0.00596771,27.768919796062928,742.582,ok,
+instancias/2l-cvrp-0/E076-08u.dat,180,1364,76,ni,both,941.644,8,0.0118407,26.806736495094146,742.582,ok,
+instancias/2l-cvrp-0/E076-08u.dat,180,1364,76,grasp,none,851.515,8,1.17946,14.669491046106693,742.582,ok,
+instancias/2l-cvrp-0/E101A11r.dat,1409,15203,101,cw,none,1932.66,11,0.00391588,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101A11r.dat,1409,15203,101,cw,swap,1932.66,11,0.0327902,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101A11r.dat,1409,15203,101,cw,relocate,1931.95,11,0.0302183,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101A11r.dat,1409,15203,101,cw,both,1931.95,11,0.0566005,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101A11r.dat,1409,15203,101,ni,none,2148.12,11,0.000481875,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101A11r.dat,1409,15203,101,ni,swap,2122.68,11,0.0297215,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101A11r.dat,1409,15203,101,ni,relocate,2107.52,11,0.0290882,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101A11r.dat,1409,15203,101,ni,both,2071.89,11,0.0541333,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101A11r.dat,1409,15203,101,grasp,none,0.0,0,5.38327,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-04g.dat,6000,22500,22,cw,none,388.772,4,0.000150458,,,ok,
+instancias/2l-cvrp-0/E022-04g.dat,6000,22500,22,cw,swap,385.497,4,0.000347541,,,ok,
+instancias/2l-cvrp-0/E022-04g.dat,6000,22500,22,cw,relocate,387.543,4,0.000343083,,,ok,
+instancias/2l-cvrp-0/E022-04g.dat,6000,22500,22,cw,both,384.267,4,0.000544708,,,ok,
+instancias/2l-cvrp-0/E022-04g.dat,6000,22500,22,ni,none,462.4,4,6.775e-05,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-04g.dat,6000,22500,22,ni,swap,449.416,4,0.000277125,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-04g.dat,6000,22500,22,ni,relocate,442.562,4,0.000269583,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-04g.dat,6000,22500,22,ni,both,442.562,4,0.000470041,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-04g.dat,6000,22500,22,grasp,none,262.997,4,0.0471835,,,ok,
+instancias/2l-cvrp-0/E030-03g.dat,4500,12750,30,cw,none,393.242,3,0.000243083,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E030-03g.dat,4500,12750,30,cw,swap,393.242,3,0.000343459,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E030-03g.dat,4500,12750,30,cw,relocate,393.242,3,0.000343625,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E030-03g.dat,4500,12750,30,cw,both,393.242,3,0.000436875,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E030-03g.dat,4500,12750,30,ni,none,611.596,3,6.3292e-05,,,ok,
+instancias/2l-cvrp-0/E030-03g.dat,4500,12750,30,ni,swap,604.142,3,0.000211625,,,ok,
+instancias/2l-cvrp-0/E030-03g.dat,4500,12750,30,ni,relocate,592.348,3,0.00020425,,,ok,
+instancias/2l-cvrp-0/E030-03g.dat,4500,12750,30,ni,both,600.519,3,0.000320042,,,ok,
+instancias/2l-cvrp-0/E030-03g.dat,4500,12750,30,grasp,none,429.36,3,0.0325297,,,ok,
+instancias/2l-cvrp-0/E026-08m.dat,48,367,26,cw,none,576.884,8,0.000175375,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E026-08m.dat,48,367,26,cw,swap,572.058,8,0.00173404,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E026-08m.dat,48,367,26,cw,relocate,576.884,8,0.00171417,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E026-08m.dat,48,367,26,cw,both,572.058,8,0.0032875,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E026-08m.dat,48,367,26,ni,none,528.62,8,8.2542e-05,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E026-08m.dat,48,367,26,ni,swap,528.62,8,0.00158683,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E026-08m.dat,48,367,26,ni,relocate,506.999,8,0.00169346,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E026-08m.dat,48,367,26,ni,both,506.999,8,0.00311421,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E026-08m.dat,48,367,26,grasp,none,0.0,0,0.316942,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E051-05e.dat,160,777,51,cw,none,514.243,5,0.000673166,-1.9763215029802919,524.611,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E051-05e.dat,160,777,51,cw,swap,514.243,5,0.00158342,-1.9763215029802919,524.611,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E051-05e.dat,160,777,51,cw,relocate,514.243,5,0.00147571,-1.9763215029802919,524.611,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E051-05e.dat,160,777,51,cw,both,514.243,5,0.00238046,-1.9763215029802919,524.611,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E051-05e.dat,160,777,51,ni,none,660.218,5,0.00012225,25.84905768274016,524.611,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E051-05e.dat,160,777,51,ni,swap,660.218,5,0.000980625,25.84905768274016,524.611,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E051-05e.dat,160,777,51,ni,relocate,653.917,5,0.00101321,24.647977263153088,524.611,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E051-05e.dat,160,777,51,ni,both,653.917,5,0.00186908,24.647977263153088,524.611,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E051-05e.dat,160,777,51,grasp,none,673.532,5,0.191235,28.386938131301108,524.611,ok,
+instancias/2l-cvrp-0/E022-06m.dat,4000,22500,22,cw,none,467.917,6,0.000137333,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-06m.dat,4000,22500,22,cw,swap,467.917,6,0.000714833,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-06m.dat,4000,22500,22,cw,relocate,467.917,6,0.000720083,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-06m.dat,4000,22500,22,cw,both,467.917,6,0.00127983,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-06m.dat,4000,22500,22,ni,none,505.64,6,6.95e-05,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-06m.dat,4000,22500,22,ni,swap,490.882,6,0.000678583,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-06m.dat,4000,22500,22,ni,relocate,503.488,6,0.00066275,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-06m.dat,4000,22500,22,ni,both,482.725,6,0.00130437,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E022-06m.dat,4000,22500,22,grasp,none,298.888,6,0.125817,,,ok,
+instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,23,cw,none,621.087,3,0.000150333,,,ok,
+instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,23,cw,swap,621.087,3,0.000239417,,,ok,
+instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,23,cw,relocate,621.087,3,0.000252,,,ok,
+instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,23,cw,both,621.087,3,0.000324333,,,ok,
+instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,23,ni,none,652.654,4,5.475e-05,,,ok,
+instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,23,ni,swap,638.545,4,0.000261917,,,ok,
+instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,23,ni,relocate,637.996,4,0.000272959,,,ok,
+instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,23,ni,both,623.886,4,0.000479833,,,ok,
+instancias/2l-cvrp-0/E023-05S.DAT,4500,10189,23,grasp,none,457.755,4,0.045903,,,ok,
+instancias/2l-cvrp-0/E033-05s.dat,8000,29370,33,cw,none,843.098,4,0.000276458,,,ok,
+instancias/2l-cvrp-0/E033-05s.dat,8000,29370,33,cw,swap,843.098,4,0.000546709,,,ok,
+instancias/2l-cvrp-0/E033-05s.dat,8000,29370,33,cw,relocate,843.098,4,0.0005535,,,ok,
+instancias/2l-cvrp-0/E033-05s.dat,8000,29370,33,cw,both,843.098,4,0.000817208,,,ok,
+instancias/2l-cvrp-0/E033-05s.dat,8000,29370,33,ni,none,1090.95,5,7.45e-05,,,ok,
+instancias/2l-cvrp-0/E033-05s.dat,8000,29370,33,ni,swap,1090.95,5,0.000605375,,,ok,
+instancias/2l-cvrp-0/E033-05s.dat,8000,29370,33,ni,relocate,1077.55,5,0.000627125,,,ok,
+instancias/2l-cvrp-0/E033-05s.dat,8000,29370,33,ni,both,1077.55,5,0.00114458,,,ok,
+instancias/2l-cvrp-0/E033-05s.dat,8000,29370,33,grasp,none,466.502,5,0.0884677,,,ok,
+instancias/2l-cvrp-0/E076-08s.dat,180,1364,76,cw,none,794.741,8,0.0017535,,,ok,
+instancias/2l-cvrp-0/E076-08s.dat,180,1364,76,cw,swap,791.512,8,0.007245,,,ok,
+instancias/2l-cvrp-0/E076-08s.dat,180,1364,76,cw,relocate,793.222,8,0.00730971,,,ok,
+instancias/2l-cvrp-0/E076-08s.dat,180,1364,76,cw,both,791.512,8,0.0131964,,,ok,
+instancias/2l-cvrp-0/E076-08s.dat,180,1364,76,ni,none,952.56,8,0.000227292,,,ok,
+instancias/2l-cvrp-0/E076-08s.dat,180,1364,76,ni,swap,944.823,8,0.00589621,,,ok,
+instancias/2l-cvrp-0/E076-08s.dat,180,1364,76,ni,relocate,948.789,8,0.0059225,,,ok,
+instancias/2l-cvrp-0/E076-08s.dat,180,1364,76,ni,both,941.644,8,0.0117861,,,ok,
+instancias/2l-cvrp-0/E076-08s.dat,180,1364,76,grasp,none,862.511,8,1.24616,,,ok,
+instancias/2l-cvrp-0/E101-14s.dat,112,1458,101,cw,none,1139.07,14,0.00404929,,,ok,
+instancias/2l-cvrp-0/E101-14s.dat,112,1458,101,cw,swap,1139.07,14,0.0574282,,,ok,
+instancias/2l-cvrp-0/E101-14s.dat,112,1458,101,cw,relocate,1139.07,14,0.048812,,,ok,
+instancias/2l-cvrp-0/E101-14s.dat,112,1458,101,cw,both,1139.07,14,0.0969972,,,ok,
+instancias/2l-cvrp-0/E101-14s.dat,112,1458,101,ni,none,1289.1,14,0.000522375,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101-14s.dat,112,1458,101,ni,swap,1277.52,14,0.0541526,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101-14s.dat,112,1458,101,ni,relocate,1276.73,14,0.0540247,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101-14s.dat,112,1458,101,ni,both,1264.93,14,0.114114,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101-14s.dat,112,1458,101,grasp,none,970.263,14,10.3878,,,ok,
+instancias/2l-cvrp-0/E048-04y.dat,15,47,48,cw,none,43477.4,4,0.000605042,,,ok,
+instancias/2l-cvrp-0/E048-04y.dat,15,47,48,cw,swap,43335.4,4,0.00115571,,,ok,
+instancias/2l-cvrp-0/E048-04y.dat,15,47,48,cw,relocate,43477.4,4,0.000998583,,,ok,
+instancias/2l-cvrp-0/E048-04y.dat,15,47,48,cw,both,43335.4,4,0.00152446,,,ok,
+instancias/2l-cvrp-0/E048-04y.dat,15,47,48,ni,none,52006.2,4,0.000103875,,,ok,
+instancias/2l-cvrp-0/E048-04y.dat,15,47,48,ni,swap,51788.1,4,0.000557916,,,ok,
+instancias/2l-cvrp-0/E048-04y.dat,15,47,48,ni,relocate,50566.6,4,0.000583042,,,ok,
+instancias/2l-cvrp-0/E048-04y.dat,15,47,48,ni,both,50529.1,4,0.00100496,,,ok,
+instancias/2l-cvrp-0/E048-04y.dat,15,47,48,grasp,none,47244.4,4,0.107976,,,ok,
+instancias/2l-cvrp-0/E200-16b.dat,200,3186,200,cw,none,1385.67,16,0.0349457,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16b.dat,200,3186,200,cw,swap,1385.67,16,0.310239,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16b.dat,200,3186,200,cw,relocate,1385.67,16,0.305658,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16b.dat,200,3186,200,cw,both,1385.67,16,0.558076,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16b.dat,200,3186,200,ni,none,1493.03,16,0.00200996,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16b.dat,200,3186,200,ni,swap,1488.31,16,0.239526,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16b.dat,200,3186,200,ni,relocate,1482.17,16,0.253017,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16b.dat,200,3186,200,ni,both,1477.45,16,0.490291,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16b.dat,200,3186,200,grasp,none,0.0,0,53.208,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101D11r.dat,1297,13592,101,cw,none,1605.78,11,0.0038335,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101D11r.dat,1297,13592,101,cw,swap,1605.78,11,0.0311036,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101D11r.dat,1297,13592,101,cw,relocate,1605.78,11,0.030595,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101D11r.dat,1297,13592,101,cw,both,1605.78,11,0.055195,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101D11r.dat,1297,13592,101,ni,none,1823.46,11,0.0004915,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101D11r.dat,1297,13592,101,ni,swap,1817.59,11,0.0252892,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101D11r.dat,1297,13592,101,ni,relocate,1773.25,11,0.0270065,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101D11r.dat,1297,13592,101,ni,both,1767.38,11,0.0544388,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101D11r.dat,1297,13592,101,grasp,none,0.0,0,5.47264,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E045-04f.dat,2010,7220,45,cw,none,739.019,4,0.000524333,2.139201510349787,723.541,ok,
+instancias/2l-cvrp-0/E045-04f.dat,2010,7220,45,cw,swap,739.019,4,0.000932709,2.139201510349787,723.541,ok,
+instancias/2l-cvrp-0/E045-04f.dat,2010,7220,45,cw,relocate,739.019,4,0.00107317,2.139201510349787,723.541,ok,
+instancias/2l-cvrp-0/E045-04f.dat,2010,7220,45,cw,both,739.019,4,0.00160367,2.139201510349787,723.541,ok,
+instancias/2l-cvrp-0/E045-04f.dat,2010,7220,45,ni,none,931.591,4,0.000105875,28.75441751054881,723.541,ok,
+instancias/2l-cvrp-0/E045-04f.dat,2010,7220,45,ni,swap,918.435,4,0.000538292,26.936137689502033,723.541,ok,
+instancias/2l-cvrp-0/E045-04f.dat,2010,7220,45,ni,relocate,915.55,4,0.00056825,26.537404238322345,723.541,ok,
+instancias/2l-cvrp-0/E045-04f.dat,2010,7220,45,ni,both,841.056,4,0.00108817,16.241650438606793,723.541,ok,
+instancias/2l-cvrp-0/E045-04f.dat,2010,7220,45,grasp,none,884.873,4,0.105086,22.2975615756398,723.541,ok,
+instancias/2l-cvrp-0/E200-16c.dat,200,3186,200,cw,none,1385.67,16,0.0285802,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16c.dat,200,3186,200,cw,swap,1385.67,16,0.290253,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16c.dat,200,3186,200,cw,relocate,1385.67,16,0.290201,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16c.dat,200,3186,200,cw,both,1385.67,16,0.568255,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16c.dat,200,3186,200,ni,none,1454.11,16,0.00187954,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16c.dat,200,3186,200,ni,swap,1450.05,16,0.296026,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16c.dat,200,3186,200,ni,relocate,1438.36,16,0.275265,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16c.dat,200,3186,200,ni,both,1437.37,16,0.499655,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-16c.dat,200,3186,200,grasp,none,0.0,0,52.0634,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-07s.dat,220,1364,76,cw,none,730.234,7,0.00179137,,,ok,
+instancias/2l-cvrp-0/E076-07s.dat,220,1364,76,cw,swap,730.234,7,0.00565962,,,ok,
+instancias/2l-cvrp-0/E076-07s.dat,220,1364,76,cw,relocate,730.234,7,0.00570525,,,ok,
+instancias/2l-cvrp-0/E076-07s.dat,220,1364,76,cw,both,730.234,7,0.00965025,,,ok,
+instancias/2l-cvrp-0/E076-07s.dat,220,1364,76,ni,none,907.16,7,0.000230667,,,ok,
+instancias/2l-cvrp-0/E076-07s.dat,220,1364,76,ni,swap,898.056,7,0.00431725,,,ok,
+instancias/2l-cvrp-0/E076-07s.dat,220,1364,76,ni,relocate,857.149,7,0.00440733,,,ok,
+instancias/2l-cvrp-0/E076-07s.dat,220,1364,76,ni,both,836.719,7,0.00835213,,,ok,
+instancias/2l-cvrp-0/E076-07s.dat,220,1364,76,grasp,none,842.27,7,0.842506,,,ok,
+instancias/2l-cvrp-0/E101-14u.dat,112,1458,101,cw,none,1139.07,14,0.00425275,4.397628788878621,1091.088,ok,
+instancias/2l-cvrp-0/E101-14u.dat,112,1458,101,cw,swap,1139.07,14,0.0615645,4.397628788878621,1091.088,ok,
+instancias/2l-cvrp-0/E101-14u.dat,112,1458,101,cw,relocate,1139.07,14,0.05851,4.397628788878621,1091.088,ok,
+instancias/2l-cvrp-0/E101-14u.dat,112,1458,101,cw,both,1139.07,14,0.117109,4.397628788878621,1091.088,ok,
+instancias/2l-cvrp-0/E101-14u.dat,112,1458,101,ni,none,1289.1,14,0.000524,18.148123707711928,1091.088,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101-14u.dat,112,1458,101,ni,swap,1277.52,14,0.0579943,17.086797765166512,1091.088,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101-14u.dat,112,1458,101,ni,relocate,1276.73,14,0.0527611,17.014392972885783,1091.088,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101-14u.dat,112,1458,101,ni,both,1264.93,14,0.115847,15.932903670464722,1091.088,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101-14u.dat,112,1458,101,grasp,none,994.941,14,11.3177,-8.812029827108349,1091.088,ok,
+instancias/2l-cvrp-0/E200-17c.dat,200,3186,200,cw,none,1395.74,17,0.0348419,6.435515210302684,1311.348,ok,
+instancias/2l-cvrp-0/E200-17c.dat,200,3186,200,cw,swap,1395.74,17,0.367849,6.435515210302684,1311.348,ok,
+instancias/2l-cvrp-0/E200-17c.dat,200,3186,200,cw,relocate,1395.74,17,0.369458,6.435515210302684,1311.348,ok,
+instancias/2l-cvrp-0/E200-17c.dat,200,3186,200,cw,both,1395.74,17,0.787317,6.435515210302684,1311.348,ok,
+instancias/2l-cvrp-0/E200-17c.dat,200,3186,200,ni,none,1706.14,17,0.00196346,30.105814779905877,1311.348,ok,
+instancias/2l-cvrp-0/E200-17c.dat,200,3186,200,ni,swap,1683.19,17,0.32454,28.355707256960024,1311.348,ok,
+instancias/2l-cvrp-0/E200-17c.dat,200,3186,200,ni,relocate,1689.68,17,0.356303,28.850617837522925,1311.348,ok,
+instancias/2l-cvrp-0/E200-17c.dat,200,3186,200,ni,both,1672.74,17,0.683953,27.558817339104497,1311.348,ok,
+instancias/2l-cvrp-0/E200-17c.dat,200,3186,200,grasp,none,1455.77,17,64.9044,11.013247436988506,1311.348,ok,
+instancias/2l-cvrp-0/E016-03m.dat,90,258,16,cw,none,249.381,3,0.0001075,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-03m.dat,90,258,16,cw,swap,249.381,3,0.000167792,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-03m.dat,90,258,16,cw,relocate,249.381,3,0.000160542,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-03m.dat,90,258,16,cw,both,249.381,3,0.000219833,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-03m.dat,90,258,16,ni,none,267.076,3,4.6958e-05,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-03m.dat,90,258,16,ni,swap,267.076,3,0.000121875,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-03m.dat,90,258,16,ni,relocate,267.076,3,0.000114167,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-03m.dat,90,258,16,ni,both,267.076,3,0.000177584,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-03m.dat,90,258,16,grasp,none,207.846,3,0.017932,,,ok,
+instancias/2l-cvrp-0/E076-10e.dat,140,1364,76,cw,none,907.392,10,0.00177229,8.364074974174637,837.355,ok,
+instancias/2l-cvrp-0/E076-10e.dat,140,1364,76,cw,swap,901.653,10,0.0141529,7.678702581342441,837.355,ok,
+instancias/2l-cvrp-0/E076-10e.dat,140,1364,76,cw,relocate,907.392,10,0.0135803,8.364074974174637,837.355,ok,
+instancias/2l-cvrp-0/E076-10e.dat,140,1364,76,cw,both,901.653,10,0.0252243,7.678702581342441,837.355,ok,
+instancias/2l-cvrp-0/E076-10e.dat,140,1364,76,ni,none,856.434,10,0.00028825,2.2784840360420553,837.355,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-10e.dat,140,1364,76,ni,swap,854.477,10,0.0119047,2.044771930662617,837.355,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-10e.dat,140,1364,76,ni,relocate,840.819,10,0.0134726,0.4136835631243549,837.355,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-10e.dat,140,1364,76,ni,both,838.862,10,0.02352,0.1799714577449168,837.355,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076-10e.dat,140,1364,76,grasp,none,0.0,0,2.39684,,837.355,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E200-17b.dat,200,3186,200,cw,none,1395.74,17,0.0273708,8.075837530827878,1291.445,ok,
+instancias/2l-cvrp-0/E200-17b.dat,200,3186,200,cw,swap,1395.74,17,0.409994,8.075837530827878,1291.445,ok,
+instancias/2l-cvrp-0/E200-17b.dat,200,3186,200,cw,relocate,1395.74,17,0.291495,8.075837530827878,1291.445,ok,
+instancias/2l-cvrp-0/E200-17b.dat,200,3186,200,cw,both,1395.74,17,0.626304,8.075837530827878,1291.445,ok,
+instancias/2l-cvrp-0/E200-17b.dat,200,3186,200,ni,none,1614.32,17,0.00195529,25.001064698845095,1291.445,ok,
+instancias/2l-cvrp-0/E200-17b.dat,200,3186,200,ni,swap,1609.59,17,0.30998,24.634808296133404,1291.445,ok,
+instancias/2l-cvrp-0/E200-17b.dat,200,3186,200,ni,relocate,1603.46,17,0.283753,24.16014619283052,1291.445,ok,
+instancias/2l-cvrp-0/E200-17b.dat,200,3186,200,ni,both,1598.73,17,0.558007,23.793889790118826,1291.445,ok,
+instancias/2l-cvrp-0/E200-17b.dat,200,3186,200,grasp,none,1466.37,17,68.2377,13.54490512565382,1291.445,ok,
+instancias/2l-cvrp-0/E076B09r.dat,1679,14906,76,cw,none,1342.64,9,0.001863,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076B09r.dat,1679,14906,76,cw,swap,1342.64,9,0.0113578,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076B09r.dat,1679,14906,76,cw,relocate,1342.64,9,0.0105104,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076B09r.dat,1679,14906,76,cw,both,1342.64,9,0.018229,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076B09r.dat,1679,14906,76,ni,none,1330.87,9,0.000279584,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076B09r.dat,1679,14906,76,ni,swap,1330.87,9,0.00953758,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076B09r.dat,1679,14906,76,ni,relocate,1295.62,9,0.00914804,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076B09r.dat,1679,14906,76,ni,both,1295.62,9,0.0160712,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076B09r.dat,1679,14906,76,grasp,none,0.0,0,1.84579,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E072-04f.dat,30000,114840,72,cw,none,172.033,4,0.00159679,-28.90405127844843,241.973,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E072-04f.dat,30000,114840,72,cw,swap,172.033,4,0.00234013,-28.90405127844843,241.973,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E072-04f.dat,30000,114840,72,cw,relocate,172.033,4,0.00222275,-28.90405127844843,241.973,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E072-04f.dat,30000,114840,72,cw,both,172.033,4,0.00295592,-28.90405127844843,241.973,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E072-04f.dat,30000,114840,72,ni,none,224.592,4,0.000174459,-7.183032817711066,241.973,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E072-04f.dat,30000,114840,72,ni,swap,220.987,4,0.000953666,-8.672868460530728,241.973,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E072-04f.dat,30000,114840,72,ni,relocate,216.382,4,0.00101217,-10.575973352398824,241.973,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E072-04f.dat,30000,114840,72,ni,both,212.953,4,0.00178988,-11.99307360738595,241.973,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E072-04f.dat,30000,114840,72,grasp,none,345.608,4,0.193446,42.82915862513586,241.973,ok,
+instancias/2l-cvrp-0/E121-07c.dat,200,1375,121,cw,none,1071.07,7,0.00677517,2.7784841404259537,1042.115,ok,
+instancias/2l-cvrp-0/E121-07c.dat,200,1375,121,cw,swap,1070.31,7,0.0157354,2.705555528900355,1042.115,ok,
+instancias/2l-cvrp-0/E121-07c.dat,200,1375,121,cw,relocate,1068.14,7,0.0148666,2.4973251512549086,1042.115,ok,
+instancias/2l-cvrp-0/E121-07c.dat,200,1375,121,cw,both,1068.14,7,0.0233325,2.4973251512549086,1042.115,ok,
+instancias/2l-cvrp-0/E121-07c.dat,200,1375,121,ni,none,1112.11,7,0.000464083,6.716629162808316,1042.115,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E121-07c.dat,200,1375,121,ni,swap,1112.11,7,0.00982417,6.716629162808316,1042.115,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E121-07c.dat,200,1375,121,ni,relocate,1106.73,7,0.0100262,6.200371360166585,1042.115,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E121-07c.dat,200,1375,121,ni,both,1106.73,7,0.0186759,6.200371360166585,1042.115,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E121-07c.dat,200,1375,121,grasp,none,1182.96,7,2.06861,13.515303013582956,1042.115,ok,
+instancias/2l-cvrp-0/E036-11h.dat,67,699,36,cw,none,706.607,11,0.000339792,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E036-11h.dat,67,699,36,cw,swap,706.607,11,0.00586896,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E036-11h.dat,67,699,36,cw,relocate,706.607,11,0.00598533,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E036-11h.dat,67,699,36,cw,both,706.607,11,0.0114935,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E036-11h.dat,67,699,36,ni,none,664.937,11,0.000135,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E036-11h.dat,67,699,36,ni,swap,659.393,11,0.00562546,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E036-11h.dat,67,699,36,ni,relocate,652.073,11,0.00561767,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E036-11h.dat,67,699,36,ni,both,646.529,11,0.0110881,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E036-11h.dat,67,699,36,grasp,none,0.0,0,1.10185,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151B14r.dat,1918,25485,151,cw,none,2890.4,14,0.0123597,,,ok,
+instancias/2l-cvrp-0/E151B14r.dat,1918,25485,151,cw,swap,2887.85,14,0.0794857,,,ok,
+instancias/2l-cvrp-0/E151B14r.dat,1918,25485,151,cw,relocate,2887.63,14,0.0791563,,,ok,
+instancias/2l-cvrp-0/E151B14r.dat,1918,25485,151,cw,both,2885.08,14,0.148844,,,ok,
+instancias/2l-cvrp-0/E151B14r.dat,1918,25485,151,ni,none,2969.59,14,0.00105454,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151B14r.dat,1918,25485,151,ni,swap,2948.43,14,0.0698709,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151B14r.dat,1918,25485,151,ni,relocate,2954.74,14,0.0743701,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151B14r.dat,1918,25485,151,ni,both,2933.57,14,0.151381,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151B14r.dat,1918,25485,151,grasp,none,2653.96,14,15.3067,,,ok,
+instancias/2l-cvrp-0/E076-07u.dat,220,1364,76,cw,none,730.234,7,0.00179892,5.707841877001301,690.804,ok,
+instancias/2l-cvrp-0/E076-07u.dat,220,1364,76,cw,swap,730.234,7,0.00563037,5.707841877001301,690.804,ok,
+instancias/2l-cvrp-0/E076-07u.dat,220,1364,76,cw,relocate,730.234,7,0.00559242,5.707841877001301,690.804,ok,
+instancias/2l-cvrp-0/E076-07u.dat,220,1364,76,cw,both,730.234,7,0.00958188,5.707841877001301,690.804,ok,
+instancias/2l-cvrp-0/E076-07u.dat,220,1364,76,ni,none,907.16,7,0.000217,31.31944806341596,690.804,ok,
+instancias/2l-cvrp-0/E076-07u.dat,220,1364,76,ni,swap,898.056,7,0.00423163,30.001563395695463,690.804,ok,
+instancias/2l-cvrp-0/E076-07u.dat,220,1364,76,ni,relocate,857.149,7,0.00428958,24.079912681455237,690.804,ok,
+instancias/2l-cvrp-0/E076-07u.dat,220,1364,76,ni,both,836.719,7,0.0082395,21.122489157561347,690.804,ok,
+instancias/2l-cvrp-0/E076-07u.dat,220,1364,76,grasp,none,807.485,7,0.834569,16.89060862415389,690.804,ok,
+instancias/2l-cvrp-0/E101-08e.dat,200,1458,101,cw,none,889.001,8,0.00351075,7.609521918909237,826.136,ok,
+instancias/2l-cvrp-0/E101-08e.dat,200,1458,101,cw,swap,889.001,8,0.0137042,7.609521918909237,826.136,ok,
+instancias/2l-cvrp-0/E101-08e.dat,200,1458,101,cw,relocate,889.001,8,0.0128317,7.609521918909237,826.136,ok,
+instancias/2l-cvrp-0/E101-08e.dat,200,1458,101,cw,both,889.001,8,0.0239208,7.609521918909237,826.136,ok,
+instancias/2l-cvrp-0/E101-08e.dat,200,1458,101,ni,none,1096.08,8,0.000338167,32.67549168659881,826.136,ok,
+instancias/2l-cvrp-0/E101-08e.dat,200,1458,101,ni,swap,1092.14,8,0.0101996,32.19857263210901,826.136,ok,
+instancias/2l-cvrp-0/E101-08e.dat,200,1458,101,ni,relocate,1088.54,8,0.0106295,31.76280902902186,826.136,ok,
+instancias/2l-cvrp-0/E101-08e.dat,200,1458,101,ni,both,1084.59,8,0.0198651,31.284679520079013,826.136,ok,
+instancias/2l-cvrp-0/E101-08e.dat,200,1458,101,grasp,none,1012.55,8,2.05102,22.564565640524076,826.136,ok,
+instancias/2l-cvrp-0/E101B11r.dat,1842,19503,101,cw,none,1936.52,11,0.00371587,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101B11r.dat,1842,19503,101,cw,swap,1935.54,11,0.0295493,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101B11r.dat,1842,19503,101,cw,relocate,1936.52,11,0.0318151,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101B11r.dat,1842,19503,101,cw,both,1935.54,11,0.0568735,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101B11r.dat,1842,19503,101,ni,none,2085.89,11,0.000529208,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101B11r.dat,1842,19503,101,ni,swap,2072.59,11,0.0252412,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101B11r.dat,1842,19503,101,ni,relocate,2054.49,11,0.0271234,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101B11r.dat,1842,19503,101,ni,both,2041.18,11,0.0531141,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E101B11r.dat,1842,19503,101,grasp,none,0.0,0,5.52054,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-04m.dat,85,329,21,cw,none,327.856,4,0.0001405,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-04m.dat,85,329,21,cw,swap,327.856,4,0.000316833,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-04m.dat,85,329,21,cw,relocate,327.856,4,0.000306041,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-04m.dat,85,329,21,cw,both,327.856,4,0.000496667,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-04m.dat,85,329,21,ni,none,342.976,4,6.35e-05,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-04m.dat,85,329,21,ni,swap,340.596,4,0.000257166,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-04m.dat,85,329,21,ni,relocate,341.988,4,0.000243375,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-04m.dat,85,329,21,ni,both,340.596,4,0.000434792,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E021-04m.dat,85,329,21,grasp,none,306.648,4,0.0427732,,,ok,
+instancias/2l-cvrp-0/E076A10r.dat,1445,13756,76,cw,none,1645.5,10,0.00181667,,,ok,
+instancias/2l-cvrp-0/E076A10r.dat,1445,13756,76,cw,swap,1645.5,10,0.013129,,,ok,
+instancias/2l-cvrp-0/E076A10r.dat,1445,13756,76,cw,relocate,1645.5,10,0.013178,,,ok,
+instancias/2l-cvrp-0/E076A10r.dat,1445,13756,76,cw,both,1645.5,10,0.0234057,,,ok,
+instancias/2l-cvrp-0/E076A10r.dat,1445,13756,76,ni,none,1711.6,10,0.00031225,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076A10r.dat,1445,13756,76,ni,swap,1698.38,10,0.0118969,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076A10r.dat,1445,13756,76,ni,relocate,1642.16,10,0.0118888,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076A10r.dat,1445,13756,76,ni,both,1628.94,10,0.022514,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076A10r.dat,1445,13756,76,grasp,none,0.0,0,2.32841,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151D14r.dat,1874,25578,151,cw,none,2539.07,14,0.013199,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151D14r.dat,1874,25578,151,cw,swap,2539.07,14,0.0797331,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151D14r.dat,1874,25578,151,cw,relocate,2539.07,14,0.079489,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151D14r.dat,1874,25578,151,cw,both,2539.07,14,0.147344,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151D14r.dat,1874,25578,151,ni,none,2569.92,14,0.00111017,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151D14r.dat,1874,25578,151,ni,swap,2565.88,14,0.068911,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151D14r.dat,1874,25578,151,ni,relocate,2534.87,14,0.0713469,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151D14r.dat,1874,25578,151,ni,both,2530.84,14,0.140276,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E151D14r.dat,1874,25578,151,grasp,none,0.0,0,14.2757,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E041-14h.dat,60,798,41,cw,none,853.405,14,0.000425417,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E041-14h.dat,60,798,41,cw,swap,853.405,14,0.0128128,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E041-14h.dat,60,798,41,cw,relocate,853.405,14,0.0127486,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E041-14h.dat,60,798,41,cw,both,853.405,14,0.0262121,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E041-14h.dat,60,798,41,ni,none,726.98,14,0.000168666,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E041-14h.dat,60,798,41,ni,swap,719.986,14,0.0126823,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E041-14h.dat,60,798,41,ni,relocate,716.373,14,0.0128133,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E041-14h.dat,60,798,41,ni,both,713.517,14,0.0251945,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E041-14h.dat,60,798,41,grasp,none,0.0,0,2.56463,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-05m.dat,55,258,16,cw,none,302.541,5,9.2584e-05,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-05m.dat,55,258,16,cw,swap,302.541,5,0.000361209,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-05m.dat,55,258,16,cw,relocate,302.541,5,0.000359917,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-05m.dat,55,258,16,cw,both,302.541,5,0.000632708,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-05m.dat,55,258,16,ni,none,310.294,5,5.0708e-05,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-05m.dat,55,258,16,ni,swap,310.294,5,0.000323833,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-05m.dat,55,258,16,ni,relocate,310.294,5,0.000313375,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-05m.dat,55,258,16,ni,both,310.294,5,0.000585917,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E016-05m.dat,55,258,16,grasp,none,176.037,5,0.0588099,,,ok,
+instancias/2l-cvrp-0/E076D09r.dat,1699,14175,76,cw,none,1372.28,9,0.001742,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076D09r.dat,1699,14175,76,cw,swap,1372.28,9,0.00963746,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076D09r.dat,1699,14175,76,cw,relocate,1371.41,9,0.0109097,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076D09r.dat,1699,14175,76,cw,both,1371.41,9,0.0194774,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076D09r.dat,1699,14175,76,ni,none,1391.86,9,0.00027175,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076D09r.dat,1699,14175,76,ni,swap,1391.86,9,0.00944471,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076D09r.dat,1699,14175,76,ni,relocate,1388.68,9,0.00856271,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076D09r.dat,1699,14175,76,ni,both,1388.68,9,0.0181159,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E076D09r.dat,1699,14175,76,grasp,none,960.425,9,1.88695,,,ok,
+instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,33,cw,none,2076.58,3,0.000298917,,,ok,
+instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,33,cw,swap,2076.58,3,0.000413958,,,ok,
+instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,33,cw,relocate,2076.58,3,0.000410917,,,ok,
+instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,33,cw,both,2076.58,3,0.0006215,,,ok,
+instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,33,ni,none,2788.43,3,7.4792e-05,,,ok,
+instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,33,ni,swap,2749.85,3,0.000213792,,,ok,
+instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,33,ni,relocate,2731.32,3,0.00023475,,,ok,
+instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,33,ni,both,2671.28,3,0.000381209,,,ok,
+instancias/2l-cvrp-0/E033-03N.DAT,38000,98565,33,grasp,none,2072.03,3,0.039103,,,ok,
+instancias/2l-cvrp-0/E031-09h.dat,68,590,31,cw,none,602.824,9,0.000241375,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E031-09h.dat,68,590,31,cw,swap,601.541,9,0.00297521,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E031-09h.dat,68,590,31,cw,relocate,602.824,9,0.00287592,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E031-09h.dat,68,590,31,cw,both,601.541,9,0.00542788,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E031-09h.dat,68,590,31,ni,none,522.361,9,9.9625e-05,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E031-09h.dat,68,590,31,ni,swap,504.019,9,0.0027985,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E031-09h.dat,68,590,31,ni,relocate,505.956,9,0.00276104,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E031-09h.dat,68,590,31,ni,both,487.614,9,0.00542088,,,infeasible,Solution infeasible or not all clients visited
+instancias/2l-cvrp-0/E031-09h.dat,68,590,31,grasp,none,0.0,0,0.52183,,,infeasible,Solution infeasible or not all clients visited
