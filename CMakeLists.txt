@@ -42,7 +42,6 @@ set(CORE_SOURCES
 set(ALGORITHM_SOURCES
     src/HeuristicaClarkeWright.cpp
     src/HeuristicaInsercionCercana.cpp
-    src/CWwLocalSearch.cpp
     src/OperadorSwap.cpp
     src/OperadorRelocate.cpp
     src/GRASP.cpp
