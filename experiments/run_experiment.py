@@ -2,7 +2,7 @@ import os
 import subprocess
 import csv
 
-INSTANCE_DIR = "../instancias/2l-cvrp-0"
+INSTANCE_DIR = "instancias/2l-cvrp-0"
 SOLUTION_DIR = os.path.join(INSTANCE_DIR, "soluciones")
 INSTANCE_FILES = [f for f in os.listdir(INSTANCE_DIR) if f.endswith('.dat') or f.endswith('.DAT')]
 
@@ -58,8 +58,39 @@ def get_best_cost(instance_file):
                         continue
     return None
 
+def get_num_clientes(instance_file):
+    """
+    Returns the number of clientes (excluding depot) in the instance file.
+    Assumes VRPLIB format with a section NODE_COORD_SECTION or DEMAND_SECTION.
+    """
+    path = os.path.join(INSTANCE_DIR, instance_file)
+    num_clientes = None
+    try:
+        with open(path, "r") as f:
+            for line in f:
+                if "DIMENSION" in line:
+                    # DIMENSION : 76
+                    parts = line.split(":")
+                    if len(parts) > 1:
+                        try:
+                            num_clientes = int(parts[1].strip())
+                        except Exception:
+                            pass
+                    else:
+                        # Try to get the last token
+                        tokens = line.split()
+                        if tokens:
+                            try:
+                                num_clientes = int(tokens[-1])
+                            except Exception:
+                                pass
+                    break
+    except Exception:
+        pass
+    return num_clientes
+
 def run_experiment(instance_file, heuristic, local_search):
-    args = ["../build/bin/main_experiment", os.path.join(INSTANCE_DIR, instance_file), heuristic]
+    args = ["build/bin/main_experiment", os.path.join(INSTANCE_DIR, instance_file), heuristic]
     if heuristic != "grasp":
         args.append(local_search)
     else:
@@ -79,6 +110,7 @@ def main():
     results = []
     for instance_file in INSTANCE_FILES:
         best = get_best_cost(instance_file)
+        num_clientes = get_num_clientes(instance_file)
         for heuristic in HEURISTICS:
             if heuristic == "grasp":
                 local_searches = ["none"]
@@ -90,6 +122,7 @@ def main():
                 data = parse_output(output)
                 data["heuristic"] = heuristic
                 data["local_search"] = local_search
+                data["num_clientes"] = num_clientes if num_clientes is not None else ""
                 if best and data.get("cost"):
                     data["gap"] = 100 * (data["cost"] - best) / best
                 else:
@@ -99,7 +132,7 @@ def main():
 
     with open(CSV_FILE, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=[
-            "instance", "capacity", "total_demand", "heuristic", "local_search",
+            "instance", "capacity", "total_demand", "num_clientes", "heuristic", "local_search",
             "cost", "num_routes", "time", "gap", "best_known", "status", "msg"
         ])
         writer.writeheader()
