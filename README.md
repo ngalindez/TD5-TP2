@@ -1,10 +1,10 @@
-# 🚚 Solucionador de CVRP
+# Solucionador de CVRP
 
 Herramienta de línea de comandos para resolver el **Problema de Ruteo de Vehículos con Capacidad (CVRP)** a partir de instancias en formato VRPLIB. Combina heurísticas, metaheurísticas y operadores de búsqueda local para explorar soluciones de calidad.
 
 ---
 
-## 📑 Tabla de Contenidos
+## Tabla de Contenidos
 
 - [Características](#características)
 - [Requisitos](#requisitos)
@@ -15,7 +15,7 @@ Herramienta de línea de comandos para resolver el **Problema de Ruteo de Vehíc
 
 ---
 
-## ✨ Características
+## Características
 
 - **Heurísticas:**
   - Clarke & Wright
@@ -36,7 +36,7 @@ Herramienta de línea de comandos para resolver el **Problema de Ruteo de Vehíc
 
 ---
 
-## ⚙️ Requisitos
+## Requisitos
 
 - Compilador C++17 (`g++`, `clang++`)
 - [CMake](https://cmake.org/) (≥ 3.10)
@@ -44,7 +44,7 @@ Herramienta de línea de comandos para resolver el **Problema de Ruteo de Vehíc
 
 ---
 
-## 🛠 Construcción
+## Construcción
 
 Compila todo el proyecto con:
 
@@ -60,7 +60,7 @@ Limpia el directorio de build si necesitás empezar de cero:
 
 ---
 
-## 🖥️ Uso
+## Uso
 
 Mostrá el menú de comandos disponibles con:
 
@@ -113,7 +113,7 @@ Mostrá el menú de comandos disponibles con:
 
 ---
 
-## 🧑‍💻 Ejemplo de ejecución
+## Ejemplo de ejecución
 
 Menú principal:
 
@@ -161,7 +161,7 @@ Resultado tras aplicar búsqueda local:
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 .
