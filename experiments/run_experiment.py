@@ -2,7 +2,7 @@ import os
 import subprocess
 import csv
 
-INSTANCE_DIR = "instancias/2l-cvrp-0"
+INSTANCE_DIR = "../instancias/2l-cvrp-0"
 SOLUTION_DIR = os.path.join(INSTANCE_DIR, "soluciones")
 INSTANCE_FILES = [f for f in os.listdir(INSTANCE_DIR) if f.endswith('.dat') or f.endswith('.DAT')]
 
@@ -59,7 +59,7 @@ def get_best_cost(instance_file):
     return None
 
 def run_experiment(instance_file, heuristic, local_search):
-    args = ["./build/bin/main_experiment", os.path.join(INSTANCE_DIR, instance_file), heuristic]
+    args = ["../build/bin/main_experiment", os.path.join(INSTANCE_DIR, instance_file), heuristic]
     if heuristic != "grasp":
         args.append(local_search)
     else:
