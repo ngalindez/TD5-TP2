@@ -149,11 +149,16 @@ void localSearchMenu(const Solucion &baseSol, const string &nombre) {
     }
 }
 
-int main() {
-    cout << "Ingrese ruta al archivo VRP: ";
-    string path;
-    getline(cin, path);
-    if (path.empty()) return 1;
+int main(int argc, char* argv[]) {
+  string path;
+  if (argc > 1) {
+      path = argv[1];
+      cout << "Usando archivo de instancia: " << path << endl;
+  } else {
+      cout << "Ingrese ruta al archivo VRP: ";
+      getline(cin, path);
+      if (path.empty()) return 1;
+  }
 
     try {
       VRPLIBReader reader(path);

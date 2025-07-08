@@ -35,29 +35,22 @@ print_error() {
 
 # Function to show help
 show_help() {
-    echo "CVRP Solver - Build and Run Script"
+    echo "Solucionador CVRP - Script de construcción y ejecución"
     echo ""
-    echo "Usage: $0 [command] [options]"
+    echo "Uso: $0 [comando] [opciones]"
     echo ""
-    echo "Commands:"
-    echo "  build           Build the project"
-    echo "  clean           Clean build directory"
-    echo "  test            Run all tests"
-    echo "  test-heuristics Run heuristic tests only"
-    echo "  test-local      Run local search tests only"
-    echo "  test-insertion  Run insertion heuristic tests only"
-    echo "  test-operators  Run operator tests only"
-    echo "  run             Run the main application"
-    echo "  instance <name> Run solver on specific instance"
-    echo "  format          Format source code (if clang-format available)"
-    echo "  help            Show this help message"
-    echo ""
-    echo "Examples:"
-    echo "  $0 build                    # Build the project"
-    echo "  $0 test                     # Run all tests"
-    echo "  $0 test-heuristics          # Run heuristic tests"
-    echo "  $0 run                      # Run main application"
-    echo "  $0 instance E022-04g        # Run on E022-04g instance"
+    echo "Comandos:"
+    echo "  build                   Compilar el proyecto"
+    echo "  clean                   Limpiar el directorio de compilación"
+    echo "  test                    Ejecutar todos los tests"
+    echo "  test-heuristica-CW      Ejecutar solo los tests de Clarke & Wright"
+    echo "  test-heuristica-IC      Ejecutar solo los tests de Inserción Cercana"
+    echo "  test-local              Ejecutar solo los tests de búsqueda local"
+    echo "  test-operadores         Ejecutar solo los tests de operadores (swap y relocate)"
+    echo "  run                     Ejecutar la aplicación principal"
+    echo "  instancia <nombre|ruta> Ejecutar el solver en una instancia específica (nombre o ruta)"
+    echo "  format                  Formatear el código fuente (si clang-format está disponible)"
+    echo "  help                    Mostrar este mensaje de ayuda"
     echo ""
 }
 
@@ -124,32 +117,31 @@ run_main() {
 
 # Function to run on specific instance
 run_instance() {
-    local instance_name="$1"
-    
-    if [ -z "$instance_name" ]; then
-        print_error "Please specify an instance name."
-        echo "Available instances:"
-        ls instancias/2l-cvrp-0/*.dat | sed 's/.*\///' | sed 's/\.dat$//' | head -10
-        echo "... and more"
-        exit 1
+    local instance_arg="$1"
+    local instance_file=""
+
+    # If the argument is an existing file, use it directly
+    if [ -f "$instance_arg" ]; then
+        instance_file="$instance_arg"
+    else
+        # Try to build the path from the name
+        instance_file="instancias/2l-cvrp-0/$instance_arg.dat"
+        if [ ! -f "$instance_file" ]; then
+            print_error "Archivo de instancia no encontrado: $instance_arg"
+            echo "Instancias disponibles:"
+            ls instancias/2l-cvrp-0/*.dat 2>/dev/null | sed 's/.*\///' | sed 's/\.dat$//' | head -10
+            echo "... y más"
+            exit 1
+        fi
     fi
-    
-    local instance_file="instancias/2l-cvrp-0/$instance_name.dat"
-    if [ ! -f "$instance_file" ]; then
-        print_error "Instance file not found: $instance_file"
-        echo "Available instances:"
-        ls instancias/2l-cvrp-0/*.dat | sed 's/.*\///' | sed 's/\.dat$//' | head -10
-        echo "... and more"
-        exit 1
-    fi
-    
+
     if [ ! -f "$BIN_DIR/cvrp_solver" ]; then
-        print_error "Main executable not found. Please build the project first."
+        print_error "Ejecutable principal no encontrado. Por favor, compila el proyecto primero."
         exit 1
     fi
-    
-    print_info "Running solver on instance: $instance_name"
-    echo "$instance_file" | "$BIN_DIR/cvrp_solver"
+
+    print_info "Ejecutando solver en la instancia: $instance_file"
+    "$BIN_DIR/cvrp_solver" "$instance_file"
 }
 
 # Function to format code
@@ -175,22 +167,23 @@ case "${1:-help}" in
     "test")
         run_tests
         ;;
-    "test-heuristics")
+    "test-heuristica-CW")
         run_tests "[HeuristicaClarkeWright]"
+        ;;
+    "test-heuristica-IC")
+        run_tests "[HeuristicaInsercionCercana]"
         ;;
     "test-local")
         run_tests "[CWwLocalSearch]"
         ;;
-    "test-insertion")
-        run_tests "[HeuristicaInsercionCercana]"
-        ;;
-    "test-operators")
-        run_tests "[OperadorSwap]" "[OperadorRelocate]"
+    "test-operadores")
+        run_tests "[OperadorSwap]"
+        run_tests "[OperadorRelocate]"
         ;;
     "run")
         run_main
         ;;
-    "instance")
+    "instancia")
         run_instance "$2"
         ;;
     "format")

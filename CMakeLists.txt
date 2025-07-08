@@ -165,37 +165,3 @@ if(CLANG_FORMAT)
         COMMENT "Formatting source code"
     )
 endif()
-
-# =============================================================================
-# Documentation
-# =============================================================================
-
-# Print configuration summary
-message(STATUS "")
-message(STATUS "=== CVRP Solver Configuration ===")
-message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
-message(STATUS "C++ standard: ${CMAKE_CXX_STANDARD}")
-message(STATUS "Install prefix: ${CMAKE_INSTALL_PREFIX}")
-message(STATUS "")
-message(STATUS "Available targets:")
-message(STATUS "  cvrp_solver     - Main application")
-message(STATUS "  runTests        - Test executable")
-message(STATUS "  test-all        - Run all tests")
-message(STATUS "  test-heuristics - Run heuristic tests")
-message(STATUS "  test-local-search - Run local search tests")
-message(STATUS "  test-insertion  - Run insertion heuristic tests")
-message(STATUS "  test-operators  - Run operator tests")
-message(STATUS "  instance-*      - Run solver on specific instances")
-message(STATUS "  clean-build     - Clean build directory")
-if(CLANG_FORMAT)
-    message(STATUS "  format          - Format source code")
-endif()
-message(STATUS "")
-message(STATUS "Usage examples:")
-message(STATUS "  make test-all                    # Run all tests")
-message(STATUS "  make test-heuristics             # Run heuristic tests only")
-message(STATUS "  make instance-E022-04g           # Run solver on E022-04g instance")
-message(STATUS "  ./bin/cvrp_solver                # Run main application")
-message(STATUS "  ./bin/runTests                   # Run all tests directly")
-message(STATUS "  ./bin/runTests \"[HeuristicaClarkeWright]\"  # Run specific test suite")
-message(STATUS "") 
