@@ -95,13 +95,13 @@ def run_experiment(instance_file, heuristic, local_search):
         args.append(local_search)
     else:
         args.append("none")
-        args.append("100")  # Iteraciones
+        args.append("1000")  # Iteraciones
         args.append("5")   # rcl_size
     proc = subprocess.run(
         args,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
-        timeout=120
+        timeout=1200
     )
     output = proc.stdout.decode()
     return output

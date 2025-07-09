@@ -28,3 +28,5 @@ Testing/
 # Ignore results and extras if not source
 results/
 extras/
+
+experiments/graficos
